@@ -1,0 +1,17 @@
+/* General
+* {
+    display: flex;
+}
+
+body {
+    flex-direction: column;
+}
+
+/* Body */
+nav ul, main {
+    flex-direction: row;
+}
+
+section {
+    flex-direction: column;
+} 
