@@ -58,6 +58,7 @@ ul {
 nav {
     background-color: var(--main);
     border-radius: 5px;
+    width: 100%;
 }
 
 nav ul {
