@@ -3,10 +3,10 @@ import HobbiesInterests from "./HobbiesInterests"
 
 const GeneralInfo = () => {
     return (
-        <>
+        <section className="general-info box">
             <NameProfile />
             <HobbiesInterests />
-        </>
+        </section>
     )
 }
 

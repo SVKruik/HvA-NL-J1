@@ -9,10 +9,12 @@ const Biography = () => {
                 semper.
                 Metus aliquam eleifend mi in. Quam viverra orci sagittis eu volutpat odio facilisis mauris sit.
                 Rutrum tellus pellentesque eu tincidunt tortor aliquam nulla facilisi.
-                <p>
-                    “Elementum pulvinar etiam non quam lacus suspendisse. Adipiscing enim eu turpis egestas pretium
-                    aenean.”
-                </p>
+            </p>
+            <p>
+                <q>Elementum pulvinar etiam non quam lacus suspendisse. Adipiscing enim eu turpis egestas pretium
+                    aenean.</q>
+            </p>
+            <p>
                 Nulla at volutpat diam ut venenatis tellus in metus vulputate.
                 Velit scelerisque in dictum non consectetur a erat.
                 Cursus vitae congue mauris rhoncus aenean vel elit scelerisque.

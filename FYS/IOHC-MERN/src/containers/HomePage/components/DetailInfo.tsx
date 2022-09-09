@@ -2,7 +2,9 @@ import Biography from "./Biography"
 
 const DetailInfo = () => {
     return (
-        <Biography />
+        <section className="detail-info box">
+            <Biography />
+        </section>
     )
 }
 

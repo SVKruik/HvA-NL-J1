@@ -1,11 +1,15 @@
-import DetailInfo from "./components/DetailInfo";
-import GeneralInfo from "./components/GeneralInfo";
+import { ReactNode } from 'react'
 
-const Content = () => {
-    return <header className="content">
-        <GeneralInfo />
-        <DetailInfo />
-    </header>;
+interface ContentProps {
+    children: ReactNode | ReactNode[]
+}
+
+const Content = ({children}: ContentProps) => {
+    return (
+        <main className="content">
+            {children}
+        </main>
+    )
 }
 
 export default Content;

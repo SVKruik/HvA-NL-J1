@@ -1,11 +1,11 @@
 import MainMenu from "./components/MainMenu";
 
-const Topbar = () => {
-    return <header className="topbar">
+const Navbar = () => {
+    return <header className="Navbar">
         <nav>
             <MainMenu />
         </nav>
     </header>;
 }
 
-export default Topbar;
+export default Navbar;

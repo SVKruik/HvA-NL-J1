@@ -1,22 +1,12 @@
-/* Pallete */
-:root {
-    --main: #0275d8;
-    --white: #ffffff;
-    --title: #000000;
-    --accent: #565656;
-    --background: #d7d7d7;
-}
-
-/* General */
+/* General and Body */
 body {
     display: flex;
     flex-direction: column;
     font-family: Verdana, Arial, sans-serif;
-    color: var(--accent);
-    background-color: var(--background);
+    color: #565656;
+    background-color: #d7d7d7;
 }
 
-/* Typography */
 h1 {
     font-size: 2em;
 }
@@ -25,10 +15,8 @@ h2 {
     font-size: 1.5em;
 }
 
-h1,
-h2,
-strong {
-    color: var(--title);
+h1, h2, strong {
+    color: #000000;
 }
 
 ul {
@@ -39,9 +27,9 @@ ul {
     text-align: center;
 }
 
-/* Nav */
+/* Navigation */
 nav {
-    background-color: var(--main);
+    background-color: #0275d8;
     border-radius: 5px;
 }
 
@@ -64,24 +52,22 @@ nav a {
     border-radius: 5px;
 }
 
-nav a:link,
-nav a:visited {
-    color: var(--main);
-    background-color: var(--white);
-    border: var(--main) 1px solid;
+nav a:link, nav a:visited {
+    color: #0275d8;
+    background-color: #FFFFFF;
+    border: #0275d8 1px solid;
 }
 
-nav a:hover {
-    color: var(--white);
-    background-color: var(--main);
-    border: var(--white) 1px solid;
+nav a:hover{
+    color: #FFFFFF;
+    background-color: #0275d8;
+    border: #FFFFFF 1px solid;
 }
 
 /* Main */
 main {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     padding: 0 30px 30px 30px;
 }
 
@@ -91,14 +77,18 @@ section {
 }
 
 section.general-info {
+    flex-grow: 1;
     align-items: center;
 }
 
+section.detail-info {
+    flex-grow: 3;
+}
+
 article {
-    background-color: var(--white);
-    border: var(--accent) 1px solid;
+    background-color: #FFFFFF;
+    border: #565656 1px solid;
     border-radius: 5px;
-    box-sizing: border-box;
     margin: 15px;
     padding: 15px;
     max-width: 800px;
@@ -109,33 +99,18 @@ img.profile {
     width: 200px;
     height: 200px;
     margin: auto;
-    box-sizing: border-box;
 }
 
-/* Media */
+/* Responsive Layout */
 @media (max-width: 360px) {
     main {
-        padding: 0 45px 45px;
-    }
-    
-    section {
-        width: 100%;
-    }
-
-    article {
-        width: inherit;
-        margin: 15px 0;
-    }
-    
-
-    p {
-        margin: 0;
+        flex-direction: column;
     }
 
     h1 {
         font-size: 1.5em;
     }
-
+    
     nav ul {
         flex-wrap: wrap;
     }

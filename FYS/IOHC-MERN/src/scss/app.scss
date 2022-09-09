@@ -4,9 +4,10 @@
 // Typography
 @import "./typography/typography.scss";
 
-// Normalizer
-@import "./normalizer/normalizer.scss";
-
 // Components
-@import "./components/topbar.scss";
+@import "./components/navbar.scss";
 @import "./components/content.scss";
+
+// Pages
+@import "./components/homepage.scss";
+@import "./components/infopage.scss";
