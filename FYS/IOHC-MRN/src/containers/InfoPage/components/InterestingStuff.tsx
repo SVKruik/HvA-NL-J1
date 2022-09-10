@@ -14,11 +14,11 @@ const InterestingStuff = () => {
             <h3>Interesting Stuff</h3>
             <p className="interesting-languages-title">Carbon, Lua, RabbitMQ, Swift en TensorFlow</p>
             <ul>
-                <li><img alt="Carbon" style={myStyles} src={carbon} /></li>
-                <li><img alt="Lua" style={myStyles} src={lua} /></li>
-                <li><img alt="RabbitMQ" style={myStyles} src={rabbitmq} /></li>
-                <li><img alt="Swift" style={myStyles} src={swift} /></li>
-                <li><img alt="TensorFlow" style={myStyles} src={tensorflow} /></li>
+                <li className="horizontal-list"><img alt="Carbon" style={myStyles} src={carbon} /></li>
+                <li className="horizontal-list"><img alt="Lua" style={myStyles} src={lua} /></li>
+                <li className="horizontal-list"><img alt="RabbitMQ" style={myStyles} src={rabbitmq} /></li>
+                <li className="horizontal-list"><img alt="Swift" style={myStyles} src={swift} /></li>
+                <li className="horizontal-list"><img alt="TensorFlow" style={myStyles} src={tensorflow} /></li>
             </ul>
             <p className="interesting-languages-desc">
                 Dit zijn dingen die ik erg interessant vind, en graag zou willen leren. Deze talen zijn niet van

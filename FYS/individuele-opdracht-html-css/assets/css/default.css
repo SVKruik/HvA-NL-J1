@@ -114,11 +114,6 @@ img.profile {
 }
 
 /* Info Page */
-
-li {
-    float: left;
-}
-
 .paragraph-link {
     color: var(--font)
 }
