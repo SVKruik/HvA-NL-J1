@@ -5,6 +5,7 @@ const MainMenu = () => {
         <ul>
             <li><NavLink to="/">Home</NavLink></li>
             <li><NavLink to="Info">Info</NavLink></li>
+            <li><NavLink to="Contact">Contact</NavLink></li>
         </ul>
     )
 }
