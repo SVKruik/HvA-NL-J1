@@ -11,7 +11,7 @@ function App() {
       <Navbar />
       <Content>
         <Routes> {/*Page Routing*/}
-          <Route path="/" >
+          <Route path="/">
             <Route index element={<HomePage />}></Route>
             <Route path="Info" element={<InfoPage />}></Route>
             <Route path="Contact" element={<ContactPage />}></Route>

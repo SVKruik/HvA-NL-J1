@@ -3,7 +3,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: Verdana, Arial, sans-serif;
-    color: $accent;
+    color: $font;
     background-color: $background;
 }
 
@@ -18,12 +18,9 @@ h2 {
 
 h1,
 h2,
+h3,
 strong {
     color: $title;
-}
-
-ul {
-    list-style-type: none;
 }
 
 /* Main */
@@ -41,7 +38,7 @@ section {
 
 article {
     background-color: $white;
-    border: $accent 1px solid;
+    border: $font 1px solid;
     box-sizing: border-box;
     border-radius: 5px;
     margin: 15px;
@@ -49,12 +46,16 @@ article {
     max-width: 800px;
 }
 
+ul {
+    list-style-type: none;
+}
+
 /* Media */
 @media (max-width: 360px) {
     main {
         padding: 0 45px 45px;
     }
-    
+
     section {
         width: 100%;
     }
@@ -63,7 +64,7 @@ article {
         width: inherit;
         margin: 15px 0;
     }
-    
+
     p {
         margin: 0;
     }
@@ -74,5 +75,10 @@ article {
 
     nav ul {
         flex-wrap: wrap;
+    }
+
+    .image-info-picture {
+        width: 100%;
+        margin-top: 10px;
     }
 }

@@ -115,6 +115,10 @@ img.profile {
 
 /* Info Page */
 
+li {
+    float: left;
+}
+
 .paragraph-link {
     color: var(--font)
 }
@@ -126,13 +130,9 @@ img.profile {
     list-style: disc;
 }
 
-.languages-title {
-    margin-bottom: 5px;
-}
-
+.interesting-languages-desc,
 .tools-title {
-    margin-top: 70px;
-    margin-bottom: 5px;
+    padding-top: 50px;
 }
 
 /* Media */
@@ -163,16 +163,9 @@ img.profile {
         flex-wrap: wrap;
     }
 
-    .interesting-languages-title {
-        padding-bottom: 10px;
-    }
-
-    .interesting-languages-desc {
-        padding-top: 15px;
-    }
-
+    .interesting-languages-desc,
     .tools-title {
-        padding-top: 35px;
+        padding-top: 90px;
     }
 
     .image-info-picture {
