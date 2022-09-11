@@ -19,6 +19,7 @@ h2 {
 h1,
 h2,
 h3,
+h4,
 strong {
     color: $title;
 }
@@ -50,8 +51,15 @@ ul {
     list-style-type: none;
 }
 
+.bullet-list {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    list-style: disc;
+}
+
 /* Media */
-@media (max-width: 360px) {
+@mixin media-query {
     main {
         padding: 0 45px 45px;
     }
@@ -77,8 +85,57 @@ ul {
         flex-wrap: wrap;
     }
 
+    .profile-picture {
+        width: 100%;
+    }
+
     .image-info-picture {
         width: 100%;
         margin-top: 10px;
     }
+
+    .commit-stat-picture {
+        padding-top: 10px;
+        width: 222px;
+    }
+}
+
+/* Tablet */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    @include media-query
+}
+
+/* Mobile Portrait */
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    @include media-query
+}
+
+/* Mobile Landscape */
+@media screen and (max-device-width: 640px) and (orientation: landscape) {
+    @include media-query
+}
+
+/* Mobile Phones Portrait or Landscape */
+@media screen and (max-device-width: 640px) {
+    @include media-query
+}
+
+/* iPhone 4 Portrait or Landscape */
+@media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+    @include media-query;
+
+    .interesting-languages-desc,
+    .tools-title {
+        margin-top: 70px;
+    }
+}
+
+/* iPhone 5 Portrait or Landscape */
+@media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+    @include media-query
+}
+
+/* iPhone 6 and 6 plus Portrait or Landscape */
+@media (min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3) {
+    @include media-query
 }

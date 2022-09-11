@@ -7,21 +7,7 @@
     color: var(--font)
 }
 
-.active-project-list {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    list-style: disc;
-}
-
 .interesting-languages-desc,
 .tools-title {
     padding-top: 50px;
-}
-
-@media (max-width: 360px) {
-    .interesting-languages-desc,
-    .tools-title {
-        padding-top: 90px;
-    }
 }
