@@ -9,8 +9,6 @@
 
 /* General */
 body {
-    display: flex;
-    flex-direction: column;
     font-family: Verdana, Arial, sans-serif;
     color: var(--font);
     background-color: var(--background);
@@ -28,6 +26,7 @@ h2 {
 h1,
 h2,
 h3,
+h4,
 strong {
     color: var(--title);
 }
@@ -101,15 +100,22 @@ ul {
     list-style-type: none;
 }
 
+.bullet-list {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    list-style: disc;
+}
+
 .centered {
     text-align: center;
 }
 
-img.profile {
+.profile {
     display: block;
-    width: 200px;
-    height: 200px;
+    width: 182px;
     margin: auto;
+    border-radius: 5px;
     box-sizing: border-box;
 }
 
@@ -118,11 +124,12 @@ img.profile {
     color: var(--font)
 }
 
-.active-project-list {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    list-style: disc;
+.horizontal-list {
+    float: left;
+}
+
+.paragraph-link {
+    color: var(--font)
 }
 
 .interesting-languages-desc,
@@ -130,10 +137,47 @@ img.profile {
     padding-top: 50px;
 }
 
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    text-align: left;
+    padding: 4px;
+}
+
+th {
+    background-color: var(--main);
+    color: var(--title);
+}
+
+tr:nth-child(even) {
+    background-color: var(--background);
+}
+
+.table-top-left {
+    border-top-left-radius: 5px;
+}
+
+.table-top-right {
+    border-top-right-radius: 5px;
+}
+
+.table-bottom-left {
+    border-bottom-left-radius: 5px;
+}
+
+.table-bottom-right {
+    border-bottom-right-radius: 5px;
+}
+
 /* Media */
-@media (max-width: 360px) {
+@media only screen and (max-width : 992px) {
     main {
         padding: 0 45px 45px;
+        flex-wrap: wrap;
     }
 
     section {
@@ -144,7 +188,6 @@ img.profile {
         width: inherit;
         margin: 15px 0;
     }
-
 
     p {
         margin: 0;
@@ -158,13 +201,17 @@ img.profile {
         flex-wrap: wrap;
     }
 
-    .interesting-languages-desc,
-    .tools-title {
-        padding-top: 90px;
+    .profile-picture {
+        width: 100%;
     }
 
     .image-info-picture {
         width: 100%;
         margin-top: 10px;
+    }
+
+    .commit-stat-picture {
+        padding-top: 10px;
+        width: 222px;
     }
 }
