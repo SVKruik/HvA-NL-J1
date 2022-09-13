@@ -6,7 +6,8 @@ const MiscPage = () => {
           <h4>Informatie pagina over deze website.</h4>
           <p>
             Dit is de framework, React.js, variant van de 'individuele-opdracht-html-css'. Ik heb deze website gemaakt omdat
-            ik dat leuk vond. Dit stond niet in de verplichtingen etc. Normaal gesproken moest je vanilla gebruiken.
+            ik dat leuk vond. Dit stond niet in de verplichtingen etc. Normaal gesproken moest je vanilla gebruiken. Het bouwen 
+            van deze website was een child van het FYS programma.
           </p>
           <p>
             Ik heb vele fouten in de opdracht gevonden, dus de code die ik geschreven heb hier, is anders dan de instructie.
@@ -34,6 +35,9 @@ const MiscPage = () => {
             <li>Tijd kwijt: ongeveer 25 uur</li>
             <li>Editor gebruikt: Visual Studio Code</li>
           </ul>
+          <p>Voor vanilla variant: <a href="https://github.com/PuffinKwadraat/HvA-NL-J1/tree/main/FYS/individuele-opdracht-html-css" className="paragraph-link" target="_blank"
+                    rel="noreferrer">Repository</a>
+                </p>
         </article>
       </section>
     </>
