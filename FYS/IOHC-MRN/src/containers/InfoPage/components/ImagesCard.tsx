@@ -2,7 +2,7 @@ import vakantie1 from "../../../shared/assets/img/Vakantie1.jpg";
 import vakantie2 from "../../../shared/assets/img/Vakantie2.jpg";
 
 const myStyles = {
-  borderRadius: "10px"
+  borderRadius: "5px"
 }
 
 const ImagesCard = () => {

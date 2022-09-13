@@ -137,6 +137,7 @@ ul {
     padding-top: 50px;
 }
 
+/* Project Page */
 table {
     border-collapse: collapse;
     width: 100%;
@@ -171,6 +172,11 @@ tr:nth-child(even) {
 
 .table-bottom-right {
     border-bottom-right-radius: 5px;
+}
+
+.project-picture {
+    border-radius: 5px;
+    width: 700px;
 }
 
 /* Media */
