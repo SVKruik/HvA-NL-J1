@@ -25,7 +25,8 @@ public class Main {
         int uiBehaald = 0;
         int rcsBehaald = 0;
 
-        final int TOTAAL_STUDIEPUNTEN = FYS_STUDIEPUNTEN_MAX + PROGRAMMING_STUDIEPUNTEN_MAX + DATABASES_STUDIEPUNTEN_MAX + PPS_STUDIEPUNTEN_MAX + UI_STUDIEPUNTEN_MAX + RCS_STUDIEPUNTEN_MAX;
+        final int TOTAAL_STUDIEPUNTEN = FYS_STUDIEPUNTEN_MAX + PROGRAMMING_STUDIEPUNTEN_MAX + DATABASES_STUDIEPUNTEN_MAX
+                + PPS_STUDIEPUNTEN_MAX + UI_STUDIEPUNTEN_MAX + RCS_STUDIEPUNTEN_MAX;
 
         System.out.println("Voer behaalde cijfers in, gebruik comma voor decimalen.");
 
@@ -46,6 +47,8 @@ public class Main {
 
         System.out.println("Research and Communication Skills:");
         double rcsCijfer = scanner.nextDouble();
+
+        scanner.close();
 
         if (fysCijfer < VOLDOENDE) {
             fysBehaald = 0;
@@ -82,26 +85,28 @@ public class Main {
             rcsBehaald = RCS_STUDIEPUNTEN_MAX;
         }
 
-        System.out.println("Vak/project: Fasten Your Seatbelts " + "\t\t\tCijfer: " + fysCijfer + "\t\tBehaalde punten: " + fysBehaald);
-        System.out.println("Vak/project: Programming " + "\t\t\t\tCijfer: " + programmingCijfer + "\t\tBehaalde punten: " + programmingBehaald);
-        System.out.println("Vak/project: Databases " + "\t\t\t\t\tCijfer: " + databasesCijfer + "\t\tBehaalde punten: " + databasesBehaald);
-        System.out.println("Vak/project: Personal and Project Skills " + "\t\tCijfer: " + ppsCijfer + "\t\tBehaalde punten: " + ppsBehaald);
-        System.out.println("Vak/project: User Interaction: " + "\t\t\t\tCijfer: " + uiCijfer + "\t\tBehaalde punten: " + uiBehaald);
-        System.out.println("Vak/project: Research and Communication Skills " + "\t\tCijfer: " + rcsCijfer + "\t\tBehaalde punten: " + rcsBehaald);
+        System.out.println("Vak/project: Fasten Your Seatbelts " + "\t\t\t\t\tCijfer: " + fysCijfer
+                + "\t\tBehaalde punten: " + fysBehaald);
+        System.out.println("Vak/project: Programming " + "\t\t\t\t\t\t\tCijfer: " + programmingCijfer
+                + "\t\tBehaalde punten: " + programmingBehaald);
+        System.out.println("Vak/project: Databases " + "\t\t\t\t\t\t\t\tCijfer: " + databasesCijfer + "\t\tBehaalde punten: "
+                + databasesBehaald);
+        System.out.println("Vak/project: Personal and Project Skills " + "\t\t\tCijfer: " + ppsCijfer
+                + "\t\tBehaalde punten: " + ppsBehaald);
+        System.out.println("Vak/project: User Interaction: " + "\t\t\t\t\t\tCijfer: " + uiCijfer + "\t\tBehaalde punten: "
+                + uiBehaald);
+        System.out.println("Vak/project: Research and Communication Skills " + "\t\tCijfer: " + rcsCijfer
+                + "\t\tBehaalde punten: " + rcsBehaald);
 
-        int behaaldeStudiepunten = fysBehaald + programmingBehaald + databasesBehaald + ppsBehaald + uiBehaald + rcsBehaald;
-                
+        int behaaldeStudiepunten = fysBehaald + programmingBehaald + databasesBehaald + ppsBehaald + uiBehaald
+                + rcsBehaald;
+
         System.out.println("Totaal behaalde studiepunten: " + behaaldeStudiepunten + "/" + TOTAAL_STUDIEPUNTEN);
-        
+
         double totaalStudiepuntenMinimum = TOTAAL_STUDIEPUNTEN / 6 * 5;
-                
+
         if (behaaldeStudiepunten < totaalStudiepuntenMinimum) {
             System.out.println("PAS OP: je ligt op schema voor een negatief BSA!");
         }
-
-
-        scanner.close();
     }
 }
-
-        
