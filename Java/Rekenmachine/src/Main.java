@@ -8,61 +8,50 @@ import java.util.Scanner;
  */
 
 public class Main {
-    public static void main(String[] args) {
-
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Operator (S = stoppen): ");
-        char karakter = scanner.next().charAt(0);
-
-        boolean karakterCheck = isGeldigeOperator(karakter);
-        double printBerkening = printBerkening(uitkomst);
-
-        while (karakterCheck == false) {
-            System.out.println("Operator is ongeldig.");
-            karakter = scanner.next().charAt(0);
-            karakterCheck = isGeldigeOperator(karakter);
-        }
-        scanner.close();
-
-        System.out.println(getal1 + operator + getal2 + " = " + uitkomst);
-    }
-
-    public static boolean isGeldigeOperator(char karakter) {
+    static boolean isGeldigeOperator(char karakter) {
         boolean karakterCheck;
-
         if (karakter != '+' && karakter != '-' && karakter != '*' && karakter != '/' && karakter != '%' && karakter != 'S' && karakter != 's') {
             karakterCheck = false;
         } else {
             karakterCheck = true;
         }
+
+        while (karakterCheck == false) {
+            System.out.println("Operator is ongeldig.");
+        }
         return karakterCheck;
     }
 
-    public static double printBerkening(char karakter, double getal1, double getal2) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Eerste getal: ");
-        getal1 = scanner.nextDouble();
-
-        System.out.println("Tweede getal: ");
-        getal2 = scanner.nextDouble();
-        scanner.close();
-
-        
+    static void printBerekening(char operator, double getal1, double getal2) {
         double uitkomst = 0;
 
-        if (karakter == '+') {
+        if (operator == '+') {
             uitkomst = getal1 + getal2;
-        } else if (karakter == '-') {
+        } else if (operator == '-') {
             uitkomst = getal1 - getal2;
-        } else if (karakter == '*') {
+        } else if (operator == '*') {
             uitkomst = getal1 * getal2;
-        } else if (karakter == '/') {
+        } else if (operator == '/') {
             uitkomst = getal1 / getal2;
-        } else if (karakter == '%') {
+        } else if (operator == '%') {
             uitkomst = getal1 % getal2;
-        } else if (karakter == 'S' || karakter == 's') {
+        } else if (operator == 'S' || operator == 's') {
             
-        }
-        return uitkomst;
+        }   
+        System.out.println(getal1 + " " + operator  + " " + getal2 + " = " + uitkomst);
+    }
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Operator (S = stoppen): ");
+        char operator = scanner.next().charAt(0);
+
+        System.out.println("Eerste getal: ");
+        double getal1 = scanner.nextDouble();
+
+        System.out.println("Tweede getal: ");
+        double getal2 = scanner.nextDouble();
+        scanner.close();
+
+        printBerekening(operator, getal1, getal2);
     }
 }
