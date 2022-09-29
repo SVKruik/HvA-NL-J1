@@ -1,8 +1,12 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println(" Ooh ooh ooh ooh ooh ooh\n" +
-                "                        Ooh ooh ooh ooh\n" +
-                "                        Ooh ooh ooh ooh ooh ooh\n" +
-                "                        I'm half asleep, wishing I still had you");
+        int keuze = 1;
+        switch (keuze) {
+            case 1 -> System.out.println("1");
+            case 2 -> System.out.print("2");
+            case 3 -> System.out.print("3");
+            case 4 -> System.out.print("4");
+            case 5 -> System.out.print("5");
+        }
     }
 }
