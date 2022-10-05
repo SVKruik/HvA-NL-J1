@@ -17,8 +17,6 @@ public class Main {
             System.out.print("Operator (S = stoppen): ");
             karakter = scanner.next().charAt(0);
         }
-        System.out.print("Operator (S = stoppen): ");
-        karakter = scanner.next().charAt(0);
         while (isGeldigeOperator(karakter)) {
             if (karakter == 's' || karakter == 'S') {
                 break;
@@ -30,6 +28,8 @@ public class Main {
                 double getal2 = scanner.nextDouble();
 
                 printBerekening(karakter, getal1, getal2);
+                System.out.print("Operator (S = stoppen): ");
+                karakter = scanner.next().charAt(0);
             }
         }
     }
