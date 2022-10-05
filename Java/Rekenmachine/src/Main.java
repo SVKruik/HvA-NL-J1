@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 /**
  * Dit programma is een rekenmachine. Geef de karakter en je getallen aan,
- * en hij berekent de uitkomst.
+ * en hij berekent de uitkomst. Checkt ook of de invoer correct is.
  *
  * @author Stefan Kruik
  */
