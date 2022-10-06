@@ -137,23 +137,19 @@ public class Main {
             ppsBehaald = vakPunten[5];
         }
 
-        System.out.println("Vak/project: Fasten Your Seatbelts " + "\t\t\t\tCijfer: " + vakCijfer[0]
-                + "\t\tBehaalde punten: " + fysBehaald);
-        System.out.println("Vak/project: Programming " + "\t\t\t\t\t\tCijfer: " + vakCijfer[1]
-                + "\t\tBehaalde punten: " + programmingBehaald);
-        System.out.println("Vak/project: User Interaction " + "\t\t\t\t\tCijfer: " + vakCijfer[2] + "\t\tBehaalde punten: "
-                + uiBehaald);
-        System.out.println("Vak/project: Engels " + "\t\t\t\t\t\t\tCijfer: " + vakCijfer[3]
-                + "\t\tBehaalde punten: " + engelsBehaald);
-        System.out.println("Vak/project: Wiskunde " + "\t\t\t\t\t\t\tCijfer: " + vakCijfer[4] + "\t\tBehaalde punten: "
-                + wiskundeBehaald);
-        System.out.println("Vak/project: Personal and Project Skills " + "\t\tCijfer: " + vakCijfer[5]
-                + "\t\tBehaalde punten: " + ppsBehaald);
+        System.out.printf("""
+                Vak/project: Fasten Your Seatbelts            Cijfer: %.1f     Behaalde punten: %d
+                Vak/project: Programming                      Cijfer: %.1f     Behaalde punten: %d
+                Vak/project: User Interaction                 Cijfer: %.1f     Behaalde punten: %d
+                Vak/project: Engels                           Cijfer: %.1f     Behaalde punten: %d
+                Vak/project: Wiskunde                         Cijfer: %.1f     Behaalde punten: %d
+                Vak/project: Personal and Project Skills      Cijfer: %.1f     Behaalde punten: %d
+                
+                """, vakCijfer[0], fysBehaald, vakCijfer[1], programmingBehaald, vakCijfer[2], uiBehaald, vakCijfer[3], engelsBehaald, vakCijfer[4], wiskundeBehaald, vakCijfer[5], ppsBehaald);
 
         int behaaldeStudiepunten = fysBehaald + programmingBehaald + uiBehaald + engelsBehaald + wiskundeBehaald + ppsBehaald;
 
         System.out.println("Totaal behaalde studiepunten: " + behaaldeStudiepunten + "/" + STUDIEPUNTEN_MAX);
-
         double totaalStudiepuntenMinimum = STUDIEPUNTEN_MAX / 6 * 5;
 
         if (behaaldeStudiepunten < totaalStudiepuntenMinimum) {
