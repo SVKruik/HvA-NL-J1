@@ -9,18 +9,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link href="./assets/css/default.css" rel="stylesheet">
-    <script src="/assets/js/app.js" type="text/javascript" async>
+    <script src="/assets/js/app.js">
+        document.addEventListener('DOMContentLoaded', () => {
+            myFunction2();
+        });
     </script>
 </head>
 
 <body>
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="info.html">Info</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="misc.html">Misc</a></li>
+            <li><a href="#" id="link1">Home</a></li>
+            <li><a href="#" id="link2">Info</a></li>
+            <li><a href="#" id="link3">Projects</a></li>
+            <li><a href="#" id="link4">Contact</a></li>
+            <li><a href="#" id="link5">Misc</a></li>
         </ul>
     </nav>
     <main>
