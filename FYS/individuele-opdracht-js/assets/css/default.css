@@ -179,6 +179,55 @@ tr:nth-child(even) {
     width: 700px;
 }
 
+/* Message Board */
+.message-form-container {
+    display: flex;
+}
+
+textarea {
+    width: 500px;
+    height: 150px;
+    margin-left: 50px;
+}
+
+.bericht-container {
+    border: 2px solid var(--background);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.form-components {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-submit-button {
+    width: 100px;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    background-color: var(--main);
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-left: 20px
+}
+
+.bericht-delete {
+    height: 30px;
+    width: 30px;
+    color: var(--main);
+    border: none;
+    border-radius: 5px;
+    font-size: larger;
+    font-weight: bolder;
+    background-color: var(--white);
+}
+
 /* Media */
 @media only screen and (max-width : 992px) {
     main {
