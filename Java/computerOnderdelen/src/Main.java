@@ -17,16 +17,22 @@ public class Main {
         System.out.print("Hoeveel computeronderdelen wil je verkopen? ");
         int verkoopAantal = scanner.nextInt();
 
-        while (verkoopAantal < 1 || verkoopAantal > 25) {
-            System.out.print("\tAantal onderdelen moet tussen de 1 en 25 liggen!\n");
+        final int MIN_VERKOOP_AANTAL = 1;
+        final int MAX_VERKOOP_AANTAL = 25;
+
+        // Verkoopaantal controle
+        while (verkoopAantal < MIN_VERKOOP_AANTAL || verkoopAantal > MAX_VERKOOP_AANTAL) {
+            System.out.printf("\tAantal onderdelen moet tussen de %d en %d liggen!", MIN_VERKOOP_AANTAL, MAX_VERKOOP_AANTAL);
             System.out.print("Hoeveel computeronderdelen wil je verkopen? ");
             verkoopAantal = scanner.nextInt();
         }
         System.out.println(" ");
 
+        // Maak de arrays
         String[] artikelOmschrijving = new String[verkoopAantal];
         double[] artikelPrijs = new double[verkoopAantal];
 
+        // Lees de verkoopbeschrijvingen in
         System.out.println("Geef per onderdeel de omschrijving: ");
         for (int i = 0; i < verkoopAantal; i++) {
             int iPlus = i + 1;
@@ -34,6 +40,7 @@ public class Main {
             artikelOmschrijving[i] = scanner.next();
         }
 
+        // Lees de verkoopprijzen in
         System.out.println(" ");
         System.out.println("Geef voor elk onderdeel de verkoopprijs: ");
         for (int i = 0; i < verkoopAantal; i++) {
@@ -43,9 +50,10 @@ public class Main {
         scanner.close();
         System.out.println(" ");
 
+        // Print alle einddata
         double totaalPrijs = berekenTotaalprijs(artikelPrijs);
         System.out.println("De totaalprijs van alle onderdelen bedraagt: " + totaalPrijs);
-        double verkoopKosten = berekenVerkoopkosten(totaalPrijs);
+        int verkoopKosten = berekenVerkoopkosten(totaalPrijs);
         System.out.println("Hierover betaalt u aan verkoopkosten: " + verkoopKosten);
         double grandTotaal = totaalPrijs - verkoopKosten;
         System.out.println("Indien alle onderdelen worden verkocht, ontvangt u: " + grandTotaal);
@@ -54,15 +62,15 @@ public class Main {
         System.out.println("Lijst van onderdelen: ");
 
         for (int i = 0; i < verkoopAantal; i++) {
-            System.out.printf("%s                              %f", artikelOmschrijving[i], Math.round(artikelPrijs[i] * 100) / 100.0);
+            System.out.printf("%s\t\t\t%.2f", artikelOmschrijving[i], artikelPrijs[i]);
             System.out.println(" ");
         }
     }
 
     public static double berekenTotaalprijs(double[] prijzen) {
         double totaal = 0;
-        for (int i = 0; i < prijzen.length; i++) {
-            totaal += prijzen[i];
+        for (double prijs : prijzen) {
+            totaal += prijs;
         }
         return totaal;
     }
@@ -71,12 +79,12 @@ public class Main {
         final double VERKOOPKOSTEN_FACTOR = 0.05;
         final int VERKOOPKOSTEN_MINIMUM = 3;
 
-        int verkoopkosten = (int) Math.round(totaalprijs * VERKOOPKOSTEN_FACTOR);
+        double verkoopkosten = totaalprijs * VERKOOPKOSTEN_FACTOR;
 
         if (verkoopkosten < VERKOOPKOSTEN_MINIMUM) {
             verkoopkosten = VERKOOPKOSTEN_MINIMUM;
         }
 
-        return verkoopkosten;
+        return (int) Math.round(verkoopkosten);
     }
 }
