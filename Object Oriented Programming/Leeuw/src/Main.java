@@ -6,5 +6,7 @@ public class Main {
         System.out.println(leeuwA.naam + leeuwA.heeftGroteManen + leeuwA.brullen + leeuwA.luieren);
         System.out.println(" ");
         System.out.println(leeuwB.naam + leeuwB.heeftGroteManen + leeuwB.brullen + leeuwB.luieren);
+
+        Boom boom = new Boom(, 100, 100, 4);
     }
 }
