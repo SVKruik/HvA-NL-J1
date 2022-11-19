@@ -9,11 +9,11 @@ public class Main {
         Vak fys = new Vak("Fasten your Seatbelts", 12);
 
         Scanner scanner = new Scanner(System.in);
-        System.out.println();
+        System.out.print("Voer behaalde cijfer voor " + fys.naam + " in: ");
         double vakCijfer = scanner.nextDouble();
 
         fys.setCijfer(vakCijfer);
 
-        System.out.println("Vak/Project: " + fys.getNaam() + ": " + fys.getCijfer() + "Punten: " + fys.getPunten());
+        System.out.println("Vak/Project: " + fys.getNaam() + "\t Cijfer: " + fys.getCijfer() + "\tPunten: " + fys.gehaaldePunten(vakCijfer));
     }
 }

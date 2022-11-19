@@ -24,8 +24,10 @@ public class Vak {
     }
 
     int gehaaldePunten(double cijfer){
-        if (setCijfer(cijfer) < 5.5) {
-
+        if (this.cijfer < 5.5) {
+            return punten = 0;
+        } else {
+            return punten;
         }
     }
 }
