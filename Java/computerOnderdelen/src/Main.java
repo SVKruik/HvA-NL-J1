@@ -30,7 +30,7 @@ public class Main {
         System.out.println("Geef per onderdeel de omschrijving: ");
         for (int i = 0; i < verkoopAantal; i++) {
             int iPlus = i + 1;
-                System.out.print("\t" + iPlus + ": ");
+            System.out.print("\t" + iPlus + ": ");
             artikelOmschrijving[i] = scanner.next();
         }
 
@@ -54,15 +54,15 @@ public class Main {
         System.out.println("Lijst van onderdelen: ");
 
         for (int i = 0; i < verkoopAantal; i++) {
-            System.out.printf("%s                              %f", artikelOmschrijving[i], Math.round(artikelPrijs[i] * 100) / 100.0);
+            System.out.printf("%s\t\t\t\t\t%f", artikelOmschrijving[i], Math.round(artikelPrijs[i] * 100) / 100.0);
             System.out.println(" ");
         }
     }
 
     public static double berekenTotaalprijs(double[] prijzen) {
         double totaal = 0;
-        for (int i = 0; i < prijzen.length; i++) {
-            totaal += prijzen[i];
+        for (double v : prijzen) {
+            totaal += v;
         }
         return totaal;
     }
