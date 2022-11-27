@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7d94818f-b251-4443-a59a-726a43ea94c1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../BSA-Monitor-3.1/BSA-Monitor-2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BSA-Monitor-3.2/BSA-Monitor-2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WKSimulator.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Simulatie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BSA-Monitor-3/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BSA-Monitor-3/.idea/discord.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BSA-Monitor-3/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BSA-Monitor-3/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BSA-Monitor-3/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BSA-Monitor-3/BSA-Monitor-2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BSA-Monitor-3/out/production/BSA-Monitor-2/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BSA-Monitor-3/out/production/BSA-Monitor-2/Vak.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BSA-Monitor-3/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BSA-Monitor-3/src/Vak.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kopje/out/production/Kopje/Kopje.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Kopje/out/production/Kopje/Kopje.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kopje/out/production/Kopje/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Kopje/out/production/Kopje/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kopje/src/Kopje.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Kopje/src/Kopje.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kopje/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Kopje/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Leeuw/out/production/Leeuw/Leeuw.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Leeuw/out/production/Leeuw/Leeuw.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Leeuw/out/production/Leeuw/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Leeuw/out/production/Leeuw/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Leeuw/src/Boom.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Leeuw/src/Boom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Leeuw/src/Leeuw.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Leeuw/src/Leeuw.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Leeuw/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Leeuw/src/Main.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2I2KRgWclsaIpiGKww22jpqmkr8" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7d94818f-b251-4443-a59a-726a43ea94c1" name="Changes" comment="" />
+      <created>1669374231899</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1669374231899</updated>
+      <workItem from="1669374233558" duration="2706000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
