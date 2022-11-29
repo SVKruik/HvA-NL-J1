@@ -7,8 +7,8 @@ public class Vak {
 
     /**
      * Kopiëren van waardes naar dit bestand.
-     * @param nieuweNaam
-     * @param nieuwePunten
+     * @param nieuweNaam - naam
+     * @param nieuwePunten - punten
      */
 
     Vak(String nieuweNaam, int nieuwePunten) {
@@ -21,7 +21,11 @@ public class Vak {
     }
 
     int getPunten(){
-        return punten;
+        if (this.cijfer < VOLDOENDE) {
+            return punten = 0;
+        } else {
+            return punten;
+        }
     }
 
     double getCijfer() {
@@ -30,18 +34,5 @@ public class Vak {
 
     void setCijfer(double cijfer) {
         this.cijfer = cijfer;
-    }
-
-    /**
-     * Checkt of het cijfer toerijkend is voor punten.
-     * @param cijfer - Vul het cijfer in
-     * @return - Geeft behaalde punten terug
-     */
-    int gehaaldePunten(double cijfer){
-        if (this.cijfer < VOLDOENDE) {
-            return punten = 0;
-        } else {
-            return punten;
-        }
     }
 }

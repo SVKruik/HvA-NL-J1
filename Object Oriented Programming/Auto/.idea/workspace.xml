@@ -1,11 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7d94818f-b251-4443-a59a-726a43ea94c1" name="Changes" comment="">
+    <list default="true" id="865a1270-ad6a-4260-85ac-1e60947237b9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Auto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Motor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Superheld/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Superheld/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Superheld/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Superheld/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Superheld/Superheld.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Superheld/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BSA-Monitor-3.2/out/production/BSA-Monitor-2/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BSA-Monitor-3.2/out/production/BSA-Monitor-2/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BSA-Monitor-3.2/out/production/BSA-Monitor-2/Vak.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BSA-Monitor-3.2/out/production/BSA-Monitor-2/Vak.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BSA-Monitor-3.2/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BSA-Monitor-3.2/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BSA-Monitor-3.2/src/Vak.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BSA-Monitor-3.2/src/Vak.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WKSimulator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../WKSimulator/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +39,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2I2KRgWclsaIpiGKww22jpqmkr8" />
+  <component name="ProjectId" id="2IB1sf6oDYkXhj3Zoe0vDbDqNl8" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -45,13 +59,13 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="7d94818f-b251-4443-a59a-726a43ea94c1" name="Changes" comment="" />
-      <created>1669374231899</created>
+      <changelist id="865a1270-ad6a-4260-85ac-1e60947237b9" name="Changes" comment="" />
+      <created>1669640370765</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1669374231899</updated>
-      <workItem from="1669374233558" duration="2706000" />
-      <workItem from="1669640094068" duration="278000" />
+      <updated>1669640370765</updated>
+      <workItem from="1669640372205" duration="2265000" />
+      <workItem from="1669724391999" duration="562000" />
     </task>
     <servers />
   </component>
