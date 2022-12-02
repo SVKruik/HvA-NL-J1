@@ -10,8 +10,7 @@ public class Vak {
      * @param nieuweNaam - naam
      * @param nieuwePunten - punten
      */
-
-    Vak(String nieuweNaam, int nieuwePunten) {
+    public Vak(String nieuweNaam, int nieuwePunten) {
         this.naam = nieuweNaam;
         this.punten = nieuwePunten;
     }
@@ -20,12 +19,8 @@ public class Vak {
         return naam;
     }
 
-    int getPunten(){
-        if (this.cijfer < VOLDOENDE) {
-            return punten = 0;
-        } else {
-            return punten;
-        }
+    int getPunten() {
+        return punten;
     }
 
     double getCijfer() {
@@ -34,5 +29,19 @@ public class Vak {
 
     void setCijfer(double cijfer) {
         this.cijfer = cijfer;
+    }
+
+    /**
+     * Check of je punten gehaald hebt voor het vak.
+     * @return - de hoeveelheid punten die je krijgt.
+     */
+    int gehaaldePunten(){
+        int gehaaldePunten;
+        if (this.cijfer < VOLDOENDE) {
+            gehaaldePunten = this.getPunten();
+        } else {
+            gehaaldePunten = 0;
+        }
+        return gehaaldePunten;
     }
 }
