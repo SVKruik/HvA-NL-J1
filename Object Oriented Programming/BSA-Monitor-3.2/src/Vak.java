@@ -3,7 +3,7 @@ public class Vak {
     private int punten;
     private double cijfer;
 
-    final double VOLDOENDE = 5.5;
+    final double ONVOLDOENDE = 5.4;
 
     /**
      * Kopiëren van waardes naar dit bestand.
@@ -37,8 +37,8 @@ public class Vak {
      */
     int gehaaldePunten(){
         int gehaaldePunten;
-        if (this.cijfer < VOLDOENDE) {
-            gehaaldePunten = this.getPunten();
+        if (this.cijfer > ONVOLDOENDE) {
+            gehaaldePunten = getPunten();
         } else {
             gehaaldePunten = 0;
         }
