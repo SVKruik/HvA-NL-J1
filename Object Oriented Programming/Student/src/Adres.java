@@ -17,17 +17,12 @@ public class Adres {
         this.plaats = plaats;
     }
 
+    /**
+     * Return adres in een mooi format.
+     * @return - geformatteerd adres
+     */
     public String toString() {
         return (straat + " " + huisnummer + ", " + postcode + " " + plaats);
-    }
-
-
-    public String getPostcode() {
-        return postcode;
-    }
-
-    public void setPostcode(String postcode) {
-        this.postcode = postcode;
     }
 
     /**

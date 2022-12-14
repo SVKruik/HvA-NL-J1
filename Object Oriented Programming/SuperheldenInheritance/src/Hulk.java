@@ -11,7 +11,7 @@ public class Hulk extends Superheld {
      * @return - return of de Hulk kalmeert.
      */
     public boolean kalmeer() {
-        return kalmeer();
+        if 
     }
 
     @Override

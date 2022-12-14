@@ -1,0 +1,274 @@
+/* Pallete */
+:root {
+    --main: #0275d8;
+    --white: #ffffff;
+    --title: #000000;
+    --font: #565656;
+    --background: #d7d7d7;
+}
+
+/* General */
+body {
+    font-family: "Lato", sans-serif;
+    color: var(--font);
+    background-color: var(--background);
+}
+
+/* Typography */
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h1,
+h2,
+h3,
+h4,
+strong {
+    color: var(--title);
+}
+
+/* Nav */
+nav {
+    background-color: var(--main);
+    border-radius: 5px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+nav li {
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 2px;
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+nav a:link,
+nav a:visited {
+    color: var(--main);
+    background-color: var(--white);
+    border: var(--main) 1px solid;
+}
+
+nav a:hover {
+    color: var(--white);
+    background-color: var(--main);
+    border: var(--white) 1px solid;
+}
+
+/* Main */
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 30px 30px 30px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+section.general-info {
+    align-items: center;
+}
+
+article {
+    background-color: var(--white);
+    border: var(--font) 1px solid;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin: 15px;
+    padding: 15px;
+    max-width: 800px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.bullet-list {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    list-style: disc;
+}
+
+.centered {
+    text-align: center;
+}
+
+.profile {
+    display: block;
+    width: 182px;
+    margin: auto;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Info Page */
+.paragraph-link {
+    color: var(--font)
+}
+
+.horizontal-list {
+    float: left;
+}
+
+.paragraph-link {
+    color: var(--font)
+}
+
+.interesting-languages-desc,
+.tools-title {
+    padding-top: 50px;
+}
+
+/* Project Page */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    text-align: left;
+    padding: 4px;
+}
+
+th {
+    background-color: var(--main);
+    color: var(--title);
+}
+
+tr:nth-child(even) {
+    background-color: var(--background);
+}
+
+.table-top-left {
+    border-top-left-radius: 5px;
+}
+
+.table-top-right {
+    border-top-right-radius: 5px;
+}
+
+.table-bottom-left {
+    border-bottom-left-radius: 5px;
+}
+
+.table-bottom-right {
+    border-bottom-right-radius: 5px;
+}
+
+.project-picture {
+    border-radius: 5px;
+    width: 700px;
+}
+
+/* Message Board */
+.message-form-container {
+    display: flex;
+}
+
+textarea {
+    width: 500px;
+    height: 150px;
+    margin-left: 50px;
+}
+
+.bericht-container {
+    border: 2px solid var(--background);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.form-components {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-submit-button {
+    width: 100px;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    background-color: var(--main);
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-left: 20px
+}
+
+.bericht-delete {
+    height: 30px;
+    width: 30px;
+    color: var(--main);
+    border: none;
+    border-radius: 5px;
+    font-size: larger;
+    font-weight: bolder;
+    background-color: var(--white);
+}
+
+/* Media */
+@media only screen and (max-width : 992px) {
+    main {
+        padding: 0 45px 45px;
+        flex-wrap: wrap;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    article {
+        width: inherit;
+        margin: 15px 0;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    .profile-picture,
+    .project-picture {
+        width: 100%;
+    }
+
+    .image-info-picture {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .commit-stat-picture {
+        padding-top: 10px;
+        width: 222px;
+    }
+}
