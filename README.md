@@ -1,7 +1,7 @@
 # HvA-NL-J1
 
-Repository for posting files from assignments. The repo contains for the files for Java and FYS project.
+Personal repository for storing projects that I made during my first year in university.
 
 ---
 
-Last updated for: week 8.
+Last updated for: week `x`.
