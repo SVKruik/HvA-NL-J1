@@ -1,0 +1,194 @@
+<nav>
+  <div class="logo-container">
+    <a href="index.html"><img src="assets/img/corendon-connect-c.png" alt="logo" class="nav-logo"></a>
+  </div>
+  <div class="center-list">
+    <ul class="nav-list">
+      <li>
+        <a href="index.html" class="nav-link">
+          <div class="nav-list-item">Home</div>
+        </a>
+      </li>
+      <li id="js-loggedin-show">
+        <a href="match.html" class="nav-link">
+          <div class="nav-list-item">Match</div>
+        </a>
+      </li>
+      <li>
+        <a href="kaart.html" class="nav-link">
+          <div class="nav-list-item">Kaart</div>
+        </a>
+      </li>
+      <li id="js-loggedin-show">
+        <a href="zoek.html" class="nav-link">
+          <div class="nav-list-item">Zoek</div>
+        </a>
+      </li>
+      <li id="js-loggedin-showadmin">
+        <a href="admin.html" class="nav-link">
+          <div class="nav-list-item">Admin</div>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="logged_in" id="js-loggedin-show">
+    <a class="chaticon" href="chat.html"><img src="/assets/img/chat/chat.png" alt="" srcset=""></a>
+    <div class="dropdown">
+      <button class="dropbtn"><a id="profilepicture" href="profiel.html"><img class="profile-picture"
+            src=""></a></button>
+      <div class="dropdown-content">
+        <p id="acc-naam"></p>
+        <a href="instellingen.html">Instellingen</a>
+        <a class="logout" href="index.html">Uitloggen</a>
+      </div>
+    </div>
+  </div>
+  <div class="inlog-button" id="js-loggedin-hide">Login</div>
+  <button id="res-dropdown-button"><i class="fa-solid fa-bars"></i></button>
+  <div class="res-dropdown-content">
+    <ul class="res-dropdown-list">
+      <li>
+        <a href="index.html" class="nav-link">
+          <div class="nav-list-item">
+            <ul class="nav-list-item-list">
+              <li>
+                Home
+              </li>
+              <li class="nav-list-item-list-icon">
+                <i class="fa-solid fa-house"></i>
+              </li>
+            </ul>
+          </div>
+        </a>
+      </li>
+      <li id="js-loggedin-show">
+        <a href="match.html" class="nav-link">
+          <div class="nav-list-item">
+            <ul class="nav-list-item-list">
+              <li>
+                Match
+              </li>
+              <li class="nav-list-item-list-icon">
+                <i class="fa-solid fa-user-plus"></i>
+              </li>
+            </ul>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="kaart.html" class="nav-link">
+          <div class="nav-list-item">
+            <ul class="nav-list-item-list">
+              <li>
+                Kaart
+              </li>
+              <li class="nav-list-item-list-icon">
+                <i class="fa-solid fa-earth-americas"></i>
+              </li>
+            </ul>
+          </div>
+        </a>
+      </li>
+      <li id="js-loggedin-hide">
+        <a href="inlog.html" class="nav-link">
+          <div class="nav-list-item">
+            <ul class="nav-list-item-list">
+              <li>
+                Inloggen
+              </li>
+              <li class="nav-list-item-list-icon">
+                <i style="color: green;" class="fa-solid fa-right-to-bracket"></i>
+              </li>
+            </ul>
+          </div>
+        </a>
+      </li>
+      <li id="js-loggedin-show">
+        <a href="zoek.html" class="nav-link">
+          <div class="nav-list-item">
+            <ul class="nav-list-item-list">
+              <li>
+                Zoek
+              </li>
+              <li class="nav-list-item-list-icon">
+                <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+              </li>
+            </ul>
+          </div>
+        </a>
+      </li>
+      <li id="js-loggedin-show" class="res-dropdown-small">
+        <a href="chat.html" class="nav-link">
+          <div class="nav-list-item">
+            <ul class="nav-list-item-list">
+              <li>
+                Chat
+              </li>
+              <li class="nav-list-item-list-icon">
+                <i class="fa-solid fa-comment"></i>
+              </li>
+            </ul>
+          </div>
+        </a>
+      </li>
+      <li id="js-loggedin-show" class="res-dropdown-small">
+        <a href="profiel.html" class="nav-link">
+          <div class="nav-list-item">
+            <ul class="nav-list-item-list">
+              <li>
+                Profiel
+              </li>
+              <li class="nav-list-item-list-icon">
+                <i class="fa-solid fa-user"></i>
+              </li>
+            </ul>
+          </div>
+        </a>
+      </li>
+      <li id="js-loggedin-showadmin">
+        <a href="admin.html" class="nav-link">
+          <div class="nav-list-item">
+            <ul class="nav-list-item-list">
+              <li>
+                Admin
+              </li>
+              <li class="nav-list-item-list-icon">
+                <i style="color: goldenrod;" class="fa-solid fa-crown"></i>
+              </li>
+            </ul>
+          </div>
+        </a>
+      </li>
+      <li id="js-loggedin-show">
+        <div class="nav-list-item" id="logout">
+          <ul class="nav-list-item-list">
+            <li>
+              Uitloggen
+            </li>
+            <li class="nav-list-item-list-icon">
+              <i style="color: brown;" class="fa-solid fa-right-to-bracket"></i>
+            </li>
+          </ul>
+        </div>
+        </a>
+      </li>
+      <li>
+        <div class="nav-list-splitter">
+        </div>
+      </li>
+      <li>
+        <div class="nav-list-item" id="res-dropdown-list-close">
+          <ul class="nav-list-item-list">
+            <li>
+              Sluiten
+            </li>
+            <li class="nav-list-item-list-icon">
+              <i style="color: brown;" class="fa-solid fa-circle-xmark"></i>
+            </li>
+          </ul>
+        </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>

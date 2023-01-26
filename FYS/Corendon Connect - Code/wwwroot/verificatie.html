@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="nl-NL">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/386dc5a5b8.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://cdn.fys.cloud/fyscloud/0.0.4/fyscloud.es6.min.js" crossorigin></script>
+    <link rel="icon" type="image/x-icon" href="/assets/img/icons/favicon.ico">
+
+    <script type="module" src="assets/js/index.js"></script>
+
+    <link rel="stylesheet" href="assets/css/default.css" />
+    <link rel="stylesheet" href="assets/css/components/nav.css" />
+    <link rel="stylesheet" href="assets/css/components/footer.css" />
+
+    <link rel="stylesheet" href="assets/css/pages/verificatie.css" />
+    <script type="module" src="assets/js/pages/verificatie.js"></script>
+    <script type="text/javascript" src="assets/js/controllers/tabs-verificatie.js"></script>
+    <title>Corendon Connect - Account Verifiëren</title>
+</head>
+
+<body>
+    <main>
+        <section class="verify-container">
+            <div class="verify-text-container">
+                <h1>Account Verifiëren</h1>
+                <p class="verify-info">
+                    Wij hebben een mail gestuurd met daarin de verificatiecode om uw account te activeren.
+                    Soms belandt de mail ook in de spam folder, dus check daar ook even als u de mail niet in de inbox
+                    kunt vinden. Het kan in sommige gevallen tot een kwartier duren.                
+                </p>
+                <p class="verify-info">
+                    Als u de mail na een paar minuten nog steeds niet kunt vinden, verzend de mail dan opnieuw:
+                </p>
+                <button class="verify-resend">Verstuur opnieuw</button>
+                <p class="verify-info">
+                    Voer de code hieronder in:
+                </p>
+            </div>
+            <div class="verify-input-container">
+                <input class="verify-input" id="input-1" onkeyup="autotab(1, this)" type="tel" maxlength="1" size="1" placeholder="x">
+                <input class="verify-input" id="input-2" onkeyup="autotab(2, this)" type="tel" maxlength="1" size="1" placeholder="x">
+                <input class="verify-input" id="input-3" onkeyup="autotab(3, this)" type="tel" maxlength="1" size="1" placeholder="x">
+                <input class="verify-input" id="input-4" onkeyup="autotab(4, this)" type="tel" maxlength="1" size="1" placeholder="x">
+                <input class="verify-input" id="input-5" onkeyup="autotab(5, this)" type="tel" maxlength="1" size="1" placeholder="x">
+                <input class="verify-input" id="input-6" type="tel" maxlength="1" size="1" placeholder="x">
+            </div>
+            <div class="verify-submit-container">
+                <button class="verify-submit">Verifëer</button>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

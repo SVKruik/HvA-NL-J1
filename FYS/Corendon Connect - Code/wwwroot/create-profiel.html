@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="nl-NL">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/386dc5a5b8.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://cdn.fys.cloud/fyscloud/0.0.4/fyscloud.es6.min.js" crossorigin></script>
+  <link rel="icon" type="image/x-icon" href="/assets/img/icons/favicon.ico" />
+
+  <script type="module" src="assets/js/index.js"></script>
+
+  <link rel="stylesheet" href="assets/css/default.css" />
+  <link rel="stylesheet" href="assets/css/components/nav.css" />
+  <link rel="stylesheet" href="assets/css/components/footer.css" />
+
+  <script type="module" src="assets/js/pages/create-profiel.js"></script>
+  <link rel="stylesheet" href="assets/css/pages/create-profiel.css" />
+  <title>Corendon Connect - Maak Profiel</title>
+</head>
+
+<body>
+  <main>
+    <div class="container-steps">
+      <div class="steps">
+        <h1>Profiel toevoegen</h1>
+        <div class="stepcounter">
+          <button class="step active">
+            <p>1</p>
+          </button>
+          <button class="step">
+            <p>2</p>
+          </button>
+          <button class="step">
+            <p>3</p>
+          </button>
+          <button class="step">
+            <p>4</p>
+          </button>
+          <button class="step">
+            <p>5</p>
+          </button>
+        </div>
+      </div>
+      <div class="tabcontent active">
+        <div class="edit-bio">
+          <div class="first">
+            <h1 class="text">Biografie</h1>
+          </div>
+        </div>
+        <div class="form">
+          <form class="form-biografie" id="form-biografie" action="">
+            <textarea class="form-biografie" id="form-biografie-inhoud" rows="5" cols="50" wrap="physical"
+              name="comments" value="" placeholder="Beschrijf wie je bent"></textarea>
+          </form>
+          <div class="second">
+            <button class="next" type="submit">volgende</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="tabcontent" id="edit-foto">
+        <div class="foto">
+          <div class="edit-foto">
+            <div class="first">
+              <h1 class="text">Profielfoto</h1>
+              <h1 class="toevoegen">toevoegen</h1>
+            </div>
+          </div>
+          <div class="img">
+            <img src="./assets/img/icons/profile-picture.png" id="pfp_preview_profiel" alt="" />
+          </div>
+          <div class="file-input">
+            <input type="file" id="pfp_input_profiel" class="file-input-2" />
+          </div>
+          <button class="terug" type="submit">terug</button>
+          <button class="next" type="submit">volgende</button>
+        </div>
+      </div>
+
+      <div class="tabcontent" id="edit-omslag">
+        <div class="edit-omslag">
+          <div class="first">
+            <h1 class="text">Omslagfoto</h1>
+            <h1 class="toevoegen">toevoegen</h1>
+          </div>
+        </div>
+        <div class="form">
+          <div class="omslag-placement">
+            <img src="" id="pfp_preview_omslag" class="pfp_preview_omslag2" alt="" />
+          </div>
+          <div class="file-input-4">
+            <input type="file" id="pfp_input_omslag" class="file-input-3" />
+          </div>
+          <button class="terug" type="submit">terug</button>
+          <button class="next" type="submit">volgende</button>
+        </div>
+      </div>
+
+      <div class="tabcontent">
+        <div class="edit-interesses">
+          <div class="first">
+            <h1 class="text">Voorkeursreis</h1>
+          </div>
+        </div>
+        <div class="form">
+          <form class="form-soortreis" action="">
+            <div class="selectors">
+              <select id="land" class="selector">
+                <option disabled selected value>selecteer een land</option>
+              </select>
+              <select id="soortreis" class="selector">
+                <option disabled selected value>
+                  selecteer een reissoort
+                </option>
+              </select>
+            </div>
+          </form>
+          <div class="third">
+            <button class="terug" type="submit">terug</button>
+            <button class="next" type="submit">volgende</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="tabcontent">
+        <div class="edit-interesses">
+          <div class="first">
+            <h1 class="text">Interesses</h1>
+          </div>
+        </div>
+        <div class="form">
+          <form class="form-interesses" id="form-interesses" action="">
+            <textarea class="form-interesses" id="form-interesses-inhoud" rows="5" cols="50" wrap="physical"
+              name="comments" value="" placeholder="Beschrijf je interesses"></textarea>
+          </form>
+          <div class="third">
+            <button class="terug" type="submit">terug</button>
+            <button class="klaar" id="klaar" type="submit">klaar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

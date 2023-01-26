@@ -1,0 +1,275 @@
+.container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    width: 75%;
+    text-align: center;
+    border-radius: 25px;
+    border: 2px solid var(--border-l);
+    background-color: var(--main-a);
+    box-shadow: 0px 4px 4px var(--shadow);
+    margin: 25px auto;
+}
+
+#section-left {
+    float: left;
+}
+
+#section-right {
+    float: right;
+    border-left: 2px solid var(--border-l);
+}
+
+.chat-profile-picture {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.test,
+.test2,
+.test3 {
+    margin: auto 0;
+    margin-left: 20px;
+}
+
+.test3 {
+    margin-left: 100px;
+}
+
+.test3 ul {
+    display: flex;
+}
+
+.test3 ul i {
+    font-size: 24px;
+}
+
+.test3 ul li {
+    margin: 15px;
+    cursor: pointer;
+}
+
+.chat-profile-header {
+    display: flex;
+    height: 15%;
+}
+
+.profiles-header-container {
+    height: 9%;
+}
+
+.message {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    height: 10%;
+    border-top: 1px solid var(--black);
+}
+
+.chat-message-balk {
+    margin: auto 0;
+    margin-left: 8px;
+    margin-bottom: 8px;
+    height: 40%;
+    border-radius: 25px;
+    border: 2px solid var(--border-l);
+    font-size: large;
+    padding: 10px;
+    text-align: left;
+    resize: none;
+}
+
+.chat-send-icon {
+    height: 40px;
+    margin: auto;
+}
+
+.chat-send-icon:hover {
+    cursor: pointer;
+}
+
+.chat {
+    width: 100%;
+    overflow: auto;
+    overflow-x: hidden;
+    height: 75%;
+    min-height: 500px;
+    border-top: 1px solid var(--black);
+    display: flex;
+    flex-direction: column-reverse;
+    box-sizing: border-box;
+}
+
+.chat-ik {
+    border-radius: 25px;
+    margin: 20px;
+    margin-left: auto;
+    padding: 10px 20px 10px 10px;
+    width: 45%;
+    background-color: var(--chat-element-other);
+    color: var(--black);
+    text-align: left;
+}
+
+.chat-ik h1,
+.chat-moniek h1 {
+    color: var(--chat-text-main);
+}
+
+.chat-ik span,
+.chat-moniek span {
+    color: var(--chat-text-secondary);
+}
+
+.chat-moniek {
+    margin: 20px;
+    margin-right: auto;
+    padding: 10px 10px 10px 20px;
+    width: 45%;
+    background-color: var(--chat-element-me);
+    text-align: left;
+    border-radius: 25px;
+}
+
+.block-icon-small {
+    width: 20px;
+    height: 20px;
+    background-image: url("./../../img/chat/block.png");
+    object-fit: cover;
+    position: absolute;
+    left: 580px;
+    top: 255px
+}
+
+.profiles-header {
+    height: 40px;
+    text-align: left;
+    margin: 20px;
+}
+
+.chat-sub-profile {
+    height: 100px;
+    display: flex;
+    align-items: center;
+
+    border-bottom: 1px solid var(--black);
+}
+
+.chat-sub-profile-picture {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.chat-sub-profile-list {
+    list-style-type: none;
+    margin-left: 50px;
+}
+
+.chat-sub-profile-info {
+    font-size: medium;
+    color: var(--font-l);
+    margin: 5px;
+}
+
+.chat-sub-profile-name {
+    font-size: larger;
+    color: var(--font);
+    margin-top: 10px;
+}
+
+/* Box styles */
+.my-box {
+    border: none;
+    height: 100%;
+    overflow: auto;
+    overflow-x: hidden;
+    border-top: 1px solid var(--black);
+}
+
+@media only screen and (max-width:1200px) and (min-width:670px) {
+    .chat-sub-profile-list {
+        list-style-type: none;
+        margin-left: 5px;
+    }
+
+    .chat-sub-profile-picture {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 670px) and (min-width:500px) {
+    .chat-sub-profile-list {
+        display: none;
+        list-style-type: none;
+        margin-left: 5px;
+    }
+
+    .chat h1 {
+        font-size: 2vh;
+    }
+
+    .chat span {
+        font-size: 1.35vh;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 30% 60%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .chat-sub-profile-list {
+        display: none;
+        list-style-type: none;
+        margin-left: 5px;
+    }
+
+    .chat h1 {
+        font-size: 2vh;
+    }
+
+    .chat span {
+        font-size: 1.35vh;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 30% 60%;
+    }
+
+    .chat-sub-profile-picture {
+        width: 50px;
+        height: 50px;
+    }
+
+    .chat-profile-picture {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 1130px) {
+    .test3 {
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 940px) {
+    .test3 {
+        margin-left: 10px;
+    }
+
+    .test3 ul {
+        display: flex;
+        flex-direction: column;
+    }
+}

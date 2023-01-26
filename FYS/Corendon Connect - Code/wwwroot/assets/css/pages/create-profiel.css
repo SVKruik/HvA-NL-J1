@@ -1,0 +1,402 @@
+.container-steps {
+    margin: auto;
+    border-radius: 25px;
+    width: 1000px;
+    height: 600px;
+    background-color: var(--main-a);
+    box-shadow: 0px 4px 4px var(--shadow);
+}
+
+.steps {
+    margin: auto;
+    margin-top: 100px;
+}
+
+.stepcounter {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.step {
+    width: 50px;
+    height: 50px;
+    border: 1px;
+    border-radius: 50%;
+    padding: 5px;
+    margin-right: 25px;
+    box-shadow: 0px 4px 4px var(--shadow);
+}
+
+.step.active,
+.step:hover,
+.step:focus,
+#current {
+    box-shadow: 0px 4px 4px var(--shadow), inset 0px 4px 25px var(--shadow);
+}
+
+.steps h1,
+.step p {
+    text-align: center;
+}
+
+.current {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.edit-omslag,
+.edit-omslag,
+.edit-bio,
+.edit-interesses {
+    position: relative;
+    width: 100%;
+}
+
+.first {
+    margin-top: 36px;
+    display: flex;
+}
+
+.second,
+.second-interesse {
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.second h2 {
+    margin-left: 200px;
+}
+
+.second-interesse h2 {
+    margin-left: 80px;
+}
+
+.first .text {
+    margin-left: 100px;
+}
+
+.first .toevoegen {
+    color: var(--accent-c);
+    position: absolute;
+    top: 0px;
+    right: 100px;
+}
+
+.form {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+form {
+    position: relative;
+    padding-bottom: 36px;
+}
+
+form textarea {
+    resize: none;
+    padding: 16px;
+    margin-top: 36px;
+    margin-bottom: 15px;
+    background-color: var(--main-a);
+    border-style: none;
+    border-radius: 25px;
+    font-size: 20px;
+    color: var(--font-l);
+    height: 200px;
+    width: 600px;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px var(--shadow);
+}
+
+.omslag-placement {
+    margin: auto;
+    margin-top: 36px;
+    margin-bottom: 14px;
+    background-color: var(--fill);
+    border-style: none;
+    border-radius: 25px;
+    height: 200px;
+    width: 600px;
+}
+
+.pfp_preview_omslag2 {
+    object-fit: cover;
+    border-radius: 25px;
+    border: none;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+#pfp_preview_profiel {
+    object-fit: cover;
+    border: none;
+}
+
+#pfp_preview_profiel {
+    border-radius: 200px;
+}
+
+.omslagblock {
+    display: block;
+}
+
+.file-input {
+    width: 100%;
+    display: flex;
+}
+
+.file-input-2 {
+    margin: auto;
+}
+
+.file-input-3 {
+    margin: auto;
+}
+
+.next {
+    position: absolute;
+    background: var(--content-button);
+    border-style: none;
+    color: var(--main-a);
+    font-weight: bold;
+    padding: 20px;
+    right: 75px;
+    width: 175px;
+    border-radius: 50px;
+}
+
+.terug {
+    position: absolute;
+    background: var(--accent-c);
+    border-style: none;
+    color: var(--main-a);
+    font-weight: bold;
+    padding: 20px;
+    width: 175px;
+    border-radius: 50px;
+    left: 75px;
+
+}
+
+.foto {
+    position: relative;
+    margin: auto;
+}
+
+.foto img {
+    display: block;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 225px;
+    width: 225px;
+}
+
+.selectors {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 151.33px;
+}
+
+.selector {
+    align-items: center;
+    background-color: var(--fill);
+    border: 1px solid var(--main-a);
+    border-radius: 25px;
+    width: 250px;
+    height: 50px;
+    padding: 10px;
+    margin-bottom: 2px;
+}
+
+.tabcontent {
+    display: none;
+}
+
+.tabcontent.active {
+    display: block;
+}
+
+.klaar {
+    position: absolute;
+    background: var(--content-button);
+    border-style: none;
+    color: var(--main-a);
+    font-weight: bold;
+    padding: 20px;
+    right: 75px;
+    width: 175px;
+    border-radius: 50px;
+}
+
+.third {
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.third h2 {
+    margin-left: 255px;
+}
+
+@media only screen and (max-width:1015px) {
+    .container-steps {
+        width: 60%;
+    }
+
+    .step {
+        margin-right: 20px;
+    }
+
+    .form-interesses,
+    .omslag-placement,
+    .form-biografie {
+        width: 83%;
+    }
+
+    .form-biografie,
+    .form-interesses {
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (max-width:860px) {
+
+    .first {
+        display: flex;
+        justify-content: center;
+    }
+
+    .first .text {
+        text-align: center;
+        margin-left: 5px;
+        width: 100%;
+    }
+
+    .klaar,
+    .terug,
+    .next {
+        width: 100px;
+        height: 40px;
+        line-height: normal;
+        font-size: small;
+        padding: 0px;
+    }
+
+    .file-input-2,
+    .file-input-3 {
+        font-size: smaller;
+    }
+
+    .container-steps {
+        height: 500px;
+    }
+
+    .toevoegen {
+        display: none;
+    }
+
+    .form-interesses,
+    .omslag-placement,
+    .form-biografie {
+        width: 70%;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .form-biografie,
+    .form-interesses {
+        height: 60%;
+    }
+
+    .foto img {
+        height: 40%;
+        width: 40%;
+    }
+
+    .selectors {
+        margin-bottom: 20%;
+    }
+}
+
+@media only screen and (max-width:615px) {
+    .file-input-2 {
+        margin-bottom: 10%;
+    }
+
+    .step {
+        width: 25px;
+        height: 25px;
+    }
+
+    .step p {
+        display: none;
+    }
+
+    .next,
+    .klaar,
+    .terug {
+        right: 20px;
+    }
+
+    .terug {
+        left: 20px;
+    }
+
+    .selector {
+        width: 60%;
+    }
+
+    .omslag-placement {
+        height: 100px;
+    }
+
+    .file-input-3 {
+        margin-bottom: 20%;
+    }
+
+    .form-biografie,
+    .form-interesses {
+        height: 150px;
+        font-size: medium;
+    }
+}
+
+@media only screen and (max-width:410px) {
+    .container-steps {
+        height: 400px;
+    }
+
+    .next,
+    .klaar,
+    .terug {
+        height: 30px;
+        width: 75px;
+    }
+
+    .file-input-3,
+    .file-input-2 {
+        width: 70%;
+    }
+
+    .form-biografie,
+    .form-interesses {
+        height: 100px;
+        font-size: smaller;
+    }
+
+    .selector {
+        font-size: small;
+    }
+
+    h1 {
+        font-size: small;
+    }
+}

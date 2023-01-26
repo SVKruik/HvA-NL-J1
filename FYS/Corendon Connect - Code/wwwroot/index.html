@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="nl-NL">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/386dc5a5b8.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://cdn.fys.cloud/fyscloud/0.0.4/fyscloud.es6.min.js" crossorigin></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="/assets/img/icons/favicon.ico">
+
+    <script type="module" src="assets/js/index.js"></script>
+
+    <link rel="stylesheet" href="assets/css/default.css" />
+    <link rel="stylesheet" href="assets/css/components/nav.css" />
+    <link rel="stylesheet" href="assets/css/components/footer.css" />
+
+    <link href="assets/css/pages/home.css" rel="stylesheet" />
+    <title>Corendon Connect - Home</title>
+</head>
+
+<body>
+    <main>
+        <div id="account_verification"></div>
+        <div class="top">
+            <div class="masthead-img">
+                <img alt="" src="assets/img/home/tourists-min.jpg" srcset="">
+            </div>
+            <div class="masthead-info">
+                <h1>Bent u het ook zat om alleen te gaan op reis?</h1>
+                <br>
+                <p>
+                    Wij bij Corendon Connect, verbinden u met uw volgende reisgenoot!
+                    <br><br>
+                    Op basis van interesses zoeken wij naar een potentiele reisgenoot,
+                    <br>
+                    of zoek zelf naar iemand die dezelfde interesses deelt.
+                    <br><br>
+                    Meldt u aan en ga direct van start met het zoeken van nieuwe
+                    <br>
+                    reisgenoten.
+                </p>
+                <div class="button-aanmelden" id="js-loggedin-hide">
+                    <a href="registreer.html">Aanmelden</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="content-info">
+                <h1>Maar hoe werkt dat dan?</h1>
+                <br>
+                <p>
+                    Bij Correndon Connect verbinden wij mensen op basis van hun interesses
+                    om zo een potentiele reis te voorstellen of tijd tijdens een vakantie te verbeteren.
+                    <br><br>
+                    Nadat je jouw account hebt gemaakt, kunt u uw profiel aanmaken en interesses toevoegen. Vervolgens
+                    zullen wij een aantal matches voor u creeeren of kunt u zelf
+                    <br>
+                    ook matches gaan zoeken doormiddel van onze browser.
+                    <br><br>
+                    Denkt u, het wordt een tijd dat ik weer op vakantie ga met iemand of ik zou deze vakantietijd graag
+                    willen delen met iemand in dit land?
+                    <br><br>
+                    Meld dan gauw aan!
+                </p>
+            </div>
+            <div class="content-container">
+                <div class="square">
+                    <div class="content-square">
+                        <img alt="" src="assets/img/home/aanmelden-min.jpg" srcset="">
+                    </div>
+                    <p>Creeer een account</p>
+                </div>
+                <div class="square">
+                    <div class="content-square">
+                        <img alt="" src="assets/img/home/people-min.jpg" srcset="">
+                    </div>
+                    <p>Voeg je profiel toe</p>
+                </div>
+                <div class="square">
+                    <div class="content-square-odd">
+                        <img alt="" src="assets/img/home/connect-min.jpg" srcset="">
+                    </div>
+                    <p>En verbind met anderen</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="last-container">
+            <div class="last-info">
+                <h1>Ervaring van andere gebruikers</h1>
+                <br>
+                <br>
+                <p>
+                    Lees hier een paar van de ervaringen van verscheidene andere gebruikers van ons platform. Dit zijn
+                    er maar 3 van onze <span id="gebruiker-container-parent"></span> aantal gebruikers die succesvol
+                    een match hebben gemaakt op onze platform
+                    en samen een reist gedeelt hebben.
+                </p>
+            </div>
+            <div class="mySlides-container">
+                <div class="mySlides">
+                    <h1> Reviews </h1>
+                    <img height="80" src="./assets/img/icons/profile-picture.png" width="80">
+                    <h3>Monieke Franssen</h3>
+                    <p id="review_1">
+                    </p>
+                </div>
+                <div class="mySlides">
+                    <h1> Reviews </h1>
+                    <img height="80" src="./assets/img/icons/profile-picture.png" width="80">
+                    <h3>Bettina Molenaar</h3>
+                    <p id="review_2">
+                    </p>
+                </div>
+                <div class="mySlides">
+                    <h1> Reviews </h1>
+                    <img height="80" src="./assets/img/icons/profile-picture.png" width="80">
+                    <h3>Irine Mondriaan</h3>
+                    <p id="review_3">
+                    </p>
+                </div>
+
+                <!-- Next/prev buttons -->
+                <a class="prev">&#10094;</a>
+                <a class="next">&#10095;</a>
+            </div>
+            <!-- Dots/bullets/indicators -->
+            <div class="dot-container">
+                <span class="dot" id="1"></span>
+                <span class="dot" id="2"></span>
+                <span class="dot" id="3"></span>
+            </div>
+
+        </div>
+
+        </div>
+    </main>
+</body>
+
+</html>

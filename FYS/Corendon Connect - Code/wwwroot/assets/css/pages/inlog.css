@@ -1,0 +1,223 @@
+.grid-container-inlog {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.grid-container-inlog img {
+    width: 740px;
+}
+
+.inlog {
+    background-color: var(--main-a);
+    height: 500px;
+    width: 475px;
+    box-shadow: 0px 4px 4px var(--shadow);
+    border-radius: 25px;
+}
+
+.inloggen {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 185px;
+}
+
+.loginform {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.loginform input[type=text],
+.loginform input[type=password] {
+    border: solid var(--black) 1px;
+    height: 50px;
+    width: 290px;
+    border-radius: 20px;
+    text-align: center;
+    font-family: var(--family);
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 41px;
+    letter-spacing: 0em;
+    margin-bottom: 10px;
+}
+
+.loginform input[type=button] {
+    background-color: var(--accent-b);
+    border: none;
+    border-radius: 25px;
+    height: 53px;
+    width: 290px;
+    font-family: var(--family);
+    font-size: 23px;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: center;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+.loginform input[type=button]:hover {
+    transform: translateY(-1px);
+    box-shadow: 0px 4px 4px var(--shadow);
+}
+
+.loginform input[type=button]:after {
+    transform: scaleX(1.2) scaleY(1.3);
+    opacity: 0;
+}
+
+.aanmelden h1 {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+    font-family: Open Sans;
+    font-size: 26.4px;
+    font-weight: 600px;
+    line-height: 54px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+
+.button-wwvergeten {
+    margin-top: -12px;
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.text-wwvergeten {
+    font-family: var(--family);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--accent-c);
+}
+
+.registreer-login {
+    height: 44px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.text-registreer {
+    font-family: var(--family);
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: center;
+    height: 35px;
+    width: 191px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button_registreer {
+    cursor: pointer;
+    background-color: var(--accent-b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 25px;
+    height: 53px;
+    width: 290px;
+}
+
+.button_registreer:hover {
+    transform: translateY(-1px);
+    box-shadow: 0px 4px 4px var(--shadow);
+}
+
+.button_registreer:after {
+    transform: scaleX(1.2) scaleY(1.3);
+    opacity: 0;
+}
+
+.field-validation {
+    margin: auto;
+    margin-top: 15px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 90%;
+    padding: 10px;
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--accent-a);
+}
+
+.field-validation p {
+    width: 300px;
+    border-radius: 25px;
+    font-size: 18px;
+}
+
+.field-validation img {
+    width: 50px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .grid-container-inlog img {
+        display: none;
+    }
+
+    .afbeelding {
+        display: none;
+    }
+
+    .inlog {
+        width: 400px;
+    }
+
+    .grid-container-inlog {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    .inlog {
+        width: 60%;
+        height: 60%;
+    }
+
+    .inloggen {
+        margin-bottom: 5px;
+        height: 60%;
+    }
+
+    .loginform input[type=button],
+    .loginform input[type=text],
+    .loginform input[type=password],
+    .button_registreer {
+        width: 150px;
+        height: 40px;
+        font-size: small;
+    }
+
+    .text-registreer,
+    .text-wwvergeten {
+        font-size: small;
+    }
+
+    .aanmelden h1 {
+        font-size: medium;
+        margin-bottom: 8px;
+        height: 60%;
+    }
+}

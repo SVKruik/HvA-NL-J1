@@ -1,0 +1,61 @@
+.klachten tr:nth-child(even) {
+    background-color: var(--main-b);
+}
+
+.klachten tr:hover {
+    background-color: var(--fill);
+}
+
+.klachten th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: var(--admin-th);
+    color: var(--main-a);
+}
+
+.klachten td {
+    padding-left: 4px;
+}
+
+.klachten {
+    margin: auto;
+    font-size: 10px;
+}
+
+.klachten {
+    border-spacing: 4px 0;
+}
+
+.admin-content {
+    overflow-x: auto;
+    margin: auto;
+    margin-top: 25px;
+    width: 75%;
+}
+
+button {
+    padding: 12px;
+    margin: 2px;
+    text-align: left;
+    border-style: none;
+    color: var(--main-a);
+}
+
+.editButton {
+    background-color: var(--admin-edit);
+
+}
+
+.deleteButton {
+    background-color: var(--accent-a);
+}
+
+.blockButton {
+    background-color: var(--accent-b);
+
+}
+
+button:hover {
+    background-color: var(--font);
+}

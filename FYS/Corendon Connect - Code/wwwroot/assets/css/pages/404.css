@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+:root {
+    /* Main */
+    --main-a: #FFFEFE;
+    --main-b: #EDECEC;
+    --shadow: #00000040;
+    --black: #000000;
+
+    /* Accents */
+    --accent-a: #D91D07;
+    --accent-b: #FEC71C;
+    --accent-c: #0081BE;
+
+    /* Typography */
+    --font: #3A3A3A;
+    --font-l: #676766;
+    --font-el: #949494;
+    --family: 'Open Sans', sans-serif;
+
+    /* Border */
+    --border: #676766;
+    --border-l: #D9D9D9;
+    --fill: #D9D9D9;
+    --fill-border: #a5a5a5;
+
+    /* Buttons */
+    --content-button: #26A515;
+}
+
+.center-div {
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 600px;
+    height: 100px;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: var(--font);
+    font-weight: 1000;
+}
+
+.parent {
+    display: flex;
+    font-family: var(--family);
+}
+
+.left {
+    padding: 20px;
+}
+
+.right {
+    border-left: 2px solid var(--font);
+    padding: 20px;
+}
+
+.smiley {
+    font-size: 60px;
+}

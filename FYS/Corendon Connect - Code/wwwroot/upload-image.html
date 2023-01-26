@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="nl-NL">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/386dc5a5b8.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://cdn.fys.cloud/fyscloud/0.0.4/fyscloud.es6.min.js" crossorigin></script>
+    <link rel="icon" type="image/x-icon" href="/assets/img/icons/favicon.ico">
+
+    <script type="module" src="assets/js/index.js"></script>
+
+    <link rel="stylesheet" href="assets/css/default.css" />
+    <link rel="stylesheet" href="assets/css/components/nav.css" />
+    <link rel="stylesheet" href="assets/css/components/footer.css" />
+
+    <link rel="stylesheet" href="assets/css/pages/upload-image.css">
+    <script type="module" src="assets/js/pages/upload-image.js"></script>
+    <title>Corendon Connect - Upload Image</title>
+</head>
+
+<body>
+    <main>
+        <div class="upload-container">
+            <ul>
+                <li>
+                    <div>
+                        <ul>
+                            <li><span>
+                                    <h2>Uploaden</h2>
+                                </span></li>
+
+                            <li><span>Upload afbeeldingen naar de database.</span></li>
+                            <li><span>Selecteer het type en Profiel ID, en klik de upload knop.</span></li>
+                            <li><span>Accepteert een maximale grootte van 3 MB.</span></li><br>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <ul>
+                            <li><span>
+                                    <h2>Verwijderen</h2>
+                                </span></li>
+
+                            <li><span>Verwijder records uit de database en/of afbeeldingen uit de uploads map
+                                    (FTP).</span></li>
+                            <li><span>Is gelinkt aan het opgegeven Profiel ID boven, en verwijdert dus specifiek voor
+                                    het profiel in kwestie.</span></li>
+                            <li><span>Bij het verwijderen van FTP worden alle types afbeeldingen verwijderd.</span></li>
+                            <br>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <ul>
+                            <li><span>Houd de console in de gaten voor meer informatie.</span></li><br>
+                        </ul>
+                    </div>
+                </li>
+                <li id="profiel-settings">
+                    <div>
+                        <ul>
+                            <span class="upload-form-title">Settings</span><br><br>
+
+                            <!-- Type -->
+                            <form id="upload-form">
+                                <label>Kies type:</label><br>
+                                <select id="type-dropdown">
+                                    <option value="profiel">Profiel</option>
+                                    <option value="banner">Banner</option>
+                                    <option value="content">Content</option>
+                                </select><br><br>
+                            </form>
+
+                            <!-- Profile ID -->
+                            <label>Kies Profiel ID:</label><br>
+                            <input id="profile_id" min="1" type="number" value="1"><br><br>
+                        </ul>
+                    </div>
+                </li>
+                <li id="profiel-foto">
+                    <div>
+                        <ul>
+                            <span class="upload-form-title">Upload</span><br><br>
+
+                            <!-- Choose Image -->
+                            <label>Kies afbeelding (PNG):</label><br>
+                            <input id="pfp_input" type="file" accept="image/png"><br><br>
+
+                            <!-- Confirm Upload -->
+                            <label>Upload Afbeelding:</label><br>
+                            <button id="pfp_confirm">Upload</button><br><br>
+
+                            <!-- Preview Upload -->
+                            <img id="pfp_preview" src="" alt="Preview">
+                        </ul>
+                    </div>
+                </li>
+                <li id="clear-foto">
+                    <div>
+                        <ul>
+                            <span class="upload-form-title">Clear</span><br><br>
+
+                            <!-- Clear DB Records -->
+                            <label>Verwijder DB Afbeeldingen:</label><br>
+                            <button id="foto-clear-table">Clear</button><br><br>
+
+                            <!-- Clear FTP Records -->
+                            <label>Verwijder FTP Afbeeldingen:</label><br>
+                            <button id="foto-clear-ftp">Clear</button><br><br>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <ul>
+                            <br>
+                            <li><span>@kruiksv</span></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="nl-NL">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/386dc5a5b8.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/386dc5a5b8.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://cdn.fys.cloud/fyscloud/0.0.4/fyscloud.es6.min.js" crossorigin></script>
+    <link rel="icon" type="image/x-icon" href="/assets/img/icons/favicon.ico">
+
+    <script type="module" src="assets/js/index.js"></script>
+
+    <link rel="stylesheet" href="assets/css/default.css" />
+    <link rel="stylesheet" href="assets/css/components/nav.css" />
+    <link rel="stylesheet" href="assets/css/components/footer.css" />
+
+    <link rel="stylesheet" href="assets/css/pages/profiel.css">
+    <script type="module" src="assets/js/pages/other-profiel.js"></script>
+    <script type="text/javascript" src="assets/js/controllers/tabs-profiel.js"></script>
+    <title>Corendon Connect - Profiel</title>
+</head>
+
+<body>
+    <main>
+        <!-- Overlay Containers -->
+        <section id="profile-report-container">
+            <div class="report-overlay">
+                <div class="report-container">
+                    <div class="report-title">
+                        <h1>Profiel Rapporteren</h1>
+                    </div>
+                    <div class="report-splitter"></div>
+                    <div class="edit-interests">
+                        <label>Rede - beschrijf uw probleem.</label>
+                        <textarea type="text-area" maxlength="2000" id="report-textarea" rows="5" cols="70"></textarea>
+                    </div>
+                    <div class="report-splitter"></div>
+                    <div class="report-bottom-buttons">
+                        <button id="close-profile-report">Annuleer</button>
+                        <button id="submit-profile-report">Opslaan</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Profile -->
+        <div class="profile-container">
+            <!-- Hero -->
+            <section class="profile-hero">
+                <div class="hero-banner-container">
+                    <img class="hero-banner" id="profile-banner" src="">
+                    <div class="profile-status-symbol" id="profile-status"></div>
+                </div>
+                <div class="hero-content-container">
+                    <ul class="responsive-hero-list">
+                        <li>
+                            <div></div>
+                        </li>
+                        <li>
+                            <div class="hero-profile-image-container">
+                                <img class="hero-profile-image-background" id="profile-picture" src="">
+                            </div>
+                        </li>
+                        <li class="responsive-flex-end">
+                            <div class="hero-edit-container" id="responsive-hidden">
+                                <ul class="hero-edit-list">
+                                    <li><button id="match-profile-button-b" class="hero-edit-button6-6"></button></li>
+                                    <li><button id="report-profile-button-b" class="hero-edit-button4-4"><i
+                                                class="fa-solid fa-flag"></i></button></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="hero-name-container">
+                        <ul class="hero-name-list">
+                            <li>
+                                <h1 id="profile-name" class="hero-name"></h1>
+                            </li>
+                            <li>
+                                <h3 id="profile-age" class="hero-age"></h3>
+                            </li>
+                            <li id="tooltip7-7">
+                                <img id="hero-country" src="" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="hero-edit-container" id="responsive-show">
+                        <ul class="hero-edit-list">
+                            <li><button id="match-profile-button-a" class="hero-edit-button5-5"></button></li>
+                            <li><button id="report-profile-button-a" class="hero-edit-button3-3"><i
+                                        class="fa-solid fa-flag"></i></button></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- Middle -->
+            <section class="profile-splitter">
+            </section>
+            <!-- Content -->
+            <section class="profile-content">
+                <div class="hero-tab-container">
+                    <!-- Tab Buttons -->
+                    <div class="hero-tabs">
+                        <button class="hero-tab-link active" onclick="openTab(event, 'tab-info')">Info</button>
+                        <button class="hero-tab-link" onclick="openTab(event, 'tab-matches')">Matches</button>
+                        <button class="hero-tab-link" onclick="openTab(event, 'tab-interesses')">Interesses</button>
+                        <button class="hero-tab-link" onclick="openTab(event, 'tab-fotos')">Foto's</button>
+                    </div>
+
+                    <!-- Biography -->
+                    <div id="tab-info" class="hero-tab-content active">
+                        <article class="profile-biography">
+                        </article>
+                    </div>
+
+                    <!--Matches-->
+                    <div id="tab-matches" class="hero-tab-content">
+                        <div class="hero-tabs-sub">
+                            <button class="hero-tab-link-sub" onclick="openSubTab(event, 'tab-alle')">Alle</button>
+                            <button class="hero-tab-link-sub" onclick="openSubTab(event, 'tab-lokaal')">Lokaal</button>
+                        </div>
+
+                        <!-- Sort All -->
+                        <div id="tab-alle" class="hero-tab-content-sub">
+                            <div id="tab-alle-container" class="hero-tab-content-sub-container">
+                                <div class="match-placeholder">Deze persoon heeft nog geen matches.</div>
+                            </div>
+                        </div>
+
+                        <!-- Sort Local -->
+                        <div id="tab-lokaal" class="hero-tab-content-sub">
+                            <div id="tab-lokaal-container" class="hero-tab-content-sub-container">
+                                <div class="match-placeholder">Deze persoon heeft nog geen lokale matches.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Interests -->
+                    <div id="tab-interesses" class="hero-tab-content">
+                        <article class="profile-interesses">
+                        </article>
+                        <article class="profile-target-interesses">
+                        </article>
+                    </div>
+
+                    <!-- Photo's -->
+                    <div id="tab-fotos" class="hero-tab-content">
+                        <article class="content-images" id="profile-photo-container">
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>

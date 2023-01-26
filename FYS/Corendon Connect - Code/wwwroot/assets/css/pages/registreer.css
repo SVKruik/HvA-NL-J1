@@ -1,0 +1,445 @@
+.grid-container-registreer {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-container-registreer img {
+    width: 740px;
+    height: fit-content;
+}
+
+.registreer-account {
+    background-color: var(--main-a);
+    height: 850px;
+    width: 460px;
+    box-shadow: 0px 4px 4px var(--shadow);
+    border-radius: 25px;
+}
+
+.registreer_disclaimer {
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.registreer-content {
+    margin: auto;
+    height: 650px;
+    width: 100%;
+}
+
+.noggeen h1 {
+    margin-top: 20px;
+    margin-bottom: 33px;
+    display: flex;
+    justify-content: center;
+    font-size: 26px;
+    line-height: 54px;
+    width: 100%;
+}
+
+.registreer {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    width: 100%;
+}
+
+.registreer_form1 {
+    display: flex;
+    justify-content: center;
+    margin-right: 50px;
+    border-radius: 25px;
+    width: 100%;
+    height: 46px;
+    margin-bottom: 15px;
+}
+
+.registreer_form1 input[type=text],
+.registreer_form6 input[type=password],
+.registreer-wachtwoordherhaling input[type=password] {
+    justify-content: center;
+    border: 1px solid var(--black);
+    height: 45px;
+    width: 250px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.registreer-tussenvoegsel {
+    display: flex;
+    justify-content: center;
+    margin-right: 50px;
+    border-radius: 25px;
+    width: 100%;
+    height: 45px;
+    margin-bottom: 15px;
+}
+
+.tussenvoegsel {
+    border: 1px solid var(--black);
+    height: 45px;
+    width: 250px;
+    border-radius: 20px;
+    text-align: center;
+    font-family: var(--family);
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 41px;
+    letter-spacing: 0em;
+}
+
+.registreer-achternaam {
+    display: flex;
+    justify-content: center;
+    margin-right: 50px;
+    border-radius: 25px;
+    width: 100%;
+    height: 45px;
+    margin-bottom: 15px;
+}
+
+.achternaam {
+    border: 1px solid var(--black);
+    height: 45px;
+    width: 250px;
+    border-radius: 20px;
+    text-align: center;
+    font-family: var(--family);
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 41px;
+    letter-spacing: 0em;
+}
+
+.registreer_form2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 46px;
+    margin-bottom: 15px;
+    font-family: Open Sans;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 41px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.land {
+    border: 1px solid var(--black);
+    height: 45px;
+    width: 250px;
+    border-radius: 20px;
+    text-align: center;
+    font-family: var(--family);
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 41px;
+    letter-spacing: 0em;
+}
+
+.registreer_form3 {
+    display: flex;
+    justify-content: center;
+    border-radius: 25px;
+    width: 100%;
+    height: 45px;
+    margin-bottom: 11px;
+    font-family: Open Sans;
+}
+
+.registreer_form3 input[type=date].geboortedatum {
+    border: 1px solid var(--black);
+    height: 45px;
+    width: 250px;
+    border-radius: 20px;
+    text-align: center;
+    font-family: var(--family);
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 41px;
+    letter-spacing: 0em;
+}
+
+.registreer_form4 {
+    display: flex;
+    justify-content: center;
+    border-radius: 25px;
+    width: 100%;
+    height: 45px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 41px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.geslacht-text {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.geslacht-text-inhoud {
+    font-size: 12px;
+    font-weight: 700;
+    padding: 0;
+}
+
+.geboortedatum-text {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.geboortedatum-text-inhoud {
+    font-size: 12px;
+    font-weight: 700;
+    padding: 0;
+}
+
+.registreer_form4 input[type=text].email {
+    border: 1px solid var(--black);
+    height: 45px;
+    width: 250px;
+    border-radius: 20px;
+    text-align: center;
+    font-family: var(--family);
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 41px;
+    letter-spacing: 0em;
+}
+
+.registreer_form5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.registreer_form5 input#man[type=radio] {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    margin-left: 12px;
+    font-size: 15px;
+}
+
+.registreer_form5 input#vrouw[type=radio] {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    margin-left: 12px;
+}
+
+.registreer_form5 input#anders[type=radio] {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    margin-left: 12px;
+}
+
+.registreer_form5 input#zeglieverniet[type=radio] {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    margin-left: 12px;
+}
+
+.registreer_form6 {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+    height: 45px;
+}
+
+.registreer_form6 input[type=text].wachtwoord {
+    border: 1px solid var(--black);
+    height: 45px;
+    width: 250px;
+    border-radius: 20px;
+    text-align: center;
+    font-family: var(--family);
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 41px;
+    letter-spacing: 0em;
+}
+
+.registreer-wachtwoordherhaling {
+    display: flex;
+    justify-content: center;
+    margin-right: 50px;
+    border-radius: 25px;
+    width: 100%;
+    height: 45px;
+    margin-bottom: 26px;
+}
+
+.wachtwoordherhaling {
+    border: 1px solid var(--black);
+    width: 250px;
+    border-radius: 20px;
+    text-align: center;
+    font-family: var(--family);
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 41px;
+    letter-spacing: 0em;
+    height: 45px;
+}
+
+.registreer_form7 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.button-aanmelden {
+    background-color: var(--accent-b);
+    border: none;
+    border-radius: 30px;
+    height: 53px;
+    width: 290px;
+    font-family: var(--family);
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: center;
+    cursor: pointer;
+}
+
+.button-aanmelden:hover {
+    transform: translateY(-1px);
+    box-shadow: 0px 4px 4px var(--shadow);
+}
+
+.button-aanmelden:after {
+    transform: scaleX(1.2) scaleY(1.3);
+}
+
+.field-validation {
+    margin: auto;
+    margin-top: 15px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 435px;
+    padding: 10px;
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--accent-a);
+}
+
+.field-validation p {
+    width: 300px;
+    border-radius: 25px;
+    font-size: 18px;
+}
+
+.field-validation img {
+    width: 50px;
+}
+
+.label {
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .grid-container-registreer img {
+        display: none;
+    }
+
+    .afbeelding {
+        display: none;
+    }
+
+    .registreer-account {
+        width: 400px;
+    }
+
+    .grid-container-registreer {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+
+    .registreer-account {
+        width: 80%;
+    }
+
+    form.registreer,
+    .registreer-content {
+        width: 80%;
+    }
+
+    .h1,
+    .registreer_form1 input[type=text],
+    .achternaam,
+    .tussenvoegsel,
+    .land,
+    .registreer_form3 input[type=date].geboortedatum,
+    .registreer_form4 input[type=text].email,
+    .wachtwoordherhaling,
+    .registreer_form6 input[type=text].wachtwoord,
+    .registreer_form6 input[type=password].wachtwoord, 
+    .registreer-wachtwoordherhaling input[type=password].wachtwoordherhaling {
+        width: 100%;
+        margin-right: -50px;
+        font-size: medium;
+    }
+
+    .registreer_form5 {
+        font-size: small;
+        width: 90%;
+        margin-left: 30px;
+    }
+
+    .registreer_form4 {
+        margin-right: -50px;
+    }
+
+    .registreer_form7 {
+        display: flex;
+        width: 125%;
+    }
+
+    .button-aanmelden {
+        font-size: medium;
+        width: 100%;
+    }
+
+    .geslacht-text {
+        width: 125%;
+    }
+
+    .geboortedatum-text {
+        width: 125%;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .noggeen h1 {
+        font-size: medium;
+    }
+
+    .label {
+        font-size: 12px;
+    }
+}

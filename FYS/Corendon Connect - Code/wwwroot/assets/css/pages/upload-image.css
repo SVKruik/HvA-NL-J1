@@ -1,0 +1,29 @@
+.upload-container li {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.upload-form-title {
+    color: var(--black);
+}
+
+.upload-container h2 {
+    font-size: large;
+    color: var(--accent-c);
+}
+
+#pfp_preview {
+    width: 500px;
+    border-radius: 10px;
+}
+
+#profiel-settings,
+#profiel-foto,
+#clear-foto {
+    background-color: var(--main-b);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 2px solid var(--border);
+}

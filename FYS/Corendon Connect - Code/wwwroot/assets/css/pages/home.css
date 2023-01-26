@@ -1,0 +1,449 @@
+/* Masthead CSS */
+.top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.masthead-img img {
+    width: 135%;
+}
+
+.masthead-info {
+    margin: auto;
+    padding-left: 172px;
+}
+
+.button-aanmelden a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+    background-color: var(--content-button);
+    border-radius: 50px;
+    width: 15vw;
+    height: 6vh;
+
+    color: var(--main-a);
+}
+
+.masthead-info p {
+    padding-bottom: 40px;
+    margin-left: -15px;
+}
+
+/* Content CSS */
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.content-info {
+    padding-left: 110px;
+}
+
+.content-info p {
+    padding-bottom: 40px;
+    margin-left: -15px;
+
+}
+
+.content-container {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.square {
+    position: relative;
+    width: 196px;
+    height: 243px;
+}
+
+.content-square {
+    border: 1px solid var(--main-a);
+    border-radius: 25px;
+    width: 196px;
+    height: 196px;
+    background-color: var(--main-a);
+    box-shadow: 0px 4px 4px var(--shadow);
+}
+
+.content-square img {
+    border: 1px;
+    border-radius: 25px;
+    width: 100%;
+}
+
+.content-square-odd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid var(--main-a);
+    border-radius: 25px;
+    width: 196px;
+    height: 196px;
+    background-color: var(--main-a);
+    box-shadow: 0px 4px 4px var(--shadow);
+}
+
+.content-square-odd img {
+    width: 100%;
+}
+
+.square p {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+}
+
+/* Last CSS */
+
+.last-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 50px;
+    justify-items: center;
+}
+
+.last-info {
+    width: 674px;
+    margin: auto;
+}
+
+.last-info h1 {
+    text-align: center;
+}
+
+.last-info p {
+    text-align: center;
+}
+
+.mySlides-container {
+    display: flex;
+    width: 600px;
+    height: auto;
+    border: 1px solid var(--main-a);
+    border-radius: 25px;
+    box-shadow: 0px 4px 4px var(--shadow);
+    justify-items: center;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mySlides {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 60%;
+    width: fit-content;
+    margin-top: -30px;
+    margin-right: 200px;
+    padding: 16px;
+    color: var(--font-el);
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.prev {
+    left: 30px
+}
+
+/* Position the "next button" to the right */
+.next {
+    position: absolute;
+    right: -150px;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: var(--main-a);
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    display: none;
+    text-align: center;
+    padding: 20px;
+    background: var(--fill);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: var(--font-l);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active,
+.dot:hover {
+    background-color: var(--font);
+}
+
+.mySlides h1,
+h3 {
+    margin-left: 250px;
+}
+
+.mySlides h3 {
+    margin-left: 210px;
+}
+
+.mySlides img {
+    margin-left: 250px;
+}
+
+#gebruiker-container-parent {
+    color: var(--accent-a);
+}
+
+@media only screen and (max-width: 1280px) {
+    .review-info {
+        width: 900px;
+    }
+
+    .masthead-info,
+    .content-info p {
+        margin-left: unset;
+    }
+}
+
+
+@media only screen and (max-width: 1200px) and (min-width: 700px) {
+    .top {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .masthead-img img {
+        width: 100%;
+    }
+
+    .masthead-info {
+        width: 100%;
+        margin: auto;
+        padding-left: 0px;
+    }
+
+    .masthead-info h1 {
+        font-size: 1.5rem;
+        text-align: left;
+        margin: auto;
+        width: 65%;
+        margin: auto;
+    }
+
+    .masthead-info p {
+        font-size: 1rem;
+        text-align: left;
+        margin: auto;
+        width: 65%;
+        padding-bottom: 3.5vh;
+    }
+
+    .button-aanmelden {
+        width: 100%;
+    }
+
+    .button-aanmelden a {
+        width: 45vw;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content-info {
+        display: none;
+        width: 0px;
+    }
+
+    .content-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: auto;
+    }
+
+    .last-container {
+        display: none;
+        width: 0px;
+    }
+
+    .square {
+        margin-top: unset;
+        margin: 2vw;
+    }
+
+    .square p {
+        width: 100%;
+        padding: 0.5vw;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    .top {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .masthead-img img {
+        width: 100%;
+    }
+
+    .masthead-info {
+        width: 100%;
+        margin: auto;
+        padding-left: 0px;
+    }
+
+    .masthead-info h1 {
+        font-size: 1.5rem;
+        text-align: left;
+        margin: auto;
+        width: 65%;
+        margin: auto;
+    }
+
+    .masthead-info p {
+        font-size: 1rem;
+        text-align: left;
+        margin: auto;
+        width: 65%;
+        padding-bottom: 3.5vh;
+    }
+
+    .button-aanmelden {
+        width: 100%;
+    }
+
+    .button-aanmelden a {
+        width: 45vw;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content-info {
+        display: none;
+        width: 0px;
+    }
+
+    .last-container {
+        display: none;
+        width: 0px;
+    }
+
+    .content-container {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .square {
+        margin-top: 15%;
+    }
+
+    .square p {
+        width: 100%;
+        padding: 0.5vw;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .top {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .masthead-img img {
+        width: 100%;
+    }
+
+    .masthead-info {
+        width: 100%;
+        padding-left: 0px;
+    }
+
+    .masthead-info h1 {
+        width: 75%;
+        text-align: left;
+        margin: auto;
+    }
+
+    .masthead-info p {
+        text-align: left;
+        margin: auto;
+        width: 75%;
+        padding-bottom: 3.5vh;
+    }
+
+    .button-aanmelden {
+        width: 100%;
+    }
+
+    .button-aanmelden a {
+        width: 65vw;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content-info {
+        display: none;
+        width: 0px;
+    }
+
+    .content-container {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .square {
+        margin-top: 15%;
+    }
+
+    .square p {
+        width: 100%;
+        padding: 0.5vw;
+        text-align: center;
+    }
+
+    .last-container {
+        display: none;
+        width: 0px;
+        flex-direction: column;
+    }
+}

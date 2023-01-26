@@ -1,0 +1,204 @@
+/* Main Tabs */
+.match-tabs {
+    overflow: hidden;
+    margin: auto;
+    margin-left: 35px;
+}
+
+.match-tabs button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+}
+
+.match-tabs button:hover {
+    background-color: var(--fill);
+}
+
+.match-tabs button.active {
+    border-bottom: 2px solid var(--accent-a);
+}
+
+.match-tab-content {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+}
+
+.match-tab-container {
+    position: relative;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.match-tab-link .active {
+    display: block;
+    border-bottom: 2px solid var(--accent-a);
+}
+
+.match-tab-content .active {
+    display: block;
+}
+
+.match-content {
+    border: 2px solid var(--border-l);
+    margin: auto;
+    width: 1100px;
+    border-radius: 25px;
+    margin-top: 50px;
+    min-height: 350px;
+}
+
+#inkomende-matches,
+#uitgaande-matches,
+#geaccepteerde-matches {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    width: 1000px;
+    margin: auto;
+}
+
+.match-splitter {
+    margin: auto;
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--border-l);
+}
+
+.hero-tab-content-sub-profile {
+    margin-bottom: 5px;
+}
+
+.sub-content-profile-controls-list {
+    margin-left: 100px;
+}
+
+.sub-content-profile-accept,
+.sub-content-profile-reject {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+}
+
+.sub-content-profile-accept {
+    background-color: var(--hover-pos);
+    color: var(--main-a);
+    margin-bottom: 5px;
+}
+
+.sub-content-profile-accept:hover {
+    background-color: var(--content-button);
+}
+
+.sub-content-profile-reject {
+    background-color: var(--accent-a);
+    color: var(--main-a);
+}
+
+.sub-content-profile-reject:hover {
+    background-color: var(--hover-neg);
+}
+
+/* Small */
+@media only screen and (max-width: 849px) {
+    .match-content {
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .match-content-container {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    #inkomende-matches,
+    #uitgaande-matches,
+    #geaccepteerde-matches {
+        grid-template-columns: auto;
+        row-gap: 20px;
+        width: 100%;
+        max-height: 800px;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .hero-tab-content-sub-profile {
+        height: 130px;
+    }
+
+    .sub-content-profile-info-list {
+        margin-left: -10px;
+    }
+}
+
+/* Medium */
+@media only screen and (min-width: 850px) and (max-width: 1229px) {
+    .match-content {
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .match-content-container {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    #inkomende-matches,
+    #uitgaande-matches,
+    #geaccepteerde-matches {
+        row-gap: 10px;
+        width: 100%;
+        min-height: 230px;
+        max-height: 800px;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .sub-content-profile-info-list {
+        margin-left: 0px;
+    }
+}
+
+/* All smaller device, applies for small and medium */
+@media only screen and (max-width: 1229px) {
+    .match-tabs {
+        margin-left: 10px;
+    }
+
+    .match-splitter {
+        width: 90%;
+    }
+
+    .hero-tab-content-sub-profile {
+        align-content: center;
+        justify-items: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0px;
+        width: 95%;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    .sub-content-profile-picture {
+        width: 80px;
+        height: 80px;
+        margin-left: 10px;
+    }
+
+    .sub-content-profile-controls-list {
+        margin-left: 0px;
+    }
+}

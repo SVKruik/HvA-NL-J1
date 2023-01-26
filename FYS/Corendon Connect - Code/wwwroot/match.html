@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="nl-NL">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/386dc5a5b8.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://cdn.fys.cloud/fyscloud/0.0.4/fyscloud.es6.min.js" crossorigin></script>
+    <link rel="icon" type="image/x-icon" href="/assets/img/icons/favicon.ico">
+
+    <script type="module" src="assets/js/index.js"></script>
+
+    <link rel="stylesheet" href="assets/css/default.css" />
+    <link rel="stylesheet" href="assets/css/components/nav.css" />
+    <link rel="stylesheet" href="assets/css/components/footer.css" />
+
+    <link rel="stylesheet" href="assets/css/pages/profiel.css" />
+    <link rel="stylesheet" href="assets/css/pages/match.css" />
+    <script type="text/javascript" src="assets/js/controllers/tabs-match.js"></script>
+    <script type="module" src="assets/js/pages/match.js"></script>
+    <title>Corendon Connect - Match</title>
+</head>
+
+<body>
+    <main>
+        <div class="match-content">
+            <div class="match-tab-container">
+                <div class="match-tabs">
+                    <button class="match-tab-link" onclick="openTab(event, 'inkomend')">Nieuw</button>
+                    <button class="match-tab-link" onclick="openTab(event, 'uitgaand')">Uitgaand</button>
+                    <button class="match-tab-link" onclick="openTab(event, 'geaccepteerde')">Matches</button>
+                </div>
+            </div>
+            <div class="match-splitter"></div>
+            <div class="match-content-container">
+                <!-- Incoming Matches -->
+                <div id="inkomend" class="match-tab-content">
+                    <article id="inkomende-matches"></article>
+                </div>
+                <!-- Outgoing Matches -->
+                <div id="uitgaand" class="match-tab-content">
+                    <article id="uitgaande-matches"></article>
+                </div>
+                <!-- Accepted Matches -->
+                <div id="geaccepteerde" class="match-tab-content">
+                    <article id="geaccepteerde-matches">
+                        <!-- Will get removed if query amount > 0 -->
+                        <p id="placeholder-match">U heeft nog geen matches.</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="nl-NL">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <script crossorigin src="https://cdn.fys.cloud/fyscloud/0.0.4/fyscloud.es6.min.js" type="module"></script>
+    <link href="/assets/img/icons/favicon.ico" rel="icon" type="image/x-icon">
+
+    <script src="assets/js/pages/instellingen.js" type="module"></script>
+    <script type="module" src="assets/js/index.js"></script>
+    <link href="assets/css/default.css" rel="stylesheet"/>
+    <link href="assets/css/components/nav.css" rel="stylesheet"/>
+    <link href="assets/css/components/footer.css" rel="stylesheet"/>
+
+    <link href="assets/css/pages/instellingen.css" rel="stylesheet"/>
+    <title>Corendon Connect - Instellingen</title>
+</head>
+
+<body>
+<main>
+    <div class="grid-container-instellingen">
+        <div class="grid-item-instellingen">
+            <div class="tab-links-instellingen">
+                <!-- Buttons aanmaken voor de tabs -->
+                <div class="tab-container" id="tab-container">
+                    <div>
+                        <button class="tablinks active">
+                            <img alt="settings-img" class="setting-img" height="30"
+                                 src="assets/img/instellingen/download-removebg-preview.png" width="30"/>
+                            <p class="2">instellingen</p>
+                        </button>
+                    </div>
+                    <div>
+                        <button class="tablinks">
+                            <p class="2">Account</p>
+                        </button>
+                    </div>
+                    <div>
+                        <button class="tablinks" id="bewerken-instellingen">
+                            <p class="2">Bewerken</p>
+                        </button>
+                    </div>
+                    <div>
+                        <button class="tablinks" id="bewerken-wachtoord">
+                            <p class="2">Wachtwoord</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- content voor de tabs-->
+            <div class="rechts-instellingen-content-container" id="content-container">
+                <div class="tab-content active">
+                    <button id="media-instellingen">terug</button>
+                    <h1>Goeiedag!</h1>
+                    <p class="p">
+                        Hier kunt u de instellingen van Corendon Connect vinden,
+                        indien u verdere problemen ervaart, raadpleeg de support
+                        paginas.
+                    </p>
+                    <p class="2">Met vriendelijke groet,</p>
+                    <h2 class="2">-Correndon connect</h2>
+                </div>
+                <div class="tab-content">
+                    <div class="verwijder">
+                        <img alt="account" class="account-img"
+                             src="assets/img/instellingen/account-removebg-preview.png"/>
+                        <h1 class="account-titel">Account</h1>
+                    </div>
+                    <div class="account-gegevens">
+                        <h3>Algemene account gegevens </h3>
+                        <span id="account-voornaam"></span>
+                        <span id="account-tussen"></span>
+                        <span id="account-achternaam"></span>
+                        <span id="account-geboortedatum"></span>
+                        <span id="account-geslacht"></span>
+                    </div>
+                    <h3>Adres: </h3>
+                    <span id="account-land"></span>
+                    <div class="account-gegevens">
+                        <h3>Contact Gevens: </h3>
+                        <span id="account-email"></span>
+                    </div>
+                </div>
+                <div class="tab-content">
+                    <form class="loginform">
+                        <h1>Algemene Gegevens</h1>
+                        <label for="voornaam">
+                            <input id="voornaam" placeholder="" type="text"/>
+                            <input id="tussenvoegsel" placeholder="tussenvoegsel" type="text"/>
+                            <input id="achternaam" placeholder="achternaam" type="text"/>
+                            <div class="gegevens-namen">
+                                <input id="email" placeholder="email" type="text"/>
+                                <input id="land" placeholder="land" type="text"/>
+                            </div>
+                        </label>
+                        <div class="birthday-input">
+                            <label for="birthday"></label>
+                            <input id="birthday" name="birthday" type="date">
+                        </div>
+                        <div class="button-update">
+                            <input id="submit" name="button" type="submit" value="Updaten">
+                        </div>
+                    </form>
+                    <button class="tablinks" id="verwijderen-account">
+                        <p class="2">Account verwijderen</p>
+                    </button>
+                </div>
+                <div class="tab-content">
+                    <form class="loginform">
+                        <h1>Wachtwoord Bewerken</h1>
+                        <div class="botton-update">
+                            <input id="wachtwoord-oud" placeholder=" Oude wachtwoord" type="text"/>
+                            <input id="wachtwoord-nieuw" placeholder=" Nieuwe wachtwoord" type="text"/>
+                            <input id="wachtwoord-herhaal" placeholder=" Herhaal uw wachtwoord" type="text"/>
+                            <input id="opslaan" name="button" type="submit" value="opslaan">
+                        </div>
+                    </form>
+                </div>
+                <div class="tab-content">
+                    <div class="verwijder">
+                        <div class="verwijder-text">
+                            <h1>Account Verwijderen</h1>
+                            <h4>Weet u zeker dat uw account wilt verwijderen.</h4>
+                            <h4>Weet dan wel dat al u gegevens kwijt bent samen met al u maches.</h4>
+                        </div>
+                        <form>
+                            <input id="delete" name="button" type="submit" value="delete">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+/* Add some style to the form */
+form {
+    width: 55%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.edit-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+span {
+    width: 150px;
+    margin-right: 50px;
+    margin: auto;
+    display: block;
+    text-align: left;
+}
+
+input,
+select {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid var(--border-l);
+    border-radius: 4px;
+}
+
+.form-content input[type="submit"] {
+    width: 80%;
+    background-color: var(--content-button);
+    color: var(--main-a);
+    padding: 14px 20px;
+    margin: 8px 0;
+    margin-top: 25px;
+    margin-left: 60%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-content input[type="submit"]:hover {
+    background-color: var(--content-button);
+}
+
+.form-content {
+    margin-top: 50px;
+    border-radius: 25px;
+    background-color: var(--main-b);
+    padding: 20px;
+}
+
+.form-content h3 {
+    margin-bottom: 25px;
+}
+
+@media only screen and (max-width: 720px) and (min-width:410px) {
+    .edit-form {
+        display: flex;
+        grid-template-columns: unset;
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
+    }
+
+    .edit-form span {
+        float: left;
+        width: 80%;
+    }
+
+    .edit-form input[type="submit"] {
+        margin-left: unset;
+    }
+}
+
+/* All smaller device, applies for small and medium */
+@media only screen and (max-width: 410px) {
+
+    form {
+        width: 80%;
+    }
+
+    .edit-form {
+        display: flex;
+        grid-template-columns: unset;
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
+    }
+
+    .edit-form span {
+        float: left;
+        width: 90%;
+    }
+
+    .edit-form input {
+        width: 90%;
+    }
+
+    .edit-form input[type="submit"] {
+        margin-left: unset;
+    }
+}

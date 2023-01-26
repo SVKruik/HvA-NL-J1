@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="nl-NL">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/386dc5a5b8.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://cdn.fys.cloud/fyscloud/0.0.4/fyscloud.es6.min.js" crossorigin></script>
+    <link rel="icon" type="image/x-icon" href="/assets/img/icons/favicon.ico">
+
+    <script type="module" src="assets/js/index.js"></script>
+
+    <link rel="stylesheet" href="assets/css/default.css" />
+    <link rel="stylesheet" href="assets/css/components/nav.css" />
+    <link rel="stylesheet" href="assets/css/components/footer.css" />
+
+    <link rel="stylesheet" href="assets/css/pages/zoek.css" />
+    <script type="module" src="assets/js/pages/zoek.js"></script>
+    <title>Corendon Connect - Zoek</title>
+</head>
+
+<body>
+    <main>
+        <div class="grid-container">
+
+            <!-- Voorkeuren -->
+            <div class="left" style="background-color: var(--main-a);">
+                <button type="button" class="collapsible"><img width="30"
+                        src="assets/img/zoek/red-triangle.png">Type
+                    vakantie
+                </button>
+                <form class="vakantieSoort" action="/action_page.php">
+                    <input type="radio" id="VakantieType" name="VakantieType" value="Stedentrip">
+                    <label for="VakantieType"> Stedentrip</label><br>
+                    <input type="radio" id="VakantieType" name="VakantieType" value="Weekend Weg">
+                    <label for="VakantieType"> Weekend weg</label><br>
+                    <input type="radio" id="VakantieType" name="VakantieType" value="Zonvakantie">
+                    <label for="VakantieType"> Zonvakantie</label><br>
+                    <input type="radio" id="VakantieType" name="VakantieType" value="All-Inclusive">
+                    <label for="VakantieType"> All-incluvise</label><br>
+                    <input type="radio" id="VakantieType" name="VakantieType" value="Wintervakantie">
+                    <label for="VakantieType"> Wintervakantie</label><br>
+                    <input type="radio" id="VakantieType" name="VakantieType" value="Wandelvakantie">
+                    <label for="VakantieType"> Wandelvakantie</label><br>
+                </form>
+
+                <div>
+                    <button type="button" class="collapsible"><img width="30"
+                            src="assets/img/zoek/red-triangle.png">land
+                    </button>
+                    <form action="/action_page.php">
+                        <input type="radio" id="Land" class="België" name="Land" value="België">
+                        <label for="Land"> België</label><br>
+                        <input type="radio" id="Land" class="Duitsland" name="Land" value="Duitsland">
+                        <label for="Land"> Duitsland</label><br>
+                        <input type="radio" id="Land" class="Egypte" name="Land" value="Egypte">
+                        <label for="Land"> Egypte</label><br>
+                        <input type="radio" id="Land" class="Engeland" name="Land" value="Engeland">
+                        <label for="Land"> Engeland</label><br>
+                        <input type="radio" id="Land" class="Gambia" name="Land" value="Gambia">
+                        <label for="Land"> Gambia</label><br>
+                        <input type="radio" id="Land" class="Nederland" name="Land" value="Nederland">
+                        <label for="Land"> Nederland</label><br>
+                        <input type="radio" id="Land" class="Oostenrijk" name="Land" value="Oostenrijk">
+                        <label for="Land"> Oostenrijk</label><br>
+                        <input type="radio" id="Land" class="Polen" name="Land" value="Polen">
+                        <label for="Land"> Polen</label><br>
+                        <input type="radio" id="Land" class="Qatar" name="Land" value="Qatar">
+                        <label for="Land"> Qatar</label><br>
+                        <input type="radio" id="Land" class="Roemenië" name="Land" value="Roemenië">
+                        <label for="Land"> Roemenië</label><br>
+                        <input type="radio" id="Land" class="Rusland" name="Land" value="Rusland">
+                        <label for="Land"> Rusland</label><br>
+                        <input type="radio" id="Land" class="Spanje" name="Land" value="Spanje">
+                        <label for="Land"> Spanje</label><br>
+                        <input type="radio" id="Land" class="Turkije" name="Land" value="Turkije">
+                        <label for="Land"> Turkije</label><br>
+                        <input type="radio" id="Land" class="Zwitserland" name="Land" value="Zwitserland">
+                        <label for="Land"> Zwitserland</label><br>
+                    </form>
+                </div>
+                <div class="slidecontainer">
+                    <button type="button" class="collapsible"><img width="30"
+                            src="assets/img/zoek/red-triangle.png">Leeftijd
+                    </button>
+                    <form action="/action_page.php">
+                        <input type="radio" id="Leeftijd" name="Leeftijd" value="Tot 30">
+                        <label for="Leeftijd"> tot 30</label><br>
+                        <input type="radio" id="Leeftijd" name="Leeftijd" value="Tot 40">
+                        <label for="Leeftijd"> tot 40</label><br>
+                        <input type="radio" id="Leeftijd" name="Leeftijd" value="Tot 50">
+                        <label for="Leeftijd"> tot 50</label><br>
+                        <input type="radio" id="Leeftijd" name="Leeftijd" value="Tot 60">
+                        <label for="Leeftijd"> tot 60</label><br>
+                        <input type="radio" id="Leeftijd" name="Leeftijd" value="Tot 70">
+                        <label for="Leeftijd"> tot 70</label><br>
+                        <input type="radio" id="Leeftijd" name="Leeftijd" value="Ouder dan 70">
+                        <label for="Leeftijd"> Ouder dan 70</label><br>
+                    </form>
+                </div>
+
+            </div>
+
+            <!-- profielen -->
+            <div class="grid-profielen">
+
+            </div>
+        </div>
+    </main>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                };
+            });
+        };
+    </script>
+
+</body>
+
+</html>

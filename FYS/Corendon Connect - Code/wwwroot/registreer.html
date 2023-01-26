@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="nl-NL">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/386dc5a5b8.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="module"
+      src="https://cdn.fys.cloud/fyscloud/0.0.4/fyscloud.es6.min.js"
+      crossorigin
+    ></script>
+    <link rel="icon" type="image/x-icon" href="/assets/img/icons/favicon.ico" />
+
+    <script type="module" src="assets/js/index.js"></script>
+
+    <link rel="stylesheet" href="assets/css/default.css" />
+    <link rel="stylesheet" href="assets/css/components/nav.css" />
+    <link rel="stylesheet" href="assets/css/components/footer.css" />
+
+    <link rel="stylesheet" href="assets/css/pages/registreer.css" />
+    <script type="module" src="assets/js/pages/registreer.js"></script>
+    <title>Corendon Connect - Registreer</title>
+  </head>
+
+  <body>
+    <main>
+      <div class="grid-container-registreer">
+        <div class="afbeelding">
+          <img src="assets/img/home/community-min.jpg" alt="" srcset="" />
+        </div>
+        <div class="registreer-account">
+          <div class="registreer-content">
+            <div class="noggeen">
+              <h1>Nog geen account?</h1>
+            </div>
+            <form class="registreer">
+              <div class="registreer_form1">
+                <input
+                  type="text"
+                  class="voornaam"
+                  placeholder="voornaam"
+                  value=""
+                />
+              </div>
+              <div class="registreer-tussenvoegsel">
+                <input
+                  type="text"
+                  class="tussenvoegsel"
+                  placeholder="tussenvoegsel"
+                  value=""
+                />
+              </div>
+              <div class="registreer-achternaam">
+                <input
+                  type="text"
+                  class="achternaam"
+                  placeholder="achternaam"
+                  value=""
+                />
+              </div>
+              <div class="registreer_form2">
+                <select id="landkeuze" class="land">
+                  <option disabled selected value>land</option>
+                </select>
+              </div>
+              <div class="geboortedatum-text">
+                <p class="geboortedatum-text-inhoud">geboortedatum</p>
+              </div>
+              <div class="registreer_form3">
+                <input
+                  type="date"
+                  class="geboortedatum"
+                  placeholder="geboortedatum"
+                  value=""
+                />
+              </div>
+              <div class="registreer_form4">
+                <input type="text" class="email" placeholder="email" value="" />
+              </div>
+              <div class="geslacht-text">
+                <p class="geslacht-text-inhoud">geslacht</p>
+              </div>
+              <div class="registreer_form5">
+                <input
+                  type="radio"
+                  class="geslacht"
+                  id="man"
+                  name="geslacht"
+                  placeholder="Man"
+                  value="Man"
+                />
+                <label for="man"><h1 class="label">Man</h1></label>
+
+                <input
+                  type="radio"
+                  class="geslacht"
+                  id="vrouw"
+                  name="geslacht"
+                  value="Vrouw"
+                />
+                <label for="vrouw"><h1 class="label">Vrouw</h1></label>
+
+                <input
+                  type="radio"
+                  class="geslacht"
+                  id="anders"
+                  name="geslacht"
+                  value="Anders"
+                />
+                <label for="anders"><h1 class="label">Anders</h1></label>
+
+                <input
+                  type="radio"
+                  class="geslacht"
+                  id="zeglieverniet"
+                  name="geslacht"
+                  value="Zeg liever niet"
+                  class="zeglieverniet"
+                />
+                <label class="label" for="zeglieverniet"
+                  ><h1 class="label">Zeg liever niet</h1></label
+                >
+              </div>
+              <div class="registreer_form6">
+                <input
+                  type="password"
+                  class="wachtwoord"
+                  placeholder="wachtwoord"
+                  value=""
+                />
+              </div>
+              <div class="registreer-wachtwoordherhaling">
+                <input
+                  type="password"
+                  class="wachtwoordherhaling"
+                  placeholder="wachtwoord herhaling"
+                  value=""
+                />
+              </div>
+              <div class="registreer_form7">
+                <button class="button-aanmelden" type="submit" onclick="submit">
+                  Registreer
+                </button>
+                <h6 class="registreer_disclaimer">Door op Registreren te klikken, ga je akkoord met onze voorwaarden. Meer informatie over hoe we je gegevens verzamelen, gebruiken en delen, vind je in ons <a href="https://www.corendon.nl/privacy-verklaring" target="_blank">privacybeleid</a>. Meer informatie over hoe we cookies en vergelijkbare technologie gebruiken, vind je in ons <a href="https://www.corendon.nl/cookies" target="_blank">cookiebeleid</a>.</h6>
+              </div>
+              <div class="field-validation">
+                <img src="/assets/img/icons/warning.png" alt="" />
+                <p></p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

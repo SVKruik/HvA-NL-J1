@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="nl-NL">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/386dc5a5b8.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://cdn.fys.cloud/fyscloud/0.0.4/fyscloud.es6.min.js" crossorigin></script>
+    <link rel="icon" type="image/x-icon" href="/assets/img/icons/favicon.ico">
+
+    <script type="module" src="assets/js/index.js"></script>
+
+    <link rel="stylesheet" href="assets/css/default.css" />
+    <link rel="stylesheet" href="assets/css/components/nav.css" />
+    <link rel="stylesheet" href="assets/css/components/footer.css" />
+
+    <script type="module" src="assets/js/pages/chat.js"></script>
+    <link rel="stylesheet" href="assets/css/pages/profiel.css" />
+    <link rel="stylesheet" href="assets/css/pages/chat.css" />
+    <title>Corendon Connect - Chat</title>
+</head>
+
+<body>
+    <main>
+        <!-- Overlay Containers -->
+        <section id="profile-report-container">
+            <div class="report-overlay">
+                <div class="report-container">
+                    <div class="report-title">
+                        <h1>Profiel Rapporteren</h1>
+                    </div>
+                    <div class="report-splitter"></div>
+                    <div class="edit-interests">
+                        <label>Rede - beschrijf uw probleem.</label>
+                        <textarea type="text-area" maxlength="2000" id="report-textarea" rows="5" cols="70"></textarea>
+                    </div>
+                    <div class="report-splitter"></div>
+                    <div class="report-bottom-buttons">
+                        <button id="close-profile-report">Annuleer</button>
+                        <button id="submit-profile-report">Opslaan</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+            <section id="section-left">
+                <div class="profiles-header-container">
+                    <h1 class="profiles-header">Chat </h1>
+                </div>
+
+                <div class="my-box">
+
+                </div>
+
+            </section>
+
+            <section id="section-right">
+                <div class="chat-profile-header">
+                    <div class="test">
+                        <img class="chat-profile-picture">
+                    </div>
+                    <div class="test2">
+                        <h1 class="chat-profile-name"></h1>
+                    </div>
+                    <div class="test3">
+                        <ul>
+                            <li id="chat-link"><i class="fa-solid fa-plane"></i> Boeken</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="chat">
+
+                </div>
+
+                <article class="message">
+                    <textarea class="chat-message-balk" placeholder="Message..."></textarea>
+                    <img class="chat-send-icon" src="assets/img/chat/send.png">
+                </article>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>

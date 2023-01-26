@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="nl-NL">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
+    <script src="https://kit.fontawesome.com/386dc5a5b8.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://cdn.fys.cloud/fyscloud/0.0.4/fyscloud.es6.min.js" crossorigin></script>
+    <link rel="icon" type="image/x-icon" href="/assets/img/icons/favicon.ico">
+
+    <script type="module" src="assets/js/index.js"></script>
+
+    <link rel="stylesheet" href="assets/css/default.css" />
+    <link rel="stylesheet" href="assets/css/components/nav.css" />
+    <link rel="stylesheet" href="assets/css/components/footer.css" />
+
+    <script type="module" src="assets/js/pages/create-profiel.js"></script>
+    <link rel="stylesheet" href="assets/css/pages/profiel.css">
+    <script type="text/javascript" src="assets/js/controllers/tabs-profiel.js"></script>
+    <script type="module" src="assets/js/pages/profiel.js"></script>
+    <title>Corendon Connect - Profiel</title>
+</head>
+
+<body>
+    <main>
+        <!-- Edit Profile -->
+        <section id="profile-edit-container">
+            <div class="edit-overlay">
+                <div class="edit-container">
+                    <div class="edit-title">
+                        <h1>Profiel Bewerken</h1>
+                    </div>
+                    <div class="edit-splitter"></div>
+                    <div class="edit-profile-picture">
+                        <div class="profile-picture-control">
+                            <label>Kies profiel foto:</label>
+                            <input id="upload-profile-picture" type="file" accept="image/png">
+                        </div>
+                        <div class="profile-picture-preview">
+                            <img id="upload-profile-preview" src="">
+                        </div>
+                    </div>
+                    <div class="edit-splitter"></div>
+                    <div class="edit-profile-banner">
+                        <div class="profile-banner-control">
+                            <label>Kies profiel banner:</label>
+                            <label>We raden een schaal aan van 4:1.</label><br>
+                            <input id="upload-profile-banner" type="file" accept="image/png">
+                        </div>
+                        <div class="profile-banner-preview">
+                            <img id="upload-banner-preview" src="" alt="">
+                        </div>
+                    </div>
+                    <div class="edit-splitter"></div>
+                    <div class="edit-biography">
+                        <label>Biografie</label>
+                        <textarea type="text-area" maxlength="5000" id="edit-biography-textarea" rows="5"
+                            cols="70"></textarea>
+                    </div>
+                    <div class="edit-splitter"></div>
+                    <div class="edit-interests">
+                        <label>Interesses</label>
+                        <textarea type="text-area" maxlength="2000" id="edit-interests-textarea" rows="5"
+                            cols="70"></textarea>
+                    </div>
+                    <div class="selectors">
+                        <select id="land" class="selector">
+                            <option disabled selected value>Selecteer een land</option>
+                        </select>
+                        <select id="soortreis" class="selector">
+                            <option disabled selected value>
+                                Selecteer een reissoort
+                            </option>
+                        </select>
+                    </div>
+                    <div class="edit-splitter"></div>
+                    <div class="edit-bottom-buttons">
+                        <button id="close-profile-edit">Annuleer</button>
+                        <button id="submit-profile-edit">Opslaan</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Add Content Image -->
+        <section id="profile-content-container">
+            <div class="content-overlay">
+                <div class="content-container">
+                    <div class="content-title">
+                        <h1>Voeg afbeelding toe</h1>
+                    </div>
+                    <div class="content-splitter"></div>
+                    <div class="add-profile-content">
+                        <div class="profile-content-control">
+                            <label>Kies afbeelding:</label><br>
+                            <label>We raden een schaal aan van 7:4.</label><br><br>
+                            <input id="upload-profile-content" type="file" accept="image/png">
+                        </div>
+                        <div class="profile-content-preview">
+                            <img id="upload-content-preview" src="" alt="">
+                        </div>
+                    </div>
+                    <div class="content-splitter"></div>
+                    <div class="content-bottom-buttons">
+                        <button id="close-profile-content">Annuleer</button>
+                        <button id="submit-profile-content">Opslaan</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Remove Content Image -->
+        <section id="profile-remove-container">
+            <div class="remove-overlay">
+                <div class="remove-container">
+                    <div class="content-title">
+                        <h1>Weet u zeker dat u de afbeelding wilt verwijderen?</h1>
+                    </div>
+                    <div class="content-splitter"></div>
+                    <div class="content-bottom-buttons">
+                        <button id="close-profile-remove">Annuleer</button>
+                        <button id="submit-profile-remove">Verwijder</button>
+                    </div>
+                </div>
+            </div>
+            <button class="klaar" id="klaar"></button>
+        </section>
+        <!-- Profile -->
+        <div class="profile-container">
+            <!-- Hero -->
+            <section class="profile-hero">
+                <div class="hero-banner-container">
+                    <img class="hero-banner" id="profile-banner" src="" alt="Profiel Banner">
+                    <div class="profile-status-symbol" id="profile-status"></div>
+                </div>
+                <div class="hero-content-container">
+                    <ul class="responsive-hero-list">
+                        <li>
+                            <div></div>
+                        </li>
+                        <li>
+                            <div class="hero-profile-image-container">
+                                <img class="hero-profile-image-background" id="profile-image" src=""
+                                    alt="Profiel Afbeelding">
+                            </div>
+                        </li>
+                        <li class="responsive-flex-end">
+                            <div class="hero-edit-container" id="responsive-hidden">
+                                <button id="edit-profile-button-b" class="hero-edit-button7-7"><i
+                                        class="fa-solid fa-pen"></i></button>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="hero-name-container">
+                        <ul class="hero-name-list">
+                            <li>
+                                <h1 id="profile-name" class="hero-name"></h1>
+                            </li>
+                            <li>
+                                <h3 id="profile-age" class="hero-age"></h3>
+                            </li>
+                            <li id="tooltip8-8">
+                                <img id="hero-country" src="" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="hero-edit-container" id="responsive-show">
+                        <button id="edit-profile-button-a" class="hero-edit-button2-2"><i
+                                class="fa-solid fa-pen"></i></button>
+                    </div>
+                </div>
+            </section>
+            <!-- Middle -->
+            <section class="profile-splitter">
+            </section>
+            <!-- Content -->
+            <section class="profile-content">
+                <div class="hero-tab-container">
+                    <!-- Tab Buttons -->
+                    <div class="hero-tabs">
+                        <button class="hero-tab-link active" onclick="openTab(event, 'tab-info')">Info</button>
+                        <button class="hero-tab-link" onclick="openTab(event, 'tab-matches')">Matches</button>
+                        <button class="hero-tab-link" onclick="openTab(event, 'tab-interesses')">Interesses</button>
+                        <button class="hero-tab-link" onclick="openTab(event, 'tab-fotos')">Foto's</button>
+                    </div>
+
+                    <!-- Biography -->
+                    <div id="tab-info" class="hero-tab-content active">
+                        <article class="profile-biography">
+                        </article>
+                    </div>
+
+                    <!--Matches-->
+                    <div id="tab-matches" class="hero-tab-content">
+                        <div class="hero-tabs-sub">
+                            <button class="hero-tab-link-sub" onclick="openSubTab(event, 'tab-alle')">Alle</button>
+                            <button class="hero-tab-link-sub" onclick="openSubTab(event, 'tab-lokaal')">Lokaal</button>
+                        </div>
+
+                        <!-- Sort All -->
+                        <div id="tab-alle" class="hero-tab-content-sub">
+                            <div id="tab-alle-container" class="hero-tab-content-sub-container">
+                                <div class="match-placeholder">Deze persoon heeft nog geen matches.</div>
+                            </div>
+                        </div>
+
+                        <!-- Sort Local -->
+                        <div id="tab-lokaal" class="hero-tab-content-sub">
+                            <div id="tab-lokaal-container" class="hero-tab-content-sub-container">
+                                <div class="match-placeholder">Deze persoon heeft nog geen lokale matches.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Interests -->
+                    <div id="tab-interesses" class="hero-tab-content">
+                        <article class="profile-interesses">
+                        </article>
+                        <article class="profile-target-interesses">
+                        </article>
+                    </div>
+
+                    <!-- Photo's -->
+                    <div id="tab-fotos" class="hero-tab-content">
+                        <div class="add-button-wrapper">
+                            <button class="profile-photo-add"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                        <article class="content-images" id="profile-photo-container">
+                            <p class="content-placeholder">Deze persoon heeft nog geen foto's geplaatst.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>
