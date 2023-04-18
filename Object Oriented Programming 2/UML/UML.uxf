@@ -1,0 +1,2680 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <help_text>// Uncomment the following line to change the fontsize and font:
+fontsize=10
+// fontfamily=SansSerif //possible: SansSerif,Serif,Monospaced
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+// Welcome to UMLet!
+//
+// Double-click on elements to add them to the diagram, or to copy them
+// Edit elements by modifying the text in this panel
+// Hold Ctrl to select multiple elements
+// Use Ctrl+mouse to select via lasso
+//
+// Use +/- or Ctrl+mouse wheel to zoom
+// Drag a whole relation at its central square icon
+//
+// Press Ctrl+C to copy the whole diagram to the system clipboard (then just paste it to, eg, Word)
+// Edit the files in the "palettes" directory to create your own element palettes
+//
+// Select "Custom Elements &gt; New..." to create new element types
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+
+// This text will be stored with each diagram;  use it for notes.</help_text>
+  <zoom_level>9</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2475</x>
+      <y>1206</y>
+      <w>189</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>Customer
+--
+-name: String
+-verified: boolean
+-language: String
+-createdOn: LocalDate</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2754</x>
+      <y>1215</y>
+      <w>189</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>DiscordBot
+--
+-Customer: belongsTo
+-accentColor: String
+-clientId: String
+-host: String
+-hostingPriceHour: double
+-port: int
+-autoRestart: boolean
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2655</x>
+      <y>1260</y>
+      <w>117</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=1
+m2=0..n
+ownedBy</panel_attributes>
+    <additional_attributes>10.0;20.0;110.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2619</x>
+      <y>1566</y>
+      <w>189</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;views&gt;&gt;
+CustomerView
+--
+#initializeView(): Parent</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2466</x>
+      <y>1431</y>
+      <w>189</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;javafx.application&gt;&gt;
+MainApplication
+--
+-WIDTH: int
+-HEIGHT: int
+--
++start(stage: Stage): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2835</x>
+      <y>1566</y>
+      <w>189</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;views&gt;&gt;
+DiscordBotView
+--
+#initializeView(): Parent</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2709</x>
+      <y>1440</y>
+      <w>189</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;views&gt;&gt;
+View
+--
+-root: Parent
+--
+#initializeView(): Parent
++getRoot(): Parent</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2412</x>
+      <y>1584</y>
+      <w>189</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>Main
+--
++main(args: String[]): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2817</x>
+      <y>1521</y>
+      <w>135</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;130.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2709</x>
+      <y>1521</y>
+      <w>90</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>80.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2493</x>
+      <y>1521</y>
+      <w>27</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2484</x>
+      <y>1368</y>
+      <w>189</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;javafx.application&gt;&gt;
+Application</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2565</x>
+      <y>1395</y>
+      <w>27</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2646</x>
+      <y>1485</y>
+      <w>81</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>70.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1926</x>
+      <y>1458</y>
+      <w>216</w>
+      <h>378</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;views&gt;&gt;
+CustomerView
+--
+-mainPane: GridPane
+-leftTitle: Text
+-profileListView: ListView&lt;Customer&gt;
+-leftButtonContainer: HBox
+-removeButton: Button
+-switchButton: Button
+-centerTitle: Text
+-centerBox: VBox
+-customerName: TextField
+-customerProfileName: TextField
+-emailVerified: CheckBox
+-language: TextField
+-creation: DatePicker
+-description: TextArea
+-rightTitle: Text
+-rightBox: VBox
+-customerNameInput: TextField
+-custerProfileNameInput: TextField
+-languageInput: ComboBox&lt;String&gt;
+-descriptionInput: TextArea
+-createButton: Button
+-cancelButton: Button
+--
+#initializeView(): Parent</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1629</x>
+      <y>1197</y>
+      <w>198</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;javafx.application&gt;&gt;
+MainApplication
+--
+-WIDTH: int
+-HEIGHT: int
+--
++start(stage: Stage): void
++switchView(controller: Controller): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2151</x>
+      <y>1458</y>
+      <w>252</w>
+      <h>639</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;views&gt;&gt;
+DiscordBotView
+--
+-mainPane: GridPane
+-leftTitle: Text
+-leftBox: VBox
+-customerSelectorLabel: Label
+-customerSelector: ComboBox&lt;String&gt;
+-discordBotSelectorLabel: Label
+-discordBotListView: ListView&lt;DiscordBot&gt;
+-leftButtonContainer: HBox
+-removeButton: Button
+-switchButton: Button
+-centerTitle: Text
+-centerBox: VBox
+-nameLabel: Label
+-name: TextField
+-clientIdLabel: Label
+-clientId: TextField
+-hostLabel: Label
+-host: TextField
+-memoryLabel: Label
+-memory: TextField
+-autoRestartLabel: Label
+-autoRestart: CheckBox
+-colorLabel: Label
+-color: Rectangle
+-rightTitle: Text
+-rightBox: VBox
+-nameInputLabel: Label
+-nameInput: TextField
+-colorInputLabel: Label
+-colorInput: TextField
+-memoryInputLabel: Label
+-memoryInput: TextField
+-hostInputLabel: Label
+-hostInput: ComboBox&lt;String&gt;
+-portInputLabel: Label
+-portInput: TextField
+-autoRestartInputLabel: Label
+-autoRestartInput: CheckBox
+-rightButtonContainer: HBox
+-createBotButton: Button
+--
+#initializeView(): Parent</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2034</x>
+      <y>1332</y>
+      <w>189</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;views&gt;&gt;
+View
+--
+-root: Parent
+--
+#initializeView(): Parent
++getRoot(): Parent</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1890</x>
+      <y>1242</y>
+      <w>189</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>Main
+--
++main(args: String[]): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2133</x>
+      <y>1413</y>
+      <w>135</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;130.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2016</x>
+      <y>1413</y>
+      <w>108</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>100.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1818</x>
+      <y>1251</y>
+      <w>90</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;80.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1890</x>
+      <y>1197</y>
+      <w>189</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;javafx.application&gt;&gt;
+Application</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1818</x>
+      <y>1206</y>
+      <w>90</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>80.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1809</x>
+      <y>1377</y>
+      <w>243</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>250.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1629</x>
+      <y>1341</y>
+      <w>189</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;controllers&gt;&gt;
+Controller
+--
++getView(): View</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1728</x>
+      <y>1296</y>
+      <w>27</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1521</x>
+      <y>1458</y>
+      <w>189</w>
+      <h>234</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;controllers&gt;&gt;
+CustomerController
+--
+-view: CustomerView
+--
++CustomerController()
++loadProfiles(): void
++createCustomer(name: String, 
+profileName: String, 
+language: String, 
+description: String): void
+
++removeCustomer():void
++cancelNewCustomer(): void
++getView(): View</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1719</x>
+      <y>1458</y>
+      <w>198</w>
+      <h>243</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;controllers&gt;&gt;
+DiscordBotController
+--
+-view: DiscordBotView
+--
++DiscordBotController()
++loadProfiles(): void
++createDiscordBot(name: String, 
+color: String, host: String, 
+portRaw: String, 
+autoRestart: boolean, 
+memoryRaw: String): void
+
++removeDiscordBot(): void
++loadBots(): void
++selectProfile(): void
++getView(): View</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1737</x>
+      <y>1395</y>
+      <w>108</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;100.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1602</x>
+      <y>1395</y>
+      <w>126</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>120.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1521</x>
+      <y>1710</y>
+      <w>189</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;models&gt;&gt;
+Customer
+--
+-name: String
+-profileName: String
+-verified: boolean
+-language: String
+-createdOn: LocalDate
+-description: String
+--
++Customer(name, profileName, 
+verified, language, createdOn, 
+description)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1611</x>
+      <y>1683</y>
+      <w>27</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;30.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1719</x>
+      <y>1719</y>
+      <w>198</w>
+      <h>234</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;models&gt;&gt;
+DiscordBot
+--
+-belongsTo: Customer
+-name: String
+-accentColor: String
+-clientId: int
+-host: String
+-hostingPriceHour: double
+-port: int
+-autoRestart: boolean
+-memory: int
+--
++DiscordBot(belongsTo, name, 
+accentColor, clientId, host
+hostingPriceHour, port,
+autoRestart)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1809</x>
+      <y>1692</y>
+      <w>27</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;30.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>720</x>
+      <y>1593</y>
+      <w>216</w>
+      <h>297</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;views&gt;&gt;
+CustomerView
+--
+-mainPane: GridPane
+-leftTitle: Text
+-profileListView: ListView&lt;Customer&gt;
+-leftButtonContainer: HBox
+-removeButton: Button
+-switchButton: Button
+-centerTitle: Text
+-centerBox: VBox
+-customerName: TextField
+-customerProfileName: TextField
+-emailVerified: CheckBox
+-language: TextField
+-creation: DatePicker
+-description: TextArea
+-rightTitle: Text
+-rightBox: VBox
+-customerNameInput: TextField
+-custerProfileNameInput: TextField
+-languageInput: ComboBox&lt;String&gt;
+-descriptionInput: TextArea
+-createButton: Button
+-cancelButton: Button
+--
+#initializeView(): Parent</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>423</x>
+      <y>1242</y>
+      <w>225</w>
+      <h>234</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;javafx.application&gt;&gt;
+MainApplication
+--
+-WIDTH: int
+-HEIGHT: int
+_-stage: Stage_
+_-customerDAO: CustomerDAO_
+_-discordBotDAO: DiscordBotDAO_
+_-dummyCustomerDAO: DummyCustomerDAO_
+_-dummyDiscordBotDAO: DummyDiscordBotDAO_
+--
++start(stage: Stage): void
+_+switchView(controller: Controller): void_
+_+getCustomerDAO(): CustomerDAO_
+_+getDiscordBotDAO(): DiscordBotDAO_
+_+getDummyCustomerDAO(): DummyCustomerDAO_
+_+getDummyDiscordBotDAO(): DummyDiscordBotDAO_
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>945</x>
+      <y>1593</y>
+      <w>252</w>
+      <h>495</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;views&gt;&gt;
+DiscordBotView
+--
+-mainPane: GridPane
+-leftTitle: Text
+-leftBox: VBox
+-customerSelectorLabel: Label
+-customerSelector: ComboBox&lt;String&gt;
+-discordBotSelectorLabel: Label
+-discordBotListView: ListView&lt;DiscordBot&gt;
+-leftButtonContainer: HBox
+-removeButton: Button
+-switchButton: Button
+-centerTitle: Text
+-centerBox: VBox
+-nameLabel: Label
+-name: TextField
+-clientIdLabel: Label
+-clientId: TextField
+-hostLabel: Label
+-host: TextField
+-memoryLabel: Label
+-memory: TextField
+-autoRestartLabel: Label
+-autoRestart: CheckBox
+-colorLabel: Label
+-color: Rectangle
+-rightTitle: Text
+-rightBox: VBox
+-nameInputLabel: Label
+-nameInput: TextField
+-colorInputLabel: Label
+-colorInput: TextField
+-memoryInputLabel: Label
+-memoryInput: TextField
+-hostInputLabel: Label
+-hostInput: ComboBox&lt;String&gt;
+-portInputLabel: Label
+-portInput: TextField
+-autoRestartInputLabel: Label
+-autoRestartInput: CheckBox
+-rightButtonContainer: HBox
+-createBotButton: Button
+--
+#initializeView(): Parent</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>855</x>
+      <y>1485</y>
+      <w>189</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;views&gt;&gt;
+View
+--
+-root: Parent
+--
+#initializeView(): Parent
++getRoot(): Parent</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>684</x>
+      <y>1377</y>
+      <w>189</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>Main
+--
+_+main(args: String[]): void_
+_-showTegridy(): void_</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>954</x>
+      <y>1566</y>
+      <w>108</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;100.0;30.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>810</x>
+      <y>1566</y>
+      <w>135</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>130.0;10.0;10.0;30.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>639</x>
+      <y>1386</y>
+      <w>63</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;50.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>684</x>
+      <y>1332</y>
+      <w>189</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;javafx.application&gt;&gt;
+Application</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>639</x>
+      <y>1341</y>
+      <w>63</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>50.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>603</x>
+      <y>1530</y>
+      <w>270</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>280.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>423</x>
+      <y>1494</y>
+      <w>189</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;controllers&gt;&gt;
+Controller
+--
++getView(): View</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>522</x>
+      <y>1467</y>
+      <w>27</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;30.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>351</x>
+      <y>1593</y>
+      <w>171</w>
+      <h>207</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;controllers&gt;&gt;
+CustomerController
+--
+-view: CustomerView
+-customerDAO: DAO&lt;Customer&gt;
+-discordBotDAO: DAO&lt;DiscordBot&gt;
+-dummyCustomerDAO: DAO&lt;Customer&gt;
+-customerView: CustomerView
+--
++CustomerController()
++loadProfiles(): void
++createCustomer(name: String, 
+profileName: String, 
+language: String, 
+description: String): void
+
++removeCustomer():void
++cancelNewCustomer(): void
++getView(): View</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>531</x>
+      <y>1593</y>
+      <w>180</w>
+      <h>261</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;controllers&gt;&gt;
+DiscordBotController
+--
+-view: DiscordBotView
+-discordBotDAO: DAO&lt;DiscordBot&gt;
+-customerDAO: DAO&lt;Customer&gt;
+-dummyDiscordBotDAO: DAO&lt;DiscordBot&gt;
+-discordBotView: DiscordBotView
+--
++DiscordBotController()
++loadProfiles(): void
++createDiscordBot(name: String, 
+color: String, host: String, 
+portRaw: String, 
+autoRestart: boolean, 
+memoryRaw: String): void
+
++removeDiscordBot(): void
++loadBots(): void
++selectProfile(): void
++getView(): View</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>531</x>
+      <y>1548</y>
+      <w>108</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;100.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>414</x>
+      <y>1548</y>
+      <w>108</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>100.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>351</x>
+      <y>1818</y>
+      <w>171</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;models&gt;&gt;
+Customer
+--
+-name: String
+-profileName: String
+-verified: boolean
+-language: String
+-createdOn: LocalDate
+-description: String
+--
++Customer(name, profileName, 
+verified, language, createdOn, 
+description)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>432</x>
+      <y>1791</y>
+      <w>27</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;30.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>531</x>
+      <y>1872</y>
+      <w>180</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;models&gt;&gt;
+DiscordBot
+--
+-belongsTo: Customer
+-name: String
+-accentColor: String
+-clientId: int
+-host: String
+-hostingPriceHour: double
+-port: int
+-autoRestart: boolean
+-memory: int
+--
++DiscordBot(belongsTo, name, 
+accentColor, clientId, host
+hostingPriceHour, port,
+autoRestart)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>675</x>
+      <y>1449</y>
+      <w>126</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>Week 4</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>1872</x>
+      <y>1314</y>
+      <w>126</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>Week 3</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>2691</x>
+      <y>1125</y>
+      <w>126</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>Week 1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>2709</x>
+      <y>1368</y>
+      <w>126</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>Week 2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>612</x>
+      <y>1845</y>
+      <w>27</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;30.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>99</x>
+      <y>1224</y>
+      <w>189</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;data&gt;&gt;
+DAO&lt;T&gt;
+--
++getAll(): List&lt;T&gt;
++addOrUpdate(model: T): void
++remove(model: T): void
++save(): boolean
++load(): boolean
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>1359</y>
+      <w>189</w>
+      <h>117</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;data&gt;&gt;
+/CustomerDAO/
+--
+#customers: ArrayList&lt;Customer&gt;
+--
++getById(id: int)
++getAll(): List&lt;Customer&gt;
++addOrUpdate(customer: Customer): void
++remove(customer: Customer): void
+/+save(): boolean/
+/+load(): boolean/
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>198</x>
+      <y>1359</y>
+      <w>207</w>
+      <h>117</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;data&gt;&gt;
+/DiscordBotDAO/
+--
+#discordBots: ArrayList&lt;DiscordBot&gt;
+--
++getAllFor(customer: Customer): List&lt;DiscordBot&gt;
++getAll(): List&lt;DiscordBot&gt;
++addOrUpdate(discordBot: DiscordBot): void
++remove(discordBot: DiscordBot): void
+/+save(): boolean/
+/+load(): boolean/
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>1512</y>
+      <w>189</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;data&gt;&gt;
+/DummyCustomerDAO/
+--
++save(): boolean
++load(): boolean
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>198</x>
+      <y>1512</y>
+      <w>207</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;data&gt;&gt;
+/DummyDiscordBotDAO/
+--
++save(): boolean
++load(): boolean
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>297</x>
+      <y>1467</y>
+      <w>27</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>90</x>
+      <y>1467</y>
+      <w>27</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>198</x>
+      <y>1314</y>
+      <w>126</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;120.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>90</x>
+      <y>1314</y>
+      <w>99</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>90.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>909</x>
+      <y>486</y>
+      <w>216</w>
+      <h>360</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;views&gt;&gt;
+CustomerView
+--
+-mainPane: GridPane
+-topPane: BorderPane
+-topMenu: MenuBar
+-mainMenu: Menu
+-save: MenuItem
+-load: MenuItem
+-shutdown: MenuItem
+-leftTitle: Text
+-profileListView: ListView&lt;Customer&gt;
+-leftButtonContainer: HBox
+-removeButton: Button
+-switchButton: Button
+-centerTitle: Text
+-centerBox: VBox
+-customerName: TextField
+-customerProfileName: TextField
+-emailVerified: CheckBox
+-language: TextField
+-creation: DatePicker
+-description: TextArea
+-rightTitle: Text
+-rightBox: VBox
+-customerNameInput: TextField
+-custerProfileNameInput: TextField
+-languageInput: ComboBox&lt;String&gt;
+-descriptionInput: TextArea
+-createButton: Button
+-cancelButton: Button
+--
+#initializeView(): Parent</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>612</x>
+      <y>225</y>
+      <w>225</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;javafx.application&gt;&gt;
+MainApplication
+--
+-WIDTH: int
+-HEIGHT: int
+_-stage: Stage_
+_-customerDAO: TextCustomerDAO_
+_-discordBotDAO: TextDiscordBotDAO_
+--
++start(stage: Stage): void
+_+switchView(controller: Controller): void_
+_+getCustomerDAO(): CustomerDAO_
+_+getDiscordBotDAO(): DiscordBotDAO_
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1134</x>
+      <y>486</y>
+      <w>252</w>
+      <h>558</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;views&gt;&gt;
+DiscordBotView
+--
+-mainPane: GridPane
+-topPane: BorderPane
+-topMenu: MenuBar
+-mainMenu: Menu
+-save: MenuItem
+-load: MenuItem
+-shutdown: MenuItem
+-leftTitle: Text
+-leftBox: VBox
+-customerSelectorLabel: Label
+-customerSelector: ComboBox&lt;String&gt;
+-discordBotSelectorLabel: Label
+-discordBotListView: ListView&lt;DiscordBot&gt;
+-leftButtonContainer: HBox
+-removeButton: Button
+-switchButton: Button
+-centerTitle: Text
+-centerBox: VBox
+-nameLabel: Label
+-name: TextField
+-clientIdLabel: Label
+-clientId: TextField
+-hostLabel: Label
+-host: TextField
+-memoryLabel: Label
+-memory: TextField
+-autoRestartLabel: Label
+-autoRestart: CheckBox
+-colorLabel: Label
+-color: Rectangle
+-rightTitle: Text
+-rightBox: VBox
+-nameInputLabel: Label
+-nameInput: TextField
+-colorInputLabel: Label
+-colorInput: TextField
+-memoryInputLabel: Label
+-memoryInput: TextField
+-hostInputLabel: Label
+-hostInput: ComboBox&lt;String&gt;
+-portInputLabel: Label
+-portInput: TextField
+-autoRestartInputLabel: Label
+-autoRestartInput: CheckBox
+-rightButtonContainer: HBox
+-createBotButton: Button
+--
+#initializeView(): Parent</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1044</x>
+      <y>378</y>
+      <w>189</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;views&gt;&gt;
+View
+--
+-root: Parent
+--
+#initializeView(): Parent
++getRoot(): Parent</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>873</x>
+      <y>270</y>
+      <w>189</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>Main
+--
+_+main(args: String[]): void_
+_-showTegridy(): void_</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1143</x>
+      <y>459</y>
+      <w>108</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;100.0;30.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>999</x>
+      <y>459</y>
+      <w>135</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>130.0;10.0;10.0;30.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>828</x>
+      <y>279</y>
+      <w>63</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;50.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>873</x>
+      <y>225</y>
+      <w>189</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;javafx.application&gt;&gt;
+Application</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>828</x>
+      <y>234</y>
+      <w>63</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>50.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>792</x>
+      <y>423</y>
+      <w>270</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>280.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>612</x>
+      <y>387</y>
+      <w>189</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;controllers&gt;&gt;
+Controller
+--
++getView(): View</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>711</x>
+      <y>360</y>
+      <w>27</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;30.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>540</x>
+      <y>486</y>
+      <w>171</w>
+      <h>189</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;controllers&gt;&gt;
+CustomerController
+--
+-customerDAO: DAO&lt;Customer&gt;
+-discordBotDAO: DAO&lt;DiscordBot&gt;
+-customerView: CustomerView
+--
++CustomerController()
++loadProfiles(): void
++createCustomer(name: String, 
+profileName: String, 
+language: String, 
+description: String): void
++removeCustomer():void
++saveCustomer(): void
++cancelNewCustomer(): void
++getView(): View</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>720</x>
+      <y>486</y>
+      <w>180</w>
+      <h>270</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;controllers&gt;&gt;
+DiscordBotController
+--
+-discordBotDAO: DAO&lt;DiscordBot&gt;
+-customerDAO: DAO&lt;Customer&gt;
+-discordBotView: DiscordBotView
+--
++DiscordBotController(customer: Customer)
++loadProfiles(selectedCustomer: 
+Customer): void
++createDiscordBot(name: String, 
+color: String, host: String, 
+portRaw: String, 
+autoRestart: boolean, 
+memoryRaw: String): void
++removeDiscordBot(): void
++loadBots(selectedCustomer: 
+Customer): void
++selectProfile(): void
++saveBot(): void
++cancelBot(): void
++clearView(): void
++setViewInputs(discordBot: 
+DiscordBot): void
++getView(): View</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>720</x>
+      <y>441</y>
+      <w>108</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;100.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>603</x>
+      <y>441</y>
+      <w>108</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>100.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>540</x>
+      <y>693</y>
+      <w>171</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;models&gt;&gt;
+Customer
+--
+-name: String
+-profileName: String
+-verified: boolean
+-language: String
+-createdOn: LocalDate
+-description: String
+--
++Customer(name, profileName, 
+verified, language, createdOn, 
+description)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>720</x>
+      <y>774</y>
+      <w>180</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;models&gt;&gt;
+DiscordBot
+--
+-belongsTo: Customer
+-name: String
+-accentColor: String
+-clientId: int
+-host: String
+-hostingPriceHour: double
+-port: int
+-autoRestart: boolean
+-memory: int
+--
++DiscordBot(belongsTo, name, 
+accentColor, clientId, host
+hostingPriceHour, port,
+autoRestart)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>864</x>
+      <y>342</y>
+      <w>126</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>Week 5</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>801</x>
+      <y>747</y>
+      <w>27</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;30.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>288</x>
+      <y>117</y>
+      <w>189</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;data&gt;&gt;
+DAO&lt;T&gt;
+--
++getAll(): List&lt;T&gt;
++addOrUpdate(model: T): void
++remove(model: T): void
++save(): boolean
++load(): boolean
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>189</x>
+      <y>252</y>
+      <w>189</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;data&gt;&gt;
+/CustomerDAO/
+--
+#customers: ArrayList&lt;Customer&gt;
+--
++getById(id: int)
++getAll(): List&lt;Customer&gt;
++getForId(customer: Customer): int
++addOrUpdate(customer: Customer): void
++remove(customer: Customer): void
+/+save(): boolean/
+/+load(): boolean/
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>387</x>
+      <y>252</y>
+      <w>207</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;data&gt;&gt;
+/DiscordBotDAO/
+--
+#discordBots: ArrayList&lt;DiscordBot&gt;
+--
++getAllFor(customer: Customer): List&lt;DiscordBot&gt;
++getById(id: int)
++getAll(): List&lt;DiscordBot&gt;
++addOrUpdate(discordBot: DiscordBot): void
++remove(discordBot: DiscordBot): void
+/+save(): boolean/
+/+load(): boolean/
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>288</x>
+      <y>396</y>
+      <w>90</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;data&gt;&gt;
+DummyCustomerDAO
+--
++save(): boolean
++load(): boolean
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>495</x>
+      <y>405</y>
+      <w>99</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;data&gt;&gt;
+DummyDiscordBotDAO
+--
++save(): boolean
++load(): boolean
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>540</x>
+      <y>369</y>
+      <w>27</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>324</x>
+      <y>369</y>
+      <w>27</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;30.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>387</x>
+      <y>207</y>
+      <w>126</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;120.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>279</x>
+      <y>207</y>
+      <w>99</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>90.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>387</x>
+      <y>405</y>
+      <w>99</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;data&gt;&gt;
+TextDiscordBotDAO
+--
+_-FILENAME: String_
+--
++save(): boolean
++load(): boolean
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>432</x>
+      <y>369</y>
+      <w>27</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>189</x>
+      <y>396</y>
+      <w>90</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;data&gt;&gt;
+TextCustomerDAO
+--
+_-FILENAME: String_
+--
++save(): boolean
++load(): boolean
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>225</x>
+      <y>369</y>
+      <w>27</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;30.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>621</x>
+      <y>666</y>
+      <w>27</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;30.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2376</x>
+      <y>369</y>
+      <w>216</w>
+      <h>423</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;views&gt;&gt;
+CustomerView
+--
+-mainPane: GridPane
+-topPane: BorderPane
+-topMenu: MenuBar
+-mainMenu: Menu
+-save: MenuItem
+-load: MenuItem
+-shutdown: MenuItem
+-sortMenu: Menu
+-sortAscendingName: MenuItem
+-sortDescendingName: MenuItem
+-sortDescendingDate: MenuItem
+-sortAscendingDate: MenuItem
+-leftTitle: Text
+-profileListView: ListView&lt;Customer&gt;
+-leftButtonContainer: HBox
+-removeButton: Button
+-switchButton: Button
+-centerTitle: Text
+-centerBox: VBox
+-customerName: TextField
+-customerProfileName: TextField
+-emailVerified: CheckBox
+-language: TextField
+-creation: DatePicker
+-description: TextArea
+-rightTitle: Text
+-rightBox: VBox
+-customerNameInput: TextField
+-custerProfileNameInput: TextField
+-languageInput: ComboBox&lt;String&gt;
+-descriptionInput: TextArea
+-createButton: Button
+-cancelButton: Button
+--
+#initializeView(): Parent</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2079</x>
+      <y>81</y>
+      <w>225</w>
+      <h>171</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;javafx.application&gt;&gt;
+MainApplication
+--
+-WIDTH: int
+-HEIGHT: int
+_-MAX_INPUTLENGTH: int_
+_-stage: Stage_
+_-customerDAO: BinaryCustomerDAO_
+_-discordBotDAO: ObjectDiscordBotDAO_
+--
++start(stage: Stage): void
+_+switchView(controller: Controller): void_
+_+getCustomerDAO(): CustomerDAO_
+_+getDiscordBotDAO(): DiscordBotDAO_
+_+inputMax(stringProperty: StringProperty,_
+_maxLength: int): void_
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2601</x>
+      <y>369</y>
+      <w>252</w>
+      <h>558</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;views&gt;&gt;
+DiscordBotView
+--
+-mainPane: GridPane
+-topPane: BorderPane
+-topMenu: MenuBar
+-mainMenu: Menu
+-save: MenuItem
+-load: MenuItem
+-shutdown: MenuItem
+-leftTitle: Text
+-leftBox: VBox
+-customerSelectorLabel: Label
+-customerSelector: ComboBox&lt;String&gt;
+-discordBotSelectorLabel: Label
+-discordBotListView: ListView&lt;DiscordBot&gt;
+-leftButtonContainer: HBox
+-removeButton: Button
+-switchButton: Button
+-centerTitle: Text
+-centerBox: VBox
+-nameLabel: Label
+-name: TextField
+-clientIdLabel: Label
+-clientId: TextField
+-hostLabel: Label
+-host: TextField
+-memoryLabel: Label
+-memory: TextField
+-autoRestartLabel: Label
+-autoRestart: CheckBox
+-colorLabel: Label
+-color: Rectangle
+-rightTitle: Text
+-rightBox: VBox
+-nameInputLabel: Label
+-nameInput: TextField
+-colorInputLabel: Label
+-colorInput: TextField
+-memoryInputLabel: Label
+-memoryInput: TextField
+-hostInputLabel: Label
+-hostInput: ComboBox&lt;String&gt;
+-portInputLabel: Label
+-portInput: TextField
+-autoRestartInputLabel: Label
+-autoRestartInput: CheckBox
+-rightButtonContainer: HBox
+-createBotButton: Button
+--
+#initializeView(): Parent</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2511</x>
+      <y>261</y>
+      <w>189</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;views&gt;&gt;
+View
+--
+-root: Parent
+--
+#initializeView(): Parent
++getRoot(): Parent</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2340</x>
+      <y>162</y>
+      <w>189</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>Main
+--
+_+main(args: String[]): void_
+_-showTegridy(): void_</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2610</x>
+      <y>342</y>
+      <w>108</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;100.0;30.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2466</x>
+      <y>342</y>
+      <w>135</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>130.0;10.0;10.0;30.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2295</x>
+      <y>171</y>
+      <w>63</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;50.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2340</x>
+      <y>99</y>
+      <w>189</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;javafx.application&gt;&gt;
+Application</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2295</x>
+      <y>108</y>
+      <w>63</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>50.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2259</x>
+      <y>306</y>
+      <w>270</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>280.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2079</x>
+      <y>270</y>
+      <w>189</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;controllers&gt;&gt;
+Controller
+--
++getView(): View</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2178</x>
+      <y>243</y>
+      <w>27</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;30.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2007</x>
+      <y>369</y>
+      <w>171</w>
+      <h>189</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;controllers&gt;&gt;
+CustomerController
+--
+-customerDAO: DAO&lt;Customer&gt;
+-discordBotDAO: DAO&lt;DiscordBot&gt;
+-customerView: CustomerView
+--
++CustomerController()
+-selectProfile(): void
+-createCustomer(name: String, 
+profileName: String, 
+language: String, 
+description: String): void
+-removeCustomer():void
+-saveCustomer(): void
+-cancelNewCustomer(): void
++getView(): View</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2187</x>
+      <y>369</y>
+      <w>180</w>
+      <h>297</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;controllers&gt;&gt;
+DiscordBotController
+--
+-discordBotDAO: DAO&lt;DiscordBot&gt;
+-customerDAO: DAO&lt;Customer&gt;
+-discordBotView: DiscordBotView
+-df: DecimalFormat
+--
++DiscordBotController(customer: Customer)
+-loadProfiles(selectedCustomer: 
+Customer): void
+-createDiscordBot(name: String, 
+color: String, host: String, 
+portRaw: String, 
+autoRestart: boolean, 
+memoryRaw: String): void
+-removeDiscordBot(): void
+-loadBots(selectedCustomer: 
+Customer): void
+-selectProfile(): void
+-saveBot(): void
+-cancelBot(): void
+-clearView(): void
+-setEditInputs(discordBot: DiscordBot): void
+-setViewInputs(discordBot: DiscordBot): void
++getView(): View</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2187</x>
+      <y>324</y>
+      <w>108</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;100.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2070</x>
+      <y>324</y>
+      <w>108</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>100.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2007</x>
+      <y>729</y>
+      <w>171</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;models&gt;&gt;
+Customer
+--
+-name: String
+-profileName: String
+-verified: boolean
+-language: String
+-createdOn: LocalDate
+-description: String
+--
++Customer(name, profileName, 
+verified, language, createdOn, 
+description)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2187</x>
+      <y>684</y>
+      <w>180</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;models&gt;&gt;
+DiscordBot
+--
+-belongsTo: Customer
+-name: String
+-accentColor: String
+-clientId: int
+-host: String
+-hostingPriceHour: double
+-port: int
+-autoRestart: boolean
+-memory: int
+--
++DiscordBot(belongsTo, name, 
+accentColor, clientId, host
+hostingPriceHour, port,
+autoRestart)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>2331</x>
+      <y>225</y>
+      <w>126</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>Week 6</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2268</x>
+      <y>657</y>
+      <w>27</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;30.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1755</x>
+      <y>0</y>
+      <w>189</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;data&gt;&gt;
+DAO&lt;T&gt;
+--
++getAll(): List&lt;T&gt;
++addOrUpdate(model: T): void
++remove(model: T): void
++save(): boolean
++load(): boolean
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1656</x>
+      <y>135</y>
+      <w>189</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;data&gt;&gt;
+/CustomerDAO/
+--
+#customers: ArrayList&lt;Customer&gt;
+--
++getById(id: int)
++getAll(): List&lt;Customer&gt;
++getForId(customer: Customer): int
++addOrUpdate(customer: Customer): void
++remove(customer: Customer): void
+/+save(): boolean/
+/+load(): boolean/
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1854</x>
+      <y>135</y>
+      <w>207</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;data&gt;&gt;
+/DiscordBotDAO/
+--
+#discordBots: ArrayList&lt;DiscordBot&gt;
+--
++getAllFor(customer: Customer): List&lt;DiscordBot&gt;
++getById(id: int)
++getAll(): List&lt;DiscordBot&gt;
++addOrUpdate(discordBot: DiscordBot): void
++remove(discordBot: DiscordBot): void
+/+save(): boolean/
+/+load(): boolean/
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1755</x>
+      <y>279</y>
+      <w>90</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;data&gt;&gt;
+DummyCustomerDAO
+--
++save(): boolean
++load(): boolean
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1962</x>
+      <y>288</y>
+      <w>99</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;data&gt;&gt;
+DummyDiscordBotDAO
+--
++save(): boolean
++load(): boolean
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2007</x>
+      <y>252</y>
+      <w>27</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1791</x>
+      <y>252</y>
+      <w>27</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;30.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1854</x>
+      <y>90</y>
+      <w>126</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;120.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1746</x>
+      <y>90</y>
+      <w>99</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>90.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1854</x>
+      <y>288</y>
+      <w>90</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;data&gt;&gt;
+TextDiscordBotDAO
+--
+_-FILENAME: String_
+--
++save(): boolean
++load(): boolean
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1899</x>
+      <y>252</y>
+      <w>27</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1656</x>
+      <y>279</y>
+      <w>81</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;data&gt;&gt;
+TextCustomerDAO
+--
+_-FILENAME: String_
+--
++save(): boolean
++load(): boolean
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1692</x>
+      <y>252</y>
+      <w>27</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;30.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2088</x>
+      <y>549</y>
+      <w>27</w>
+      <h>198</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;200.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1701</x>
+      <y>360</y>
+      <w>90</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;data&gt;&gt;
+BinaryCustomerDAO
+--
+_-FILENAME: String_
+--
++save(): boolean
++load(): boolean
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1890</x>
+      <y>369</y>
+      <w>99</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;data&gt;&gt;
+ObjectDiscordBotDAO
+--
+_-FILENAME: String_
+--
++save(): boolean
++load(): boolean
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1737</x>
+      <y>252</y>
+      <w>27</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1944</x>
+      <y>252</y>
+      <w>27</w>
+      <h>135</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1656</x>
+      <y>630</y>
+      <w>189</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;java.util&gt;&gt;
+Comparator&lt;T&gt;
+--
++compare(o1: T, o2: T): int
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1773</x>
+      <y>459</y>
+      <w>189</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;comparators&gt;&gt;
+NameCustomerComparator
+--
++Comparator(sortDescending: boolean)
++compare(o1: Customer, o2: Customer): int
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1773</x>
+      <y>531</y>
+      <w>189</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;comparators&gt;&gt;
+DateCustomerComparator
+--
++Comparator(sortDescending: boolean)
++compare(o1: Customer, o2: Customer): int
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1971</x>
+      <y>576</y>
+      <w>189</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;comparators&gt;&gt;
+MemoryDiscordBotComparator
+--
++Comparator(sortDescending: boolean)
++compare(o1: DiscordBot, o2: DiscordBot): int
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1971</x>
+      <y>648</y>
+      <w>189</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;comparators&gt;&gt;
+NameDiscordBotComparator
+--
++Comparator(sortDescending: boolean)
++compare(o1: DiscordBot, o2: DiscordBot): int
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2394</x>
+      <y>819</y>
+      <w>72</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;java.io&gt;&gt;
+Serializable</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2133</x>
+      <y>342</y>
+      <w>108</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-&gt;</panel_attributes>
+    <additional_attributes>10.0;30.0;10.0;10.0;100.0;10.0;100.0;30.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1836</x>
+      <y>621</y>
+      <w>153</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;150.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1809</x>
+      <y>585</y>
+      <w>81</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;50.0;10.0;30.0;70.0;30.0;70.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1755</x>
+      <y>468</y>
+      <w>36</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;180.0;10.0;10.0;20.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1836</x>
+      <y>666</y>
+      <w>153</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;150.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1953</x>
+      <y>540</y>
+      <w>72</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;60.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1953</x>
+      <y>468</y>
+      <w>72</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;60.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2151</x>
+      <y>576</y>
+      <w>54</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;40.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2151</x>
+      <y>639</y>
+      <w>54</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;40.0;10.0;40.0;30.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2358</x>
+      <y>828</y>
+      <w>54</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>40.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>
