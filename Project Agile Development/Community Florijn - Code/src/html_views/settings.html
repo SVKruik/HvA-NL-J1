@@ -1,0 +1,269 @@
+<link href="../assets/css/pages/settings.css" rel="stylesheet">
+<div class="page-title">
+    <h4 data-translate="account-settings-title">Account Instellingen</h4>
+    <h6 class="page-subtext" data-translate="account-settings-subtext">Wijzig uw profiel en account instellingen</h6>
+</div>
+<div class="settings container">
+    <div class="settings box-content">
+        <section class="settings-tabs">
+            <ul class="settings-tabslist">
+                <li class="settings-tab" title="account">
+                    <i class="fa-solid fa-user"></i>
+                    <p data-translate="account-tab">Account</p>
+                </li>
+                <li class="settings-tab" title="password">
+                    <i class="fa-solid fa-lock"></i>
+                    <p data-translate="password-tab">Wachtwoord</p>
+                </li>
+                <li class="settings-tab" title="advanced">
+                    <i class="fa-solid fa-gear"></i>
+                    <p data-translate="advanced-tab">Geavanceerd</p>
+                </li>
+                <li class="settings-tab" title="accessibility">
+                    <i class="fa-solid fa-person-walking-with-cane"></i>
+                    <p data-translate="access-tab">Toegankelijkheid</p>
+                </li>
+                <li class="settings-tab" title="support">
+                    <i class="fa-regular fa-circle-question"></i>
+                    <p data-translate="support-tab">Help</p>
+                </li>
+            </ul>
+        </section>
+        <div class="settings-main">
+            <div class="settings-section">
+                <h5 class="title" data-translate="general-info-heading">Algemene Informatie</h5>
+                <section class="account-wrapper">
+                    <section class="account-main">
+                        <div class="account-names">
+                            <label class="account-fname">
+                                <p data-translate="first-name-label">Voornaam</p>
+                                <input name="Voornaam" id="first_name" maxlength="50" autocomplete="off" type="text"
+                                    required>
+                            </label>
+                            <label class="account-lname">
+                                <p data-translate="last-name-label">Achternaam</p>
+                                <input name="Achternaam" id="sur_name" maxlength="50" autocomplete="off" type="text"
+                                    required>
+                            </label>
+                        </div>
+                        <div class="account-info">
+                            <label class="account-email">
+                                <p data-translate="email-label">E-mailadres</p>
+                                <input name="E-mailadres" id="email" maxlength="320" autocomplete="off" type="email"
+                                    required>
+                            </label>
+                            <label class="account-username">
+                                <p data-translate="username-label">Gebruikersnaam</p>
+                                <section class="username-section">
+                                    <div class="username-icon">@</div>
+                                    <input name="Gebruikersnaam" id="user_name" maxlength="50" autocomplete="off"
+                                        type="text" required>
+                                </section>
+                            </label>
+                        </div>
+                        <label class="account-biography">
+                            <p data-translate="biography-label">Biografie</p>
+                            <textarea name="Biografie" id="biography" maxlength="300"></textarea>
+                        </label>
+                    </section>
+                    <form class="account-profile-picture" enctype="multipart/form-data">
+                        <div class="account-profile">
+                            <p data-translate="profile-picture-label">Profielfoto</p>
+                            <span class="account-profile-span">
+                                <img class="account-profile-image" alt="preview" />
+                                <section class="account-profile-img-buttons">
+                                    <button type="button" class="account-profile-img-button">
+                                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                                        <p data-translate="upload-button">Bestand uploaden</p>
+                                    </button>
+                                    <button type="button" class="account-profile-img-remove-button">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                </section>
+                                <input id="image" class="account-profile-input" type="file" name="Profielfoto"
+                                    accept=".png, .jpg, .jpeg" hidden>
+                            </span>
+                        </div>
+                    </form>
+                </section>
+                <section class="user-buttons">
+                    <button class="account save inverted" data-translate="save-button">Opslaan</button>
+                    <button class="account cancel" data-translate="cancel-button">Annuleren</button>
+                </section>
+            </div>
+            <div class="settings-section">
+                <h5 class="title" data-translate="change-password-heading">Wachtwoord veranderen</h5>
+                <section class="password-wrapper">
+                    <section class="password-main">
+                        <label class="password-current">
+                            <p data-translate="current-password-label">Huidig wachtwoord</p>
+                            <section class="password-field ">
+                                <input name="Huidig wachtwoord" id="current-password" maxlength="45" type="password"
+                                    autocomplete="off">
+                                <i class="bi bi-eye-fill"></i>
+                            </section>
+                        </label>
+                        <label class="password password-new">
+                            <p data-translate="new-password-label">Nieuw wachtwoord</p>
+                            <section class="password-field ">
+                                <input name="Nieuw wachtwoord" id="new-password" maxlength="45" type="password"
+                                    autocomplete="new-password">
+                                <i class="bi bi-eye-fill"></i>
+                            </section>
+                        </label>
+                        <label class="password password-confirm">
+                            <p data-translate="confirm-password-label">Herhaal nieuw wachtwoord</p>
+                            <section class="password-field ">
+                                <input name="Herhaal wachtwoord" id="confirm-password" maxlength="45" type="password"
+                                    autocomplete="new-password">
+                                <i class="bi bi-eye-fill"></i>
+                            </section>
+                        </label>
+                    </section>
+                    <section class="password-tips">
+                        <div class="password-tips-container">
+                            <h5 data-translate="settings-password-tips-header">Bescherm jouw account!</h5>
+                            <p data-translate="settings-password-tips-description">Om jouw account zo goed mogelijk te
+                                beschermen, is het essentieel om een sterk wachtwoord te kiezen.</p>
+                            <p data-translate="settings-password-tips-intro">Hier zijn enkele voorwaarden waaraan jouw
+                                wachtwoord moet voldoen:</p>
+                            <ul class="password-tips-list">
+                                <li>
+                                    <p data-translate="settings-password-tips-1">Kies een wachtwoord met een minimale
+                                        lengte
+                                        van 8 tekens.</p>
+                                </li>
+                                <li>
+                                    <p data-translate="settings-password-tips-2">Gebruik een mix van hoofdletters,
+                                        kleine
+                                        letters, cijfers en speciale tekens.</p>
+                                </li>
+                                <li>
+                                    <p data-translate="settings-password-tips-3">Gebruik geen voorspelbare woorden of
+                                        persoonlijke informatie.</p>
+                                </li>
+                                <li>
+                                    <p data-translate="settings-password-tips-4">Gebruik voor elk account een uniek
+                                        wachtwoord.</p>
+                                </li>
+                                <li>
+                                    <p data-translate="settings-password-tips-5">Verander jouw wachtwoord regelmatig.
+                                    </p>
+                                </li>
+                            </ul>
+                            <p data-translate="settings-password-tips-outro">Volg deze tips om ervoor te zorgen dat jouw
+                                account veilig blijft en beschermd is tegen hackers.</p>
+                        </div>
+                    </section>
+                </section>
+                <section class="user-buttons">
+                    <button class="password save inverted" data-translate="save-button">Opslaan</button>
+                    <button class="password cancel" data-translate="cancel-button">Annuleren</button>
+                </section>
+            </div>
+            <div class="settings-section">
+                <h5 class="title" data-translate="advanced-settings-heading">Geavanceerde instellingen</h5>
+                <section class="advanced-main">
+                    <div class="setting">
+                        <input id="interaction_mail" type="checkbox">
+                        <label for="interaction_mail">
+                            <h6 data-translate="notifications-label">Meldingen</h6>
+                            <p data-translate="notifications-description">Ontvang e-mails wanneer er met uw verhalen
+                                wordt
+                                geinteracteert.</p>
+                        </label>
+                    </div>
+                    <div class="setting">
+                        <input id="sotw_mail" type="checkbox">
+                        <label for="sotw_mail">
+                            <h6 data-translate="story-of-the-week-label">Verhaal van de Week</h6>
+                            <p data-translate="story-of-the-week-description">Ontvang e-mails wanneer er een nieuw
+                                verhaal van de
+                                week is uitgekozen.</p>
+                        </label>
+                    </div>
+                    <div class="setting">
+                        <input id="auto_translate" type="checkbox">
+                        <label for="auto_translate">
+                            <h6 data-translate="settings-automatic-translate-label">Automatisch Vertalen</h6>
+                            <p data-translate="settings-automatic-translate-description">Vertaal automatisch alle
+                                verhalen naar
+                                uw gekozen taal.</p>
+                        </label>
+                    </div>
+                    <div class="setting vertical">
+                        <label for="language">
+                            <h6 data-translate="language-label">Taal</h6>
+                            <p data-translate="language-description">Verander de taal van de webapplicatie naar eigen
+                                keuze.</p>
+                        </label>
+                        <select id="language">
+                            <option value="nl-NL">NL - Nederlands</option>
+                            <option value="en-US">US - English</option>
+                            <option value="es-ES">ES - Español</option>
+                            <option value="pt-PT">PT - Português</option>
+                            <option value="fr-FR">FR - Français</option>
+                            <option value="de-DE">DE - Deutsch</option>
+                            <option value="zh-CN">CN - 中國人</option>
+                            <option value="ru-RU">RU - Русский</option>
+                            <option value="ja-JP">JP - 日本</option>
+                            <option value="ar-MA">AR - عربي</option>
+                        </select>
+                    </div>
+                    <div class="setting vertical">
+                        <label for="account_delete">
+                            <h6 data-translate="delete-account-label">Account Verwijderen</h6>
+
+                            <p data-translate="delete-account-description">Bij het account verwijderen, worden al je
+                                gegevens, inclusief verhalen en
+                                opmerkingen, permanent verwijderd.</p>
+                        </label>
+                        <button id="account_delete" class="advanced delete" type="button"
+                            data-translate="delete-account-button">Account
+                            Verwijderen</button>
+                    </div>
+                </section>
+                <section class="user-buttons">
+                    <button class="advanced save inverted" data-translate="save-button">Opslaan</button>
+                    <button class="advanced cancel" data-translate="cancel-button">Annuleren</button>
+                </section>
+            </div>
+            <div class="settings-section">
+                <h5 class="title" data-translate="access-settings-heading">Toegankelijkheid</h5>
+                <section class="access-wrapper">
+                    <section class="access-main">
+                        <div class="setting">
+                            <input id="colorblind" type="checkbox">
+                            <label for="colorblind">
+                                <h6 data-translate="colorblindness-label">Kleurenblindheid</h6>
+                                <p data-translate="colorblindness-description">Schakel aangepaste kleurenmodus in voor
+                                    gebruikers met
+                                    kleurenblindheid.</p>
+                                <select id="colorblindmode">
+                                    <option value="protanopia">Protanopia</option>
+                                    <option value="deuteranopia">Deuteranopia</option>
+                                    <option value="tritanopia">Tritanopia</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="setting">
+                            <input id="high_contrast" type="checkbox">
+                            <label for="high_contrast">
+                                <h6 data-translate="high-contrast-label">Hoog contrast</h6>
+                                <p data-translate="high-contrast-description">Schakel hoog contrast modus in voor
+                                    verbeterde
+                                    zichtbaarheid.</p>
+                            </label>
+                        </div>
+                    </section>
+                    <img class="access-image" src="../assets/img/svg/Settings.svg" alt="Settings Illustration">
+                </section>
+
+                <section class="user-buttons">
+                    <button class="access save inverted" data-translate="save-button">Opslaan</button>
+                    <button class="access cancel" data-translate="cancel-button">Annuleren</button>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>

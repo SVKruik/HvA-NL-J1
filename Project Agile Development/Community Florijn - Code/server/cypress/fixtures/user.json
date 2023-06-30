@@ -1,0 +1,24 @@
+{
+    "data": {
+        "biography": "Hallo, dit is mijn biografie!",
+        "birthdate": "2023-05-02T00:00:00.000Z",
+        "creation_date": "2023-05-09T12:05:12.000Z",
+        "email": "stefan.kruik@hva.nl",
+        "email_verification": 1,
+        "first_name": "Stefan",
+        "gender": "M",
+        "password": "aaa",
+        "sur_name": "Kruik",
+        "user_email": "stefan.kruik@hva.nl",
+        "user_name": "PuffinKwadraat",
+        "user_type": 1,
+        "verification_pin": 277375
+    },
+    "settings": {
+        "result": [{
+            "interaction_mail": 1,
+            "language": "en-US",
+            "sotw_mail": 1
+        }]
+    }
+}

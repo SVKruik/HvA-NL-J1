@@ -1,0 +1,34 @@
+{
+    "name": "pad-server-app",
+    "displayName": "PAD server",
+    "description": "PAD server setup for HvA HBO-ICT",
+    "private": true,
+    "version": "2.0.0",
+    "engines": {
+        "node": ">=16.0.0 <17.0.0"
+    },
+    "devDependencies": {
+        "cypress": "^12.12.0",
+        "cypress-file-upload": "^5.0.8",
+        "nodemon": "2.0.20"
+    },
+    "dependencies": {
+        "body-parser": "1.20.1",
+        "cypress-file-upload": "^5.0.8",
+        "express": "4.18.2",
+        "morgan": "1.10.0",
+        "multer": "1.4.5-lts.1",
+        "mysql": "2.18.1",
+        "nodemailer": "^6.9.1",
+        "pm2": "^5.3.0",
+        "quill": "^1.3.7",
+        "translatte": "^3.0.1"
+    },
+    "scripts": {
+        "start": "nodemon server.js",
+        "cy:open": "pm2 start cypress-server.js --name cypress-server && cypress open && pm2 delete cypress-server",
+        "cy:run": "pm2 start cypress-server.js --name cypress-server && cypress run && pm2 delete cypress-server",
+        "cy:close": "cypress run --record false && pkill -f \"Cypress\"",
+        "e2e": "pm2 start cypress-server.js --name cypress-server && cypress run --record --key 76c50398-4181-45ca-be8b-6bdbb788b7e8 --browser chrome --headless --reporter junit --group 'PAD GitLab CI' --parallel --ci-build-id $CI_PIPELINE_ID && pm2 delete cypress-server"
+    }
+}

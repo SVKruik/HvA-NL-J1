@@ -1,0 +1,674 @@
+label p {
+    font-size: 18px;
+    font-family: 'Playfair Display';
+}
+
+label h6 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    text-align: left;
+}
+
+h5.title {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.settings.box-content {
+    padding: 0;
+    flex-direction: row;
+    min-height: 70vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.settings-tabs {
+    display: flex;
+    flex-direction: column;
+    /* flex-grow: 1; */
+    border-right: 1px solid var(--gray);
+    border-radius: 0;
+    width: max-content;
+}
+
+.settings-tab {
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    gap: 15px;
+    font-size: 18px;
+    padding: 15px 60px 15px 25px;
+    border-radius: 0;
+}
+
+.settings-tab:hover {
+    cursor: pointer;
+    background-color: var(--selection);
+}
+
+.settings-tabslist {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0;
+    box-sizing: border-box;
+    width: 300px;
+}
+
+.settings-main {
+    display: flex;
+    padding: 25px;
+    box-sizing: border-box;
+    flex-grow: 1;
+}
+
+.settings-subtitle {
+    text-align: left;
+}
+
+.settings input,
+.settings label,
+.settings textarea,
+.settings select {
+    display: block;
+}
+
+.settings input,
+.settings textarea,
+.settings select {
+    margin: 5px 0 5px 0;
+    height: 40px;
+    width: 100%;
+    color: var(--alt);
+    box-sizing: border-box;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.settings textarea {
+    font-size: 16px;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+}
+
+.settings label {
+    font-family: 'Playfair Display';
+    width: 100%;
+}
+
+.settings button {
+    height: 40px;
+    font-size: 15px;
+}
+
+.settings.title {
+    text-align: left;
+    padding: 10px 0 25px 0;
+    font-weight: bold;
+}
+
+.settings-section {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100%;
+    gap: 25px;
+    width: 100%;
+}
+
+.settings-section h5 {
+    font-family: "DM Sans", sans-serif;
+    font-weight: normal;
+}
+
+.settings input {
+    border-radius: 5px;
+    outline: none;
+}
+
+section.user-buttons {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    width: 100%;
+    flex-grow: 1;
+    gap: 5px;
+}
+
+.user-buttons button {
+    width: clamp(100px, 200px, 300px);
+}
+
+.user-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.account-main,
+.password-main,
+.support-main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+/* Settings Main Section */
+.account-wrapper {
+    display: flex;
+    gap: 10px;
+    width: 80%;
+}
+
+.account-names,
+.account-info {
+    display: flex;
+    flex-grow: 1;
+    gap: 10px;
+}
+
+.username-section {
+    display: flex;
+}
+
+.username-icon,
+input#user_name {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+input#user_name {
+    border-radius: 0 5px 5px 0;
+}
+
+.username-icon {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--gray);
+    background-color: var(--gray);
+    padding: 0 2px;
+    border-radius: 5px 0 0 5px;
+    box-sizing: border-box;
+    margin: 5px 0 5px 0;
+}
+
+label.account-biography {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    height: 100%;
+}
+
+.account-biography textarea {
+    flex-grow: 1;
+    margin: 5px 0 0 0;
+}
+
+label.account-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    height: 100%;
+    width: 300px;
+}
+
+#account-profile-picture {
+    display: flex;
+}
+
+.account-profile {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    gap: 5px;
+}
+
+.account-profile p {
+    font-family: 'Playfair Display';
+}
+
+.account-profile button p {
+    font-family: "DM Sans", sans-serif;
+}
+
+.account-profile input[type=file] {
+    display: none;
+    flex-grow: 1;
+    margin: 5px 0 0 0;
+    border: none;
+}
+
+.account-profile input[type=file]::-webkit-file-upload-button {
+    display: none;
+}
+
+.account-profile-span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px dashed var(--gray);
+    width: 250px;
+    height: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    flex-grow: 1;
+    gap: 10px;
+}
+
+.profile-image-exist {
+    border: 1px solid var(--gray);
+}
+
+
+.account-profile-image {
+    background-size: contain;
+    height: 250px;
+    width: 250px;
+    border-radius: 5px;
+}
+
+.account-profile-img-buttons {
+    display: flex;
+    gap: 5px;
+    width: 100%;
+}
+
+button.account-profile-img-button {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+button.account-profile-img-button p {
+    font-size: 16px;
+}
+
+.account-profile-img-remove-button {
+    flex-grow: 0.2;
+}
+
+.account-profile-img-remove-button:hover,
+.account-profile-img-remove-button:hover i {
+    background-color: var(--error);
+    color: var(--alt);
+}
+
+.account-picture-selection {
+    border: 1px solid var(--gray);
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    flex-grow: 1;
+}
+
+.account-picture-selection button {
+    width: 250px;
+    height: 50px;
+}
+
+.account-cancel,
+.password-cancel,
+.advanced-cancel,
+.access-cancel,
+.support-cancel {
+    background-color: var(--white);
+    color: var(--alt);
+}
+
+.account-cancel:hover,
+.password-cancel:hover,
+.advanced-cancel:hover,
+.access-cancel:hover,
+.support-cancel:hover {
+    background-color: var(--alt);
+    color: var(--main);
+}
+
+/* Settings Password Section */
+.password-main {
+    max-width: 450px;
+}
+
+section.password-field {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.password-field i {
+    margin: -30px;
+}
+
+.advanced-main,
+.access-main {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.password-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    width: 100%;
+}
+
+.password-tips {
+    border: 1px solid var(--border);
+    padding: 20px;
+    box-sizing: content-box;
+    max-width: 450px;
+    max-height: 480px;
+}
+
+.password-tips p,
+.password-tips h5 {
+    font-family: 'Playfair Display';
+    text-align: left;
+}
+
+.password-tips h5 {
+    font-weight: 600;
+}
+
+p[data-translate="settings-password-tips-description"] {
+    margin: 0 0 20px 0;
+}
+
+p[data-translate="settings-password-tips-intro"] {
+    margin: 0 0 20px 0;
+}
+
+ul.password-tips-list li {
+    margin: 0 0 0 35px;
+    list-style-type: unset;
+}
+
+p[data-translate="settings-password-tips-outro"] {
+    margin: 20px 0 0 0;
+}
+
+/* Settings Advanced Section */
+.advanced-main input,
+.advanced-main select {
+    display: block;
+}
+
+.setting {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.setting.vertical {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.setting.vertical label {
+    pointer-events: none;
+}
+
+.setting input {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    overflow: hidden;
+}
+
+.setting select {
+    width: clamp(50px, 100%, 400px);
+}
+
+.delete {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    margin: 5px 0 5px 0;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: var(--error);
+}
+
+.delete:hover {
+    background-color: brown;
+    color: var(--alt);
+}
+
+/* Settings Support Section */
+section.support-main {
+    display: block;
+    flex-grow: .5;
+}
+
+.support-message {
+    display: flex;
+}
+
+.support-message textarea {
+    height: 100%;
+    min-height: 150px;
+}
+
+.support-wrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.support-tips {
+    border: 1px solid var(--gray);
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 15px;
+    max-width: 400px;
+}
+
+.support-tips h6 {
+    text-align: left;
+    font-weight: 600;
+    font-size: 22px;
+    margin: 5px 0;
+}
+
+.support-tips p {
+    font-family: 'Playfair Display';
+    font-size: 16px;
+}
+
+/* Settings Access Section */
+.access-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 95%;
+    gap: 20px;
+}
+
+.access-image {
+    /* display: none; */
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+}
+
+/* Important Rulesets  */
+.selected-tab {
+    background-color: var(--gray);
+}
+
+.selected-section {
+    display: flex;
+}
+
+.inactive {
+    display: none;
+}
+
+.account-profile span.dragover {
+    filter: brightness(50%);
+    border: 1px dashed var(--gray);
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1368px) {}
+
+@media only screen and (max-width: 1280px) {
+    section.password-main {
+        width: 100%;
+    }
+
+    section.support-main {
+        flex-grow: 1;
+    }
+
+    button.account-profile-img-button p {
+        font-size: 16px;
+    }
+
+    .account-wrapper {
+        width: 100%;
+        max-width: unset;
+    }
+
+    .account-profile-image {
+        height: 300px;
+        width: 100%;
+    }
+
+    .account-profile-span {
+        width: unset;
+        height: unset;
+        flex-direction: row;
+    }
+
+    .account-profile-img-button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .account-profile-img-buttons {
+        flex-direction: row;
+    }
+
+    .selected-section {
+        height: 100%;
+    }
+
+    .settings-section {
+        flex-grow: 1;
+        width: 100%;
+    }
+
+    .box-content {
+        gap: 0;
+    }
+
+    .settings.box-content {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .settings-tabs {
+        border: none;
+        width: 100%;
+        flex-grow: unset;
+    }
+
+    .settings-tab {
+        align-items: center;
+        justify-content: center;
+        flex-grow: 1;
+        padding: 25px;
+    }
+
+    .settings-tabslist {
+        width: 100%;
+        height: 75px;
+        flex-direction: row;
+        padding: unset;
+        justify-content: space-between;
+    }
+
+    .settings button {
+        height: 45px;
+    }
+
+    .account-wrapper {
+        flex-direction: column-reverse;
+    }
+
+    #biography {
+        min-height: 200px;
+    }
+}
+
+@media only screen and (max-width: 960px) {}
+
+@media only screen and (max-width: 860px) {
+    .account-profile-span {
+        flex-direction: column;
+    }
+
+    .settings-tab p:not(.settings-tab.selected-tab) {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .password-wrapper {
+        flex-wrap: wrap;
+    }
+
+    @media only screen and (max-width: 670px) {
+        .account-profile-image {
+            height: 350px;
+            width: 350px;
+        }
+    }
+
+    @media only screen and (max-width: 550px) {
+        .account-profile-image {
+            height: 100%;
+            width: 100%;
+        }
+
+        .account-names,
+        .account-info {
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .password-tips,
+        .account-wrapper {
+            width: 100%;
+            max-width: unset;
+            max-height: unset;
+        }
+    }
+
+
+    @media only screen and (max-width: 460px) {
+        .account-profile-image {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

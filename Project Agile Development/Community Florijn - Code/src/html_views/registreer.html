@@ -1,0 +1,81 @@
+<link href="/assets/css/pages/login.css" rel="stylesheet" />
+<link href="/assets/css/defaults.css" rel="stylesheet" />
+
+<img id="background-img" src="../assets/img/background/authentication/FlorijnFlat.png" class="background-image-regis">
+<div class="container-register">
+  <div class="login-box">
+    <h1 data-translate="register-title" class="Title">REGISTREER</h1>
+    <form class="big-container">
+
+
+      <label data-translate="register-name" for="firstname">Voornaam</label>
+      <input type="text" id="firstname" name="firstname" required>
+
+      <label data-translate="register-surname" for="lastname">Achternaam</label>
+      <input type="text" id="lastname" name="lastname" required>
+
+      <label data-translate="register-gender" for="gender">Geslacht</label>
+      <select id="gender" name="gender">
+        <option data-translate="register-gender-1" value="M">Man</option>
+        <option data-translate="register-gender-2" value="F">Vrouw</option>
+        <option data-translate="register-gender-3" value="X">Anders</option>
+      </select>
+
+      <label data-translate="register-birthday" for="birthdate">Geboortedatum</label>
+      <input type="date" id="birthdate" name="birthdate" required>
+
+      <label data-translate="register-language" for="language">Taal</label>
+      <select id="language">
+        <option value="nl-NL">NL - Nederlands</option>
+        <option value="en-US">US - English</option>
+        <option value="es-ES">ES - Español</option>
+        <option value="pt-PT">PT - Português</option>
+        <option value="fr-FR">FR - Français</option>
+        <option value="de-DE">DE - Deutsch</option>
+        <option value="ru-RU">RU - Русский</option>
+        <option value="zh-CN">CN - 中國人</option>
+        <option value="ja-JP">JP - 日本</option>
+        <option value="ar-MA">AR - عربي</option>
+      </select>
+
+      <label data-translate="register-email" for="email">E-mailadres</label>
+      <input type="email" id="email" name="email" required>
+
+      <label data-translate="register-password" for="password">Wachtwoord</label>
+      <input type="password" id="password" name="password" required>
+
+
+      <label data-translate="register-password-repeat" for="repeat-password">Herhaal Wachtwoord</label>
+      <input type="password" id="repeat-password" name="repeat-password" required>
+
+
+
+      <label for="privacy-policy">
+        <input type="checkbox" id="privacy-policy" name="privacy-policy" required>
+        <p data-translate="register-privacy">Ik heb het Privacy- en cookiebeleid gelezen en ga hiermee akkoord.</p>
+      </label>
+
+      <p class="error"></p>
+      <button data-translate="register-submit-1" class="inverted" id="button">Volgende</button>
+
+    </form>
+
+    <form id="newcontainer" class="newcontainer">
+      <label data-translate="register-profile-picture">Profielfoto</label>
+      <img id="profileImage-preview" src="../assets/img/icons/default.svg" alt="default.png">
+
+      <label data-translate="register-edit" for="image" class="button">Wijzigen</label>
+      <input type="file" id="image" name="image" accept=".png, .jpg, .jpeg">
+
+      <label data-translate="register-username" for="username">Gebruikersnaam</label>
+      <input type="text" id="username" name="username" pattern="[a-zA-Z0-9]+" required>
+
+      <label data-translate="register-biography" for="biography">Biografie</label>
+      <textarea rows="4" maxlength="300" cols="50" id="biography" placeholder="Hier komt jouw biografie"></textarea>
+
+      <p class="error2"></p>
+      <button data-translate="register-submit-2" id="newbutton">Registreer</button>
+    </form>
+
+  </div>
+</div>

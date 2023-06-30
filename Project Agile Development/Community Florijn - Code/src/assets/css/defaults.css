@@ -1,0 +1,693 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+:root {
+    --main: #FFFFFF;
+    --alt: #000000;
+    --alt-l: #636363;
+    --gray: #8C8C8C;
+    --border: #C8C8C8;
+    --selection: #C8C8C8;
+    --fill: #EFEFEF;
+    --error: #EC6565;
+    --warning: #FAAB78;
+    --confirm: #829460;
+    --gradient-main: 255, 255, 255;
+    --gradient-alt: 19, 19, 19;
+    --url: #5F9EA0;
+    --tag-color-1: #FA9189;
+    --tag-color-2: #7CAE7C;
+    --tag-color-3: #ffeb8e;
+    --tag-color-4: #B3F5BC;
+    --tag-color-5: #D6F6FF;
+    --tag-color-6: #E2CBF7;
+    --tag-color-7: #D1BDFF;
+    --tag-color-8: #A2D2D9;
+    --tag-color-9: #D9BBA2;
+    --tag-color-10: #D9A2A2;
+    --tag-color-11: #7286D3;
+    --tag-color-12: #C98474;
+    --tag-color-13: #AF7AB3;
+    --tag-color-14: #576F72;
+    --tag-color-15: #AC7088;
+    --position-first: #DDC055;
+    --position-second: #828282;
+    --position-third: #594000;
+}
+
+/* Body */
+* {
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+    font-weight: 400;
+    font-family: 'DM Sans', sans-serif;
+    transition: 0.4s ease-out;
+}
+
+img {
+    user-select: none;
+}
+
+p,
+a,
+li,
+legend,
+i,
+div,
+select,
+option,
+label {
+    color: var(--alt);
+}
+
+select,
+input,
+textarea {
+    background-color: var(--main);
+    border: 1px solid var(--border);
+}
+
+.disabled {
+    pointer-events: none;
+    appearance: none;
+    user-select: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 90vw;
+    height: max-content;
+    margin: auto;
+}
+
+.box-content {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-evenly;
+    border: 1px solid var(--gray);
+    box-sizing: border-box;
+    padding: 15px;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.page-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 90vw;
+    box-sizing: border-box;
+    padding: 15px;
+    margin: 0 auto 20px;
+}
+
+.page-subtext {
+    text-align: left;
+    max-width: 600px;
+    font-style: italic;
+}
+
+body {
+    background-color: var(--main);
+    overflow-x: hidden;
+}
+
+li {
+    list-style-type: none;
+}
+
+button,
+a,
+select {
+    cursor: pointer;
+}
+
+a {
+    color: var(--alt);
+    text-decoration: none;
+}
+
+button {
+    background-color: var(--main);
+    color: var(--alt);
+    border: 1px solid var(--border);
+    user-select: none;
+}
+
+button:hover {
+    background-color: var(--alt);
+}
+
+button:hover,
+button:hover i,
+button:hover p {
+    color: var(--main);
+}
+
+button.inherit {
+    background-color: inherit;
+    color: inherit;
+}
+
+button.inverted {
+    background-color: var(--alt);
+    color: var(--main);
+    border-color: var(--border);
+}
+
+button.inverted p,
+button.inverted i {
+    color: var(--main);
+}
+
+button.inverted:hover {
+    background-color: var(--main);
+    color: var(--alt);
+}
+
+button.inverted:hover,
+button.inverted:hover i,
+button.inverted:hover p {
+    color: var(--alt);
+}
+
+strong {
+    font-weight: 600;
+}
+
+img {
+    object-fit: cover;
+}
+
+b {
+    font-weight: bold;
+}
+
+/* Modifiers */
+.story-modifier {
+    border-radius: 2px;
+    width: 25px;
+    display: flex;
+    height: 25px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.story-modifier-content {
+    text-align: center;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+
+/* Tooltip */
+.tooltip {
+    position: relative;
+}
+
+.tooltip-text {
+    display: none;
+    width: 120px;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip-text::after {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+}
+
+/* Inputs */
+input[type=checkbox] {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+    border-radius: 2px;
+    border: 1px solid var(--gray);
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    display: flex;
+    place-content: center;
+    align-items: center;
+}
+
+input[type=checkbox]:checked::before {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: "✔";
+    color: var(--alt);
+    box-shadow: none;
+}
+
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=tel],
+input[type=number],
+textarea {
+    background-color: var(--main);
+    color: var(--alt);
+    outline: none;
+    resize: none;
+    border-radius: 5px;
+}
+
+select {
+    border-radius: 5px;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Playfair Display', sans-serif;
+    text-align: center;
+    color: var(--alt);
+}
+
+h1 {
+    font-size: 96px;
+    font-weight: 500;
+    line-height: 130px;
+}
+
+h2 {
+    font-size: 80px;
+    line-height: 110px;
+}
+
+h3 {
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 60px;
+}
+
+h4 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+}
+
+h5 {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 27px;
+}
+
+h6 {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+p.title {
+    font-size: 24px;
+}
+
+p.classy {
+    font-family: 'Playfair Display', sans-serif;
+}
+
+/* Labels */
+p,
+label {
+    font-size: 18px;
+    color: var(--alt);
+}
+
+label {
+    display: flex;
+    align-items: center;
+}
+
+label span {
+    margin-top: -2px;
+    font-size: 18px;
+    text-overflow: ellipsis;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--fill);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--border);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--border);
+}
+
+@media (prefers-color-scheme: dark) {
+
+    :root {
+        --main: #131313;
+        --alt: #FFFFFF;
+        --alt-l: #B1B1B1;
+        --gray: #8C8C8C;
+        --border: #4B4B4B;
+        --selection: #4B4B4B;
+        --fill: #292929;
+        --error: #EC6565;
+        --warning: #FAAB78;
+        --confirm: #829460;
+        --gradient-main: 19, 19, 19;
+        --gradient-alt: 255, 255, 255;
+        --url: #5F9EA0;
+        --tag-color-1: #FF7B6B;
+        --tag-color-2: #57BC58;
+        --tag-color-3: #FAFF72;
+        --tag-color-4: #84FF95;
+        --tag-color-5: #BCFCFF;
+        --tag-color-6: #F1C3FF;
+        --tag-color-7: #DCB5FF;
+        --tag-color-8: #7BDCEA;
+        --tag-color-9: #d19869;
+        --tag-color-10: #FF9696;
+        --tag-color-11: #5E85FF;
+        --tag-color-12: #FF7656;
+        --tag-color-13: #bb58c3;
+        --tag-color-14: #389aa7;
+        --tag-color-15: #D96191;
+        --position-first: #FFDE69;
+        --position-second: #828282;
+        --position-third: #594000;
+    }
+
+    :root.high-contrast {
+        --main: #000000;
+        --gradient-main: 00, 00, 00;
+    }
+}
+
+/* Important CSS Rules  */
+.alert-container {
+    position: fixed;
+    top: 100px;
+    right: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    gap: 20px;
+    z-index: 3;
+    padding: 10px;
+}
+
+.alert-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+    gap: 20px;
+}
+
+.alert-box {
+    background-color: var(--main);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 10px 10px 10px 20px;
+    border: 1px solid var(--gray);
+    text-align: left;
+    width: 400px;
+    user-select: none;
+}
+
+.alert-graphic {
+    font-size: 44px;
+}
+
+.alert-title {
+    text-align: left;
+    font-family: 'DM Sans';
+    font-size: 21px;
+}
+
+.alert-text {
+    font-family: 'Playfair Display';
+}
+
+.alert-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.alert-buttons {
+    display: flex;
+    gap: 5px;
+    margin: 5px 0 0 0;
+}
+
+button.alert-confirm:hover {
+    background-color: var(--confirm);
+    color: var(--alt);
+    border: 1px solid var(--border);
+}
+
+button.alert-cancel:hover {
+    background-color: var(--error);
+    color: var(--alt);
+    border: 1px solid var(--border);
+}
+
+.alert-button {
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 5px;
+    width: 100%;
+}
+
+.alert-close {
+    color: var(--gray);
+    cursor: pointer;
+    align-self: self-start;
+}
+
+@keyframes popup-frames {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes remove-frames {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
+
+.popup-animation {
+    animation: popup-frames 0.5s ease forwards;
+}
+
+.remove-animation {
+    animation: remove-frames 0.5s ease forwards;
+}
+
+input.invalid,
+textarea.invalid,
+div.invalid,
+section.invalid,
+select.invalid,
+button.invalid {
+    border: 1px solid var(--error) !important;
+}
+
+.invalid:not(.no-shake) {
+    animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-5px);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+
+    75% {
+        transform: translateX(-5px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .alert-box {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .alert-box {
+        width: 275px;
+    }
+}
+
+/* High Contrast Styling */
+:root.high-contrast {
+    --border: var(
+    --alt);
+    --error: #FF0000;
+    --warning: #FFFF00;
+    --confirm: #00FF00;
+    --url: #00FFFF;
+    --tag-color-1: #FF7B6B;
+    --tag-color-2: #57BC58;
+    --tag-color-3: #cbcf5d;
+    --tag-color-4: #84FF95;
+    --tag-color-5: #BCFCFF;
+    --tag-color-6: #F1C3FF;
+    --tag-color-7: #DCB5FF;
+    --tag-color-8: #7BDCEA;
+    --tag-color-9: #F2B684;
+    --tag-color-10: #FF9696;
+    --tag-color-11: #5E85FF;
+    --tag-color-12: #FF7656;
+    --tag-color-13: #D56BDD;
+    --tag-color-14: #44747A;
+    --tag-color-15: #D96191;
+    --position-first: #c3ad62;
+    --position-second: #828282;
+    --position-third: #594000;
+}
+
+.high-contrast input[type=text],
+.high-contrast input[type=password],
+.high-contrast input[type=email],
+.high-contrast input[type=tel],
+.high-contrast input[type=number],
+.high-contrast textarea {
+    border: 1px solid var(--alt);
+}
+
+/* Voor Protanopia (Moeilijkheid om rood te zien) */
+:root.protanopia {
+    --error: #668899;
+    --warning: #998866;
+    --confirm: #669966;
+    --url: #555599;
+    --tag-color-1: #998855;
+    --tag-color-2: #559988;
+    --tag-color-3: #889999;
+    --tag-color-4: #995566;
+    --tag-color-5: #669999;
+    --tag-color-6: #763c3c;
+    --tag-color-7: #556699;
+    --tag-color-8: #666699;
+    --tag-color-9: #996655;
+    --tag-color-10: #558899;
+    --tag-color-11: #556688;
+    --tag-color-12: #889955;
+    --tag-color-13: #665588;
+    --tag-color-14: #555588;
+    --tag-color-15: #996688;
+    --position-first: #997755;
+    --position-second: #666666;
+    --position-third: #554400;
+}
+
+/* Voor Deuteranopia (Moeilijkheid om groen te zien) */
+:root.deuteranopia {
+    --error: #BB6060;
+    --warning: #D68851;
+    --confirm: #5B7760;
+    --url: #4D7878;
+    --tag-color-1: #BB5A6A;
+    --tag-color-2: #3D777F;
+    --tag-color-3: #D5BD61;
+    --tag-color-4: #59BD80;
+    --tag-color-5: #79A7BD;
+    --tag-color-6: #BD7FE5;
+    --tag-color-7: #A577D5;
+    --tag-color-8: #5199B6;
+    --tag-color-9: #BD8261;
+    --tag-color-10: #BD6877;
+    --tag-color-11: #3E4FBD;
+    --tag-color-12: #BD5648;
+    --tag-color-13: #A55ED5;
+    --tag-color-14: #375F68;
+    --tag-color-15: #A55E85;
+    --position-first: #BD9D50;
+    --position-second: #606070;
+    --position-third: #404010;
+}
+
+/* Voor Tritanopia (Moeilijkheid om blauw te zien) */
+:root.tritanopia {
+    --error: #8F6565;
+    --warning: #A28E88;
+    --confirm: #748270;
+    --url: #546E8E;
+    --tag-color-1: #8F6B7B;
+    --tag-color-2: #567E66;
+    --tag-color-3: #A2A282;
+    --tag-color-4: #709FA0;
+    --tag-color-5: #8CA6B2;
+    --tag-color-6: #A27FAF;
+    --tag-color-7: #9270B2;
+    --tag-color-8: #628D9A;
+    --tag-color-9: #A2787E;
+    --tag-color-10: #8F6877;
+    --tag-color-11: #545A9F;
+    --tag-color-12: #8F6166;
+    --tag-color-13: #9256B2;
+    --tag-color-14: #445A70;
+    --tag-color-15: #92567F;
+    --position-first: #A28C60;
+    --position-second: #626272;
+    --position-third: #404810;
+}

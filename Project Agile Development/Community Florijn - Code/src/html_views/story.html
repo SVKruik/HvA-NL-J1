@@ -1,0 +1,490 @@
+<link href="../assets/css/pages/story.css" rel="stylesheet">
+
+<div class="page-title">
+    <h4 data-translate="navigation-story">Verhalen</h4>
+    <h6 data-translate="view-description-story" class="page-subtext">Lees verhalen en deel jouw mening</h6>
+</div>
+<button class="scroll-button scroll-button-hidden"><i class="fa-solid fa-arrow-up"></i></button>
+<section class="content-container">
+    <!-- Filters -->
+    <section class="filter-container">
+        <div class="button-close-wrapper filter-spec">
+            <h5 data-translate="story-filter-header">Zoekfilters</h5>
+            <button id="filter-close" class="fold-out-close"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="filter-tag">
+            <div class="filter-title">
+                <h5 data-translate="story-header-tags">Tags</h5>
+                <i class="bi bi-caret-down-fill" id="filter-tag-fold"></i>
+            </div>
+            <ul class="filter-list">
+                <li class="filter-list-item">
+                    <div class="filter-form">
+                        <label>
+                            <input id="tagChk-1" name="tag" type="checkbox" value="1">
+                            <span id="tagLbl-1" data-translate="story-tag-1" class="checkmark">Kort</span>
+                        </label>
+                    </div>
+                    <div class="tag-color" id="tagNr-1"></div>
+                </li>
+                <li class="filter-list-item">
+                    <div class="filter-form">
+                        <label>
+                            <input id="tagChk-2" name="tag" type="checkbox" value="2">
+                            <span id="tagLbl-2" data-translate="story-tag-2" class="checkmark">Lang</span>
+                        </label>
+                    </div>
+                    <div class="tag-color" id="tagNr-2"></div>
+                </li>
+                <li class="filter-list-item">
+                    <div class="filter-form">
+                        <label>
+                            <input id="tagChk-3" name="tag" type="checkbox" value="3">
+                            <span id="tagLbl-3" data-translate="story-tag-3" class="checkmark">Vraag</span>
+                        </label>
+                    </div>
+                    <div class="tag-color" id="tagNr-3"></div>
+                </li>
+                <li class="filter-list-item">
+                    <div class="filter-form">
+                        <label>
+                            <input id="tagChk-4" name="tag" type="checkbox" value="4">
+                            <span id="tagLbl-4" data-translate="story-tag-4" class="checkmark">Uitnodiging</span>
+                        </label>
+                    </div>
+                    <div class="tag-color" id="tagNr-4"></div>
+                </li>
+                <li class="filter-list-item">
+                    <div class="filter-form">
+                        <label>
+                            <input id="tagChk-5" name="tag" type="checkbox" value="5">
+                            <span id="tagLbl-5" data-translate="story-tag-5" class="checkmark">Evenement</span>
+                        </label>
+                    </div>
+                    <div class="tag-color" id="tagNr-5"></div>
+                </li>
+                <li class="filter-list-item">
+                    <div class="filter-form">
+                        <label>
+                            <input id="tagChk-6" name="tag" type="checkbox" value="6">
+                            <span id="tagLbl-6" data-translate="story-tag-6" class="checkmark">Historie</span>
+                        </label>
+                    </div>
+                    <div class="tag-color" id="tagNr-6"></div>
+                </li>
+                <li class="filter-list-item">
+                    <div class="filter-form">
+                        <label>
+                            <input id="tagChk-7" name="tag" type="checkbox" value="7">
+                            <span id="tagLbl-7" data-translate="story-tag-7" class="checkmark">Heden</span>
+                        </label>
+                    </div>
+                    <div class="tag-color" id="tagNr-7"></div>
+                </li>
+                <li class="filter-list-item">
+                    <div class="filter-form">
+                        <label>
+                            <input id="tagChk-8" name="tag" type="checkbox" value="8">
+                            <span id="tagLbl-8" data-translate="story-tag-8" class="checkmark">Florijn</span>
+                        </label>
+                    </div>
+                    <div class="tag-color" id="tagNr-8"></div>
+                </li>
+                <li class="filter-list-item">
+                    <div class="filter-form">
+                        <label>
+                            <input id="tagChk-9" name="tag" type="checkbox" value="9">
+                            <span id="tagLbl-9" data-translate="story-tag-9" class="checkmark">Bijlmer</span>
+                        </label>
+                    </div>
+                    <div class="tag-color" id="tagNr-9"></div>
+                </li>
+                <li class="filter-list-item">
+                    <div class="filter-form">
+                        <label>
+                            <input id="tagChk-10" name="tag" type="checkbox" value="10">
+                            <span id="tagLbl-10" data-translate="story-tag-10" class="checkmark">Milieu</span>
+                        </label>
+                    </div>
+                    <div class="tag-color" id="tagNr-10"></div>
+                </li>
+                <li class="filter-list-item">
+                    <div class="filter-form">
+                        <label>
+                            <input id="tagChk-11" name="tag" type="checkbox" value="11">
+                            <span id="tagLbl-11" data-translate="story-tag-11" class="checkmark">Kunst</span>
+                        </label>
+                    </div>
+                    <div class="tag-color" id="tagNr-11"></div>
+                </li>
+                <li class="filter-list-item">
+                    <div class="filter-form">
+                        <label>
+                            <input id="tagChk-12" name="tag" type="checkbox" value="12">
+                            <span id="tagLbl-12" data-translate="story-tag-12" class="checkmark">Cultuur</span>
+                        </label>
+                    </div>
+                    <div class="tag-color" id="tagNr-12"></div>
+                </li>
+                <li class="filter-list-item">
+                    <div class="filter-form">
+                        <label>
+                            <input id="tagChk-13" name="tag" type="checkbox" value="13">
+                            <span id="tagLbl-13" data-translate="story-tag-13" class="checkmark">Sociale Kwestie</span>
+                        </label>
+                    </div>
+                    <div class="tag-color" id="tagNr-13"></div>
+                </li>
+                <li class="filter-list-item">
+                    <div class="filter-form">
+                        <label>
+                            <input id="tagChk-14" name="tag" type="checkbox" value="14">
+                            <span id="tagLbl-14" data-translate="story-tag-14" class="checkmark">Buurtnieuws</span>
+                        </label>
+                    </div>
+                    <div class="tag-color" id="tagNr-14"></div>
+                </li>
+                <li class="filter-list-item">
+                    <div class="filter-form">
+                        <label>
+                            <input id="tagChk-15" name="tag" type="checkbox" value="15">
+                            <span id="tagLbl-15" data-translate="story-tag-15" class="checkmark">LGBTQ+</span>
+                        </label>
+                    </div>
+                    <div class="tag-color" id="tagNr-15"></div>
+                </li>
+            </ul>
+        </div>
+        <div class="filter-sort">
+            <div class="filter-title">
+                <h5 data-translate="story-header-sort">Sorteren Op</h5>
+                <i class="bi bi-caret-down-fill" id="filter-sort-fold"></i>
+            </div>
+            <form class="filter-radio-form">
+                <input type="radio" id="sortRadio1" value="like-desc" name="sort">
+                <label for="sortRadio1" data-translate="story-sort-like-desc">Stemmen Aflopend</label>
+
+                <input type="radio" id="sortRadio2" value="like-asc" name="sort">
+                <label for="sortRadio2" data-translate="story-sort-like-asc">Stemmen Oplopend</label>
+
+                <input type="radio" id="sortRadio3" value="comm-desc" name="sort">
+                <label for="sortRadio3" data-translate="story-sort-comment-desc">Commentaar Aflopend</label>
+
+                <input type="radio" id="sortRadio4" value="comm-asc" name="sort">
+                <label for="sortRadio4" data-translate="story-sort-comment-asc">Commentaar Oplopend</label>
+
+                <input type="radio" id="sortRadio5" value="date-desc" name="sort">
+                <label for="sortRadio5" data-translate="story-sort-date-desc">Likes Aflopend</label>
+
+                <input type="radio" id="sortRadio6" value="date-asc" name="sort">
+                <label for="sortRadio6" data-translate="story-sort-date-asc">Likes Aflopend</label>
+            </form>
+        </div>
+        <div class="filter-modifier">
+            <div class="filter-title">
+                <h5 data-translate="story-header-modifier">Instellingen</h5>
+                <i class="bi bi-caret-down-fill" id="filter-modifier-fold"></i>
+            </div>
+            <ul class="filter-list">
+                <li class="filter-list-item">
+                    <div class="filter-form">
+                        <label>
+                            <input id="modifier-1" name="modifier" type="checkbox" value="1">
+                            <span data-translate="story-modifier-1" class="checkmark">Geverifieerd</span>
+                        </label>
+                    </div>
+                </li>
+                <li class="filter-list-item">
+                    <div class="filter-form">
+                        <label>
+                            <input id="modifier-2" name="modifier" type="checkbox" value="1">
+                            <span data-translate="story-modifier-2" class="checkmark">Expliciet</span>
+                        </label>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="filter-story-title">
+            <div class="filter-title">
+                <h5 data-translate="story-header-title">Titel</h5>
+                <i class="bi bi-caret-down-fill" id="filter-story-title-fold"></i>
+            </div>
+            <div class="title-input">
+                <input data-translate="story-input-title" id="title-input" maxlength="100" type="text"
+                    placeholder="Zoeken op titel">
+                <i id="title-search" class="bi bi-search"></i>
+            </div>
+        </div>
+        <div class="filter-story-content">
+            <div class="filter-title">
+                <h5 data-translate="story-header-content">Content</h5>
+                <i class="bi bi-caret-down-fill" id="filter-story-content-fold"></i>
+            </div>
+            <div class="content-input">
+                <input data-translate="story-input-content" id="content-input" maxlength="100" type="text"
+                    placeholder="Zoeken op content">
+                <i id="content-search" class="bi bi-search"></i>
+            </div>
+        </div>
+        <div class="filter-author">
+            <div class="filter-title">
+                <h5 data-translate="story-header-author">Geschreven door</h5>
+                <i class="bi bi-caret-down-fill" id="filter-author-fold"></i>
+            </div>
+            <div class="author-input">
+                <input data-translate="story-input-author" id="author-input" maxlength="50" type="text"
+                    placeholder="Zoeken op auteur">
+                <i id="author-search" class="bi bi-search"></i>
+            </div>
+        </div>
+        <div class="filter-clear">
+            <button class="filter-clear-button">
+                <p data-translate="filter-clear">Zoekfilters wissen</p>
+            </button>
+        </div>
+    </section>
+
+    <!-- Overlays -->
+    <div id="filter-spec-overlay" class="fold-out-overlay"></div>
+    <div id="leaderboard-spec-overlay" class="fold-out-overlay"></div>
+
+    <!-- Stories -->
+    <div class="center-bundle">
+        <div class="button-open-wrapper">
+            <button id="filter-open" class="fold-out-open filter-button">
+                <i class="fa-solid fa-filter"></i>
+                <p data-translate="story-filter-fold-out">Open Filters</p>
+            </button>
+            <button id="leaderboard-open" class="fold-out-open">
+                <i class="fa-solid fa-trophy"></i>
+                <p data-translate="story-leaderboard-fold-out">Open Scorebord</p>
+            </button>
+        </div>
+        <section class="story-container">
+            <div class="story-tab-container"></div>
+        </section>
+    </div>
+
+    <!-- Leaderboard -->
+    <section class="leaderboard-container">
+        <div class="button-close-wrapper">
+            <h5 data-translate="story-header-leaderboard">Zoekfilters</h5>
+            <button id="leaderboard-close" class="fold-out-close"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="filter-leaderboard">
+            <div class="filter-title center">
+                <h5 data-translate="story-header-leaderboard">Scorebord</h5>
+            </div>
+            <section class="leaderboard-top">
+                <a id="leaderboard-item-2" class="leaderboard-top-item second-place second-place-container">
+                    <section class="leaderboard-top-image-container">
+                        <img class="leaderboard-top-image second-place" src="assets/img/icons/default.svg"
+                            alt="Second Place" id="leaderboard-2-image">
+                        <span class="leaderboard-top-image-position second-place">2</span>
+                    </section>
+                    <section class="leaderboard-top-content">
+                        <div class="leaderboard-top-content-name">
+                            <p class="leaderboard-name" id="leaderboard-2-name">?</p>
+                            <p class="leaderboard-username" id="leaderboard-2-username">@</p>
+                        </div>
+                        <div class="leaderboard-content-count">
+                            <i class="fa-solid fa-fire"></i>
+                            <p class="leaderboard-count" id="leaderboard-2-count">?</p>
+                        </div>
+                    </section>
+                </a>
+                <a id="leaderboard-item-1" class="leaderboard-top-item first-place first-place-container">
+                    <section class="leaderboard-top-image-container">
+                        <i class="fa-solid fa-crown first-place-icon"></i>
+                        <img class="leaderboard-top-image first-place" src="assets/img/icons/default.svg"
+                            alt="First Place" id="leaderboard-1-image">
+                        <span class="leaderboard-top-image-position first-place">1</span>
+                    </section>
+                    <section class="leaderboard-top-content">
+                        <div class="leaderboard-top-content-name">
+                            <p class="leaderboard-name" id="leaderboard-1-name">?</p>
+                            <p class="leaderboard-username" id="leaderboard-1-username">@</p>
+                        </div>
+                        <div class="leaderboard-content-count">
+                            <i class="fa-solid fa-fire"></i>
+                            <p class="leaderboard-count" id="leaderboard-1-count">?</p>
+                        </div>
+                    </section>
+                </a>
+                <a id="leaderboard-item-3" class="leaderboard-top-item third-place third-place-container">
+                    <section class="leaderboard-top-image-container">
+                        <img class="leaderboard-top-image third-place" src="assets/img/icons/default.svg"
+                            alt="Third Place" id="leaderboard-3-image">
+                        <span class="leaderboard-top-image-position third-place">3</span>
+                    </section>
+                    <section class="leaderboard-top-content">
+                        <div class="leaderboard-top-content-name">
+                            <p class="leaderboard-name" id="leaderboard-3-name">?</p>
+                            <p class="leaderboard-username" id="leaderboard-3-username">@</p>
+                        </div>
+                        <div class="leaderboard-content-count">
+                            <i class="fa-solid fa-fire"></i>
+                            <p class="leaderboard-count" id="leaderboard-3-count">?</p>
+                        </div>
+                    </section>
+                </a>
+            </section>
+            <section class="leaderboard-bottom">
+                <div class="first-place-wrapper">
+                    <i class="fa-solid fa-crown first-place-icon-bottom"></i>
+                    <a id="leaderboard-item-1" class="leaderboard-bottom-item leaderboard-responsive-item first-place">
+                        <p class="leaderboard-position">#1</p>
+                        <div class="leaderboard-bottom-info-container">
+                            <img class="leaderboard-bottom-image" src="assets/img/icons/default.svg" alt="First Place"
+                                id="leaderboard-1-image">
+                            <div class="leaderboard-bottom-info">
+                                <p class="leaderboard-name" id="leaderboard-1-name">?</p>
+                                <p class="leaderboard-username" id="leaderboard-1-username">@</p>
+                            </div>
+                        </div>
+                        <div class="leaderboard-content-count">
+                            <i class="fa-solid fa-fire"></i>
+                            <p class="leaderboard-count" id="leaderboard-1-count">?</p>
+                        </div>
+                    </a>
+                </div>
+                <a id="leaderboard-item-2" class="leaderboard-bottom-item leaderboard-responsive-item second-place">
+                    <p class="leaderboard-position">#2</p>
+                    <div class="leaderboard-bottom-info-container">
+                        <img class="leaderboard-bottom-image" src="assets/img/icons/default.svg" alt="Second Place"
+                            id="leaderboard-2-image">
+                        <div class="leaderboard-bottom-info">
+                            <p class="leaderboard-name" id="leaderboard-2-name">?</p>
+                            <p class="leaderboard-username" id="leaderboard-2-username">@</p>
+                        </div>
+                    </div>
+                    <div class="leaderboard-content-count">
+                        <i class="fa-solid fa-fire"></i>
+                        <p class="leaderboard-count" id="leaderboard-2-count">?</p>
+                    </div>
+                </a>
+                <a id="leaderboard-item-3" class="leaderboard-bottom-item leaderboard-responsive-item third-place">
+                    <p class="leaderboard-position">#3</p>
+                    <div class="leaderboard-bottom-info-container">
+                        <img class="leaderboard-bottom-image" src="assets/img/icons/default.svg" alt="Third Place"
+                            id="leaderboard-3-image">
+                        <div class="leaderboard-bottom-info">
+                            <p class="leaderboard-name" id="leaderboard-3-name">?</p>
+                            <p class="leaderboard-username" id="leaderboard-3-username">@</p>
+                        </div>
+                    </div>
+                    <div class="leaderboard-content-count">
+                        <i class="fa-solid fa-fire"></i>
+                        <p class="leaderboard-count" id="leaderboard-3-count">?</p>
+                    </div>
+                </a>
+                <a id="leaderboard-item-4" class="leaderboard-bottom-item">
+                    <p class="leaderboard-position">#4</p>
+                    <div class="leaderboard-bottom-info-container">
+                        <img class="leaderboard-bottom-image" src="assets/img/icons/default.svg" alt="Fourth Place"
+                            id="leaderboard-4-image">
+                        <div class="leaderboard-bottom-info">
+                            <p class="leaderboard-name" id="leaderboard-4-name">?</p>
+                            <p class="leaderboard-username" id="leaderboard-4-username">@</p>
+                        </div>
+                    </div>
+                    <div class="leaderboard-content-count">
+                        <i class="fa-solid fa-fire"></i>
+                        <p class="leaderboard-count" id="leaderboard-4-count">?</p>
+                    </div>
+                </a>
+                <a id="leaderboard-item-5" class="leaderboard-bottom-item">
+                    <p class="leaderboard-position">#5</p>
+                    <div class="leaderboard-bottom-info-container">
+                        <img class="leaderboard-bottom-image" src="assets/img/icons/default.svg" alt="Fifth Place"
+                            id="leaderboard-5-image">
+                        <div class="leaderboard-bottom-info">
+                            <p class="leaderboard-name" id="leaderboard-5-name">?</p>
+                            <p class="leaderboard-username" id="leaderboard-5-username">@</p>
+                        </div>
+                    </div>
+                    <div class="leaderboard-content-count">
+                        <i class="fa-solid fa-fire"></i>
+                        <p class="leaderboard-count" id="leaderboard-5-count">?</p>
+                    </div>
+                </a>
+                <a id="leaderboard-item-6" class="leaderboard-bottom-item">
+                    <p class="leaderboard-position">#6</p>
+                    <div class="leaderboard-bottom-info-container">
+                        <img class="leaderboard-bottom-image" src="assets/img/icons/default.svg" alt="Sixth Place"
+                            id="leaderboard-6-image">
+                        <div class="leaderboard-bottom-info">
+                            <p class="leaderboard-name" id="leaderboard-6-name">?</p>
+                            <p class="leaderboard-username" id="leaderboard-6-username">@</p>
+                        </div>
+                    </div>
+                    <div class="leaderboard-content-count">
+                        <i class="fa-solid fa-fire"></i>
+                        <p class="leaderboard-count" id="leaderboard-6-count">?</p>
+                    </div>
+                </a>
+                <a id="leaderboard-item-7" class="leaderboard-bottom-item">
+                    <p class="leaderboard-position">#7</p>
+                    <div class="leaderboard-bottom-info-container">
+                        <img class="leaderboard-bottom-image" src="assets/img/icons/default.svg" alt="Seventh Place"
+                            id="leaderboard-7-image">
+                        <div class="leaderboard-bottom-info">
+                            <p class="leaderboard-name" id="leaderboard-7-name">?</p>
+                            <p class="leaderboard-username" id="leaderboard-7-username">@</p>
+                        </div>
+                    </div>
+                    <div class="leaderboard-content-count">
+                        <i class="fa-solid fa-fire"></i>
+                        <p class="leaderboard-count" id="leaderboard-7-count">?</p>
+                    </div>
+                </a>
+                <a id="leaderboard-item-8" class="leaderboard-bottom-item">
+                    <p class="leaderboard-position">#8</p>
+                    <div class="leaderboard-bottom-info-container">
+                        <img class="leaderboard-bottom-image" src="assets/img/icons/default.svg" alt="Eighth Place"
+                            id="leaderboard-8-image">
+                        <div class="leaderboard-bottom-info">
+                            <p class="leaderboard-name" id="leaderboard-8-name">?</p>
+                            <p class="leaderboard-username" id="leaderboard-8-username">@</p>
+                        </div>
+                    </div>
+                    <div class="leaderboard-content-count">
+                        <i class="fa-solid fa-fire"></i>
+                        <p class="leaderboard-count" id="leaderboard-8-count">?</p>
+                    </div>
+                </a>
+                <a id="leaderboard-item-9" class="leaderboard-bottom-item">
+                    <p class="leaderboard-position">#9</p>
+                    <div class="leaderboard-bottom-info-container">
+                        <img class="leaderboard-bottom-image" src="assets/img/icons/default.svg" alt="Nineth Place"
+                            id="leaderboard-9-image">
+                        <div class="leaderboard-bottom-info">
+                            <p class="leaderboard-name" id="leaderboard-9-name">?</p>
+                            <p class="leaderboard-username" id="leaderboard-9-username">@</p>
+                        </div>
+                    </div>
+                    <div class="leaderboard-content-count">
+                        <i class="fa-solid fa-fire"></i>
+                        <p class="leaderboard-count" id="leaderboard-9-count">?</p>
+                    </div>
+                </a>
+                <hr class="position-splitter">
+                <a id="leaderboard-item-10" class="leaderboard-bottom-item">
+                    <p id="leaderboard-10-position" class="leaderboard-position">#10</p>
+                    <div class="leaderboard-bottom-info-container">
+                        <img class="leaderboard-bottom-image" src="assets/img/icons/default.svg" alt="Tenth Place"
+                            id="leaderboard-10-image">
+                        <div class="leaderboard-bottom-info">
+                            <p class="leaderboard-name" id="leaderboard-10-name">?</p>
+                            <p class="leaderboard-username" id="leaderboard-10-username">@</p>
+                        </div>
+                    </div>
+                    <div class="leaderboard-content-count">
+                        <i class="fa-solid fa-fire"></i>
+                        <p class="leaderboard-count" id="leaderboard-10-count">?</p>
+                    </div>
+                </a>
+            </section>
+        </div>
+    </section>
+</section>

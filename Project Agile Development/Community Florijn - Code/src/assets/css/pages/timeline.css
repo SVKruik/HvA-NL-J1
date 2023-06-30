@@ -1,0 +1,588 @@
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    gap: 50px;
+}
+
+.timeline-splitter {
+    width: 2px;
+    height: 600px;
+    background-color: var(--border);
+}
+
+.timeline-container,
+.story-container {
+    height: 600px;
+    overflow-y: auto;
+    border-radius: 0px;
+}
+
+.timeline-container::-webkit-scrollbar {
+    display: none;
+}
+
+.story-container::-webkit-scrollbar {
+    margin-left: 10px;
+}
+
+/* Timeline */
+.timeline-container {
+    display: flex;
+    justify-content: center;
+    flex-grow: .5;
+}
+
+.timeline-mid {
+    width: 5px;
+    height: 3910px;
+    background-color: var(--alt);
+}
+
+.timeline-odd,
+.timeline-even {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    margin-top: 15px;
+}
+
+.timeline-even {
+    margin-top: 85px;
+}
+
+.timeline-odd-item,
+.timeline-even-item {
+    width: fit-content;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.timeline-odd-item {
+    flex-direction: row-reverse;
+    margin-right: -12px;
+}
+
+.timeline-even-item {
+    margin-left: -12px;
+}
+
+.year-item-connector,
+.year-item-bridge,
+.year-item-box {
+    background-color: var(--alt);
+    color: var(--alt);
+}
+
+.year-item-connector {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.year-item-bridge {
+    width: 70px;
+    height: 5px;
+    border-radius: 0px;
+    z-index: 1;
+    margin-left: -1px;
+}
+
+.year-item-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    user-select: none;
+    z-index: 1;
+}
+
+.year-display {
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--main);
+}
+
+.year-item-box.empty p.year-display,
+.year-item-box.inactive p.year-display {
+    color: var(--alt-l);
+}
+
+.year-item-box.inactive p.year-display {
+    color: var(--main);
+}
+
+.empty {
+    background-color: var(--border);
+}
+
+.inactive {
+    background-color: var(--gray);
+}
+
+/* Stories */
+.story-host-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 0px;
+}
+
+.selector-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 2px solid var(--border);
+    border-radius: 0px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.story-sort-selector {
+    width: 170px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 0 5px;
+    box-sizing: border-box;
+    font-weight: 600;
+}
+
+.story-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-end;
+    height: 700px;
+    min-width: 722px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.story-placeholder {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.story-placeholder h4 {
+    font-weight: 500;
+    width: 90%;
+}
+
+.story-placeholder img {
+    width: 60%;
+    margin-top: 50px;
+}
+
+.story-item-wrapper {
+    border-right: 10px solid var(--main);
+}
+
+.story-item {
+    width: 700px;
+    height: 420px;
+    box-sizing: border-box;
+    border: 1px solid var(--border);
+    transition: .5s;
+}
+
+.story-image-container {
+    width: 100%;
+    height: 240px;
+    box-sizing: border-box;
+    padding: 5px;
+    background-color: var(--fill);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.story-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.story-content-container {
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+}
+
+.blur-toggle {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 10px;
+    opacity: 0;
+    z-index: 1;
+}
+
+.story-image-container:hover .blur-toggle {
+    opacity: 1;
+}
+
+.story-info-container {
+    width: 75%;
+    height: 105px;
+}
+
+.story-title-container {
+    cursor: pointer;
+}
+
+.story-title {
+    font-weight: 700;
+    text-align: left;
+    font-size: 28px;
+    line-height: 28px;
+    margin-top: 2px;
+    overflow: hidden;
+    height: 31px;
+    border-radius: 0px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.story-description {
+    font-family: 'Playfair Display', sans-serif;
+    text-align: left;
+    font-weight: 500;
+    font-size: 20px;
+    height: 23px;
+    width: 125%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-top: 5px;
+    pointer-events: none;
+    border-radius: 0px;
+}
+
+.story-description b,
+.story-description i,
+.story-description u,
+.story-description a {
+    font-weight: 500;
+    font-family: 'Playfair Display', sans-serif;
+    text-decoration: none !important;
+    font-style: normal;
+}
+
+.story-author-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.story-author-name {
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.story-author-image {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: var(--fill);
+    background-size: cover;
+}
+
+.story-date {
+    width: 190px;
+    height: 17px;
+    margin-right: -9px;
+    margin-top: -9px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Playfair Display', sans-serif;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.statistics-container-parent {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.story-stat-container {
+    width: 100%;
+    display: flex;
+    margin-top: 5px;
+}
+
+.story-tag-container {
+    display: flex;
+    gap: 10px;
+}
+
+.story-tag {
+    width: 130px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+.story-tag-name {
+    text-align: center;
+    border-radius: 5px;
+    color: var(--main);
+}
+
+.story-vtcm-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.story-stat-splitter {
+    width: 1px;
+    height: 25px;
+    border-left: 2px solid var(--border);
+    border-radius: 0px;
+    margin-left: 10px;
+}
+
+.story-votes,
+.story-comments {
+    text-align: left;
+}
+
+.story-vote-container,
+.story-comment-container {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 5px;
+    align-items: center;
+}
+
+.story-vote-container i,
+.story-comment-container i {
+    font-size: 22px;
+}
+
+.story-comment-container {
+    cursor: pointer;
+}
+
+.story-modifier-container {
+    display: flex;
+    gap: 5px;
+}
+
+@media only screen and (max-width: 1440px) {
+    .timeline-container {
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 1285px) {
+    .content-container {
+        flex-direction: column;
+    }
+
+    .timeline-container {
+        overflow-y: hidden;
+        overflow-x: scroll;
+        flex-direction: column;
+        width: 700px;
+        justify-content: normal;
+        height: fit-content;
+    }
+
+    .timeline-splitter {
+        display: none;
+    }
+
+    .timeline-container,
+    .story-host-container {
+        overflow-x: auto;
+        -ms-overflow-style: unset;
+        scrollbar-width: 10px;
+    }
+
+    .timeline-container::-webkit-scrollbar {
+        display: block;
+    }
+
+    .timeline-container::-webkit-scrollbar-track,
+    .timeline-container::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+    }
+
+    .timeline-odd,
+    .timeline-even {
+        flex-direction: row;
+    }
+
+    .timeline-mid {
+        width: 5570px;
+        height: 5px;
+    }
+
+    .timeline-odd-item,
+    .timeline-even-item {
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .timeline-even {
+        margin-top: -12px;
+        margin-left: 85px;
+        margin-bottom: 20px;
+    }
+
+    .timeline-odd-item {
+        margin-right: 0px;
+        flex-direction: column-reverse;
+        margin-bottom: -12px;
+    }
+
+    .timeline-even-item {
+        margin-left: 0px;
+    }
+
+    .year-item-bridge {
+        width: 5px;
+        height: 40px;
+    }
+}
+
+@media only screen and (max-width: 745px) {
+    .timeline-container {
+        width: 95%;
+    }
+
+    .story-container {
+        height: 500px;
+        min-width: 532px;
+    }
+
+    .story-placeholder {
+        width: 80%;
+        margin: auto;
+    }
+
+    .story-sort-selector {
+        margin-right: 30px;
+    }
+
+    .story-item {
+        width: 510px;
+        height: 550px;
+    }
+
+    .statistics-container-parent,
+    .story-stat-container {
+        height: fit-content;
+    }
+
+    .story-date {
+        margin-top: 10px;
+    }
+
+    .story-content-container {
+        flex-direction: column;
+    }
+
+    .story-stat-container {
+        flex-direction: column;
+    }
+
+    .story-vtcm-container {
+        justify-content: flex-start;
+        margin-top: 10px;
+        width: fit-content;
+    }
+
+    .story-stat-splitter {
+        display: none;
+    }
+
+    .story-host-container {
+        height: fit-content;
+    }
+
+    .story-title {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .selector-container {
+        justify-content: center;
+        flex-direction: column;
+        width: 75%;
+        margin: auto;
+    }
+
+    .story-container {
+        min-width: 372px;
+    }
+
+    .story-sort-selector {
+        margin-right: 0px;
+    }
+
+    .story-item {
+        width: 350px;
+    }
+
+    .story-tag-container {
+        flex-direction: column;
+    }
+
+    .story-placeholder h4 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .story-container {
+        min-width: 295px;
+    }
+
+    .story-item {
+        width: 250px;
+    }
+
+    .story-info-container {
+        width: 84%;
+    }
+}
+
+@media only screen and (max-width: 290px) {
+    .story-container {
+        min-width: 222px;
+    }
+
+    .story-item {
+        width: 200px;
+    }
+
+    .story-author-image {
+        display: none;
+    }
+
+    .story-date {
+        margin-top: 0px;
+    }
+}

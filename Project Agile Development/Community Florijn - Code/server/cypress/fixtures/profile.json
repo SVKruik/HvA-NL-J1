@@ -1,0 +1,74 @@
+{
+  "data": {
+    "result": [
+      {
+        "01_first_story": null,
+        "02_first_comment": null,
+        "03_story_verified": null,
+        "04_story_sotw": null,
+        "05_story_vote_threshold": null,
+        "06_vote_combined": null,
+        "07_comment_threshold": null,
+        "08_wordcount_threshold": null,
+        "09_vote_out_threshold": null,
+        "10_share": null,
+        "anonymous": null,
+        "biography": "Hallo, dit is mijn biografie!",
+        "comments": 0,
+        "content": null,
+        "creationDate": "18 April 2023",
+        "credits": 33,
+        "date": null,
+        "disable_comments": null,
+        "disable_votes": null,
+        "email": "emir.bay@hva.nl",
+        "explicit": null,
+        "first_name": "Emir",
+        "id": null,
+        "likes": null,
+        "sotw": null,
+        "sur_name": "Bay",
+        "tagid": null,
+        "tagname": null,
+        "title": null,
+        "url": null,
+        "user_name": "Emir",
+        "user_type": 1,
+        "verified": null
+      }
+    ],
+    "result2": [],
+    "result3": []
+  },
+  "userData": [
+    {
+      "biography": "Hallo, dit is mijn biografie!",
+      "birthdate": "2002-11-29T00:00:00.000Z",
+      "creation_date": "2023-04-18T12:46:25.000Z",
+      "credits": 193,
+      "email": "emir.bay@hva.nl",
+      "email_verification": 1,
+      "first_name": "Emir",
+      "gender": "M",
+      "password": "groen",
+      "sur_name": "Bay",
+      "user_email": "emir.bay@hva.nl",
+      "user_name": "Emir",
+      "user_type": 1,
+      "verification_pin": 509337
+    }
+  ],
+  "userAdvanced": {
+    "result": [
+      {
+        "auto_translate": 1,
+        "colorblind": null,
+        "interaction_mail": 0,
+        "language": "nl-NL",
+        "show_explicit": 1,
+        "sotw_mail": 0,
+        "user_email": "emir.bay@hva.nl"
+      }
+    ]
+  }
+}

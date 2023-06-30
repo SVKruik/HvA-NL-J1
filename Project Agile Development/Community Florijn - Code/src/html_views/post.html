@@ -1,0 +1,128 @@
+<link rel="stylesheet" href="../assets/css/pages/post.css">
+
+<div class="page-title">
+    <h4 data-translate="post-header-1">Verhaal plaatsen</h4>
+    <h6 data-translate="post-sub-1" class="page-subtext">Schrijf en deel jouw verhaal met anderen</h6>
+</div>
+<div class="main container">
+    <div class="main box-content">
+        <div class="main-interaction">
+            <div class="sub-interaction">
+                <section class="story-main">
+                    <section class="wrapper"><label data-translate="post-label-1">Titel</label>
+                        <input id="story-title" maxlength="100" type="text" autocomplete="off">
+                    </section>
+                    <div class="story-writing">
+                        <div class="story-richtext">
+                            <div class="story-richtext-wrapper">
+                                <button class="richtext-button" type="button" data-element="bold">
+                                    <i class="bi bi-type-bold"></i>
+                                </button>
+                                <button class="richtext-button" type="button" data-element="italic">
+                                    <i class="bi bi-type-italic"></i>
+                                </button>
+                                <button class="richtext-button" type="button" data-element="underline">
+                                    <i class="bi bi-type-underline"></i>
+                                </button>
+                                <button class="richtext-button" type="button" data-element="strikethrough">
+                                    <i class="bi bi-type-strikethrough"></i>
+                                </button>
+                                <button class="richtext-button" type="button" data-element="createLink">
+                                    <i class="bi bi-link-45deg"></i>
+                                </button>
+                            </div>
+                            <div class="story-tags-wrapper">
+                                <div class="story-add-tags">
+                                    <label>
+                                        <select class="story-tags-dropdown">
+                                            <option value="empty" disabled selected hidden
+                                                data-translate="post-placeholder-1">Kies uw tags...</option>
+                                            <option value="full" disabled hidden data-translate="post-placeholder-2">Max
+                                                bereikt.</option>
+                                        </select>
+                                    </label>
+                                    <button class="richtext-button add inherit">+</button>
+                                </div>
+                                <div class="story-tags"></div>
+                            </div>
+
+                        </div>
+                        <div contenteditable="true" data-max-length="4000" id="story-content" class="story-contentarea">
+                        </div>
+                </section>
+            </div>
+            <div class="sub-interaction">
+                <section class="story-banner">
+                    <form id="story-img-form" enctype="multipart/form-data">
+                        <section class="wrapper">
+                            <label data-translate="post-label-2">Omslagfoto</label>
+                            <span id="story-image">
+                                <img id="story-img-preview" src="" alt="preview" />
+                                <label>
+                                    <button type="button" class="story-upload"><i
+                                            class="fa-solid fa-cloud-arrow-up"></i>
+                                        <p data-translate="post-upload-button">Bestand uploaden</p>
+                                    </button>
+                                </label>
+                                <input id="story-img-input" type="file" name="sampleFile" accept=".png, .jpg, .jpeg"
+                                    hidden />
+                            </span>
+                        </section>
+                    </form>
+                    <button id="story-img-clear" class="inactive"><i class="fa-solid fa-trash"></i></button>
+                </section>
+
+                <section class="story-settings">
+                    <div class="story-settings-options">
+                        <fieldset class="story-settings-radiobuttons">
+                            <legend data-translate="post-legend-1">Instellingen</legend>
+                            <label class="label-input"><input value="anonymous" type="checkbox"><span
+                                    data-translate="post-checkbox-1">Anoniem
+                                    delen</span></label>
+                            <label class="label-input"><input value="disable-comments" type="checkbox"><span
+                                    data-translate="post-checkbox-2">Commentaar uitschakelen</span></label>
+                            <label class="label-input"><input value="disable-votes" type="checkbox"><span
+                                    data-translate="post-checkbox-3">Stemmen verbergen</span></label>
+                            <label class="label-input"><input value="explicit" type="checkbox"><span
+                                    data-translate="post-checkbox-4">Expliciete
+                                    inhoud</span></label>
+                        </fieldset>
+                        <fieldset class="story-date-selection">
+                            <legend data-translate="post-legend-2">Jaar</legend>
+                            <input id="story-year" type="number" placeholder="2023" min="1968" max="2099" maxlength="4">
+                            <label data-translate="post-year-label">Selecteer een jaar</label>
+                        </fieldset>
+                    </div>
+                    <div class="story-settings-tips">
+                        <fieldset class="story-tips">
+                            <legend data-translate="post-legend-3">Tips</legend>
+                            <div class="story-tips-text">
+                                <ul>
+                                    <li data-translate="post-tip-1">Zorg voor een pakkende titel</li>
+                                    <li data-translate="post-tip-2">Gebruik de aanwezige opties om uw tekst te stylen
+                                    </li>
+                                    <li data-translate="post-tip-3">Upload een omslagfoto die wordt weergegeven bij jouw
+                                        verhaal</li>
+                                    <li data-translate="post-tip-4">Deel uw verhalen via social media voor meer
+                                        erkenning</li>
+                                </ul>
+                                <p data-translate="post-tip-5">Het einde van elke week wordt het meest gestemde verhaal
+                                    op de homepagina
+                                    weergegeven.</p>
+                            </div>
+                        </fieldset>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="user-buttons">
+            <section class="main-buttons">
+                <button id="button-post" class="inverted" data-translate="post-button-1">Plaats</button>
+                <button id="button-cancel" data-translate="post-button-2">Annuleren</button>
+            </section>
+            <section class="side-buttons">
+                <button id="button-save"><i class="fa-solid fa-floppy-disk"></i></button>
+            </section>
+        </div>
+    </div>
+</div>

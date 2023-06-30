@@ -1,0 +1,60 @@
+{
+  "support": {
+    "email": "stefan.kruik@hva.nl",
+    "subject": "Cypress - Subject",
+    "category": "Technische problemen",
+    "message": "Cypress - Message",
+    "env": "",
+    "date": "14 mei 2023 om 13:31",
+    "translationGeneral": {
+      "subject": "Onderwerp",
+      "category": "Categorie",
+      "message": "Bericht",
+      "date": "Datum"
+    },
+    "translationEdge": {
+      "salutation": "Beste",
+      "link-home": "Home",
+      "link-support": "Contact",
+      "link-privacy": "Privacybeleid",
+      "link-copyright": "Copyright",
+      "closing": "Met vriendelijke groet",
+      "name": "Het team van Community Florijn",
+      "receiver-1": "Deze mail is bedoeld voor",
+      "receiver-2": "Bent u dit niet? Dan kunt u deze mail veilig negeren.",
+      "generated": "Dit is een automatisch gegenereerde e-mail. Reacties op dit bericht worden niet gelezen."
+    },
+    "translationUser": {
+      "1": "Dit is een verificatie-email voor uw ondersteunings-verzoek.",
+      "2": "Wij hebben uw verzoek ontvangen en gaan hier zo snel mogelijk mee aan de slag.",
+      "3": "Wij zullen binnen 5 werkdagen bij u terug komen om u te helpen met uw probleem en/of vraag.",
+      "4": "Hierbij uw verzonden informatie:",
+      "title": "Support Verzoek Bevestiging"
+    },
+    "translationStaff": {
+      "1": "sent a new support request.",
+      "2": "Here is the information sent:",
+      "3": "This email is intended for the administrators of Community Florijn.",
+      "title": "New Support Request"
+    },
+    "rawDate": 1684063900298,
+    "translationGeneralStaff": {
+      "subject": "Subject",
+      "category": "Category",
+      "message": "Message",
+      "date": "Date"
+    },
+    "translationEdgeStaff": {
+      "salutation": "Dear",
+      "link-home": "Home",
+      "link-support": "Contact",
+      "link-privacy": "Privacy Policy",
+      "link-copyright": "Copyright",
+      "closing": "Sincerely",
+      "name": "The Community Florijn team",
+      "receiver-1": "This mail is intended for",
+      "receiver-2": "If this isn't you, you can safely ignore this email.",
+      "generated": "This is an auto-generated email. Replies to this message will not be read."
+    }
+  }
+}

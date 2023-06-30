@@ -1,0 +1,94 @@
+<link href="../assets/css/pages/story-read.css" rel="stylesheet">
+
+<div class="story-placeholder">
+    <img src="../assets/img/svg/Question.svg" class="story-read-placeholder-image">
+    <h5 data-translate="story-read-placeholder-3" class="story-read-placeholder">Er is geen verhaal gevonden met deze
+        URL. Check of de link juist is,
+        en probeer opnieuw.</h5>
+</div>
+<div class="story-content-wrapper">
+    <div class="story-container">
+        <img class="image-container" alt="Story Image"></img>
+        <div class="image-content">
+            <section class="story-edit-button-wrapper">
+                <button class="story-edit-button"><i class="fa-solid fa-pen"></i></button>
+                <button class="story-zoom-button"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+            </section>
+            <section class="story-read-info">
+                <div class="story-title-wrapper">
+                    <h3 class="story-title"></h3>
+                </div>
+                <div class="story-info-bar">
+                    <div class="story-info-sub-bar bar1">
+                        <div class="story-bar-left">
+                            <a class="story-author-container">
+                                <img class="story-author-image" alt="Avatar"></img>
+                                <p class="story-author-username"></p>
+                            </a>
+                        </div>
+                        <div class="story-tag-container"></div>
+                    </div>
+                    <div class="story-info-sub-bar bar2">
+                        <div class="story-stat-container">
+                            <div class="story-like-container">
+                                <p class="story-likes"></p>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="story-comment-container">
+                                <p class="story-comments"></p>
+                                <i class="fa-solid fa-comment"></i>
+                            </div>
+                        </div>
+                        <div class="story-modifier-container"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="content-container">
+            <section class="story-translation-disclaimer inactive-section">
+                <p class="inactive" data-translate="story-translation-disclaimer">Disclaimer: Dit verhaal is automatisch
+                    vertaalt en kan
+                    niet gelijk zijn aan het origineel.</p>
+                <button class="story-translation-switch inactive">
+                    <i class="fa-solid fa-arrow-rotate-left"></i>
+                    <p data-translate="story-translation-switch">Bekijk Origineel</p>
+                </button>
+                <button class="story-translate-button inactive">
+                    <i class="bi bi-translate"></i>
+                    <p data-translate="story-translate-button">Vertaal Verhaal</p>
+                </button>
+            </section>
+            <p class="story-content"></p>
+            <div id="spinner" style="display:none;">
+                <div class="loader"></div>
+            </div>
+        </div>
+        <div class="story-read-footer">
+            <p class="story-date"></p>
+            <div class="social-container">
+                <i class="fa-solid fa-thumbs-up" id="upvote"></i>
+                <i class="fa-solid fa-thumbs-down" id="downvote"></i>
+                <i class="fa-regular fa-calendar" id="timeline"></i>
+                <i class="fa-solid fa-share" id="share"></i>
+            </div>
+        </div>
+    </div>
+    <div class="place-comment-container">
+        <div class="comment-input-container">
+            <input data-translate="story-read-input" id="comment-input" type="text" placeholder="Plaats een reactie"
+                maxlength="300">
+            <i id="place-story-icon" class="bi bi-arrow-return-left"></i>
+        </div>
+        <p class="character-counter"></p>
+    </div>
+    <div class="comment-header">
+        <h5 data-translate="story-read-comment-header" class="comment-container-title">Reacties</h5>
+        <select class="comment-sort-selector">
+            <option data-translate="story-sort-date-desc" value="date DESC">Datum Nieuw - Oud</option>
+            <option data-translate="story-sort-date-asc" value="date ASC">Datum Oud - Nieuw</option>
+            <option data-translate="story-sort-like-desc" value="like DESC">Likes Aflopend</option>
+            <option data-translate="story-sort-like-asc" value="like ASC">Likes Oplopend</option>
+        </select>
+    </div>
+    <div class="comment-container"></div>
+</div>

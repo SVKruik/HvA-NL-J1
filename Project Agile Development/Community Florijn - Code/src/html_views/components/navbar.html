@@ -1,0 +1,102 @@
+<link href="../assets/css/components/navbar.css" rel="stylesheet" />
+<div id="navigation">
+  <div class="hamburger-icon">
+    <i class="fa-solid fa-bars"></i>
+  </div>
+  <a class="nav-logo-wrapper nav-link" href="#home"><img class="nav-logo" src="../assets/img/logo/florijn.png" /></a>
+  <ul class="nav-list">
+    <li class="nav-item">
+      <a data-translate="navigation-home" class="nav-link" href="#home">Home</a>
+    </li>
+    <li class="nav-item">
+      <a data-translate="navigation-story" class="nav-link" href="#story">Verhalen</a>
+    </li>
+    <li class="nav-item">
+      <a data-translate="navigation-timeline" class="nav-link" href="#timeline">Tijdlijn</a>
+    </li>
+    <li class="nav-item">
+      <a data-translate="navigation-support" class="nav-link" href="#support">Support</a>
+    </li>
+    <li class="nav-item">
+      <a data-translate="navigation-post" class="nav-link" href="#post/new">Plaatsen</a>
+    </li>
+    <li class="nav-item marked">
+      <a data-translate="navigation-login" class="loginBtn nav-link marked" href="#login">Login</a>
+    </li>
+    <li class="nav-item marked hidden userId">
+      <a class="nav-link" href="#profile">
+        <img class="nav-user-img" src="" alt="user-avatar" />
+      </a>
+      <button class="nav-dropdown-btn inherit">
+        <img class="nav-dropdown" src="../../assets/img/svg/Dropdown.svg" alt="dropdown" />
+      </button>
+      <div class="nav-dropdown-list">
+        <a href="#settings/account" data-translate="navigation-settings" class="dropdown-item">Instellingen</a>
+        <a data-translate="navigation-logout" class="dropdown-item logout-btn">Uitloggen</a>
+      </div>
+    </li>
+    <div class="hamburger-icon invis-item">
+      <i class="invis-item"></i>
+    </div>
+  </ul>
+</div>
+<div class="hamburger-menu">
+  <button class="hamburger-close"><i class="fa-solid fa-xmark"></i></button>
+  <ul class="ham-list">
+    <a href="#home">
+      <li class="ham-item">
+        <i class="fa-solid fa-house"></i>
+        <p data-translate="navigation-home">Home</p>
+      </li>
+    </a>
+    <a href="#story">
+      <li class="ham-item">
+        <i class="fa-solid fa-book"></i>
+        <p data-translate="navigation-story">Verhalen</p>
+      </li>
+    </a>
+    <a href="#timeline">
+      <li class="ham-item">
+        <i class="fa-solid fa-calendar"></i>
+        <p data-translate="navigation-timeline">Tijdlijn</p>
+      </li>
+    </a>
+    <a href="#support">
+      <li class="ham-item">
+        <i class="fa-solid fa-circle-info"></i>
+        <p data-translate="navigation-support">Support</p>
+      </li>
+    </a>
+    <a href="#profile">
+      <li class="ham-item hidden">
+        <i class="fa-solid fa-user"></i>
+        <p data-translate="navigation-profile">Profiel</p>
+      </li>
+    </a>
+    <a href="#post/new">
+      <li class="ham-item">
+        <i class="fa-solid fa-paper-plane"></i>
+        <p data-translate="navigation-post">Plaatsen</p>
+      </li>
+    </a>
+    <section class="ham-bottom">
+      <a href="#login">
+        <li class="loginBtn ham-item">
+          <i class="fa-solid fa-arrow-right-to-bracket"></i>
+          <p data-translate="navigation-login">Inloggen</p>
+        </li>
+      </a>
+      <a href="#settings">
+        <li class="ham-item hidden">
+          <i class="fa-solid fa-gear"></i>
+          <p data-translate="navigation-settings">Instellingen</p>
+        </li>
+      </a>
+      <li class="logout-btn ham-item hidden">
+        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+        <p data-translate="navigation-logout">Uitloggen</p>
+      </li>
+    </section>
+  </ul>
+</div>
+<div class="hamburger-overlay"></div>

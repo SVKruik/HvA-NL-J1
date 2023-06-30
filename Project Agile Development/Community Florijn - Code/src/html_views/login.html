@@ -1,0 +1,75 @@
+<link href="/assets/css/pages/login.css" rel="stylesheet" />
+
+<img id="background-img" src="../assets/img/background/authentication/FlorijnFlat.png" class="background-image">
+<div class="container-login">
+    <div class="login-box">
+        <h1 data-translate="login-title" class="Title">Inloggen</h1>
+        <form class="mini-container">
+            <label data-translate="register-email" for="email">E-mailadres</label>
+            <input type="email" id="email" name="email">
+
+            <label data-translate="register-password" for="password">Wachtwoord</label>
+            <input type="password" id="password" name="password">
+
+            <button type="submit" class="submit inverted">
+                <p data-translate="login-title">Inloggen</p>
+            </button>
+
+            <div class="container-checkbox">
+                <a data-translate="login-forgot" id="forgot-password" class="text-Alignmnt register-button">Wachtwoord vergeten?</a>
+            </div>
+
+            <div class="Hline">
+                <div class="line"></div>
+                <p data-translate="login-splitter">of</p>
+                <div class="line"></div>
+            </div>
+
+            <p class="text-Alignment">
+            <div class="register">
+                <p data-translate="login-register-1">Nog geen account?</p>
+                <a data-translate="register-submit-2" id="registreer" class="register-button">Registreer</a>
+            </div>
+            </p>
+
+        </form>
+    </div>
+    <div class="new-Login-box">
+        <h2 data-translate="login-password-edit" class="Title2">Wachtwoord wijzigen</h2>
+        <form class="mini-container2">
+
+            <label data-translate="register-email" for="email1">E-mailadres</label>
+            <input type="email" id="email1" name="email">
+
+
+            <p class="error2"></p>
+
+            <button type="submit" class="submit inverted" id="change">
+                <p data-translate="register-submit-1">Volgende</p>
+            </button>
+        </form>
+        <form class="mini-container3">
+
+            <label data-translate="login-code" for="codeInput">Code</label>
+            <input type="text" id="codeInput" name="codeInput" maxlength="6" pattern="[0-9]+" required>
+
+            <p class="error3"></p>
+            <button type="submit" class="submit inverted" id="codeCheck">
+                <p data-translate="register-submit-1">Volgende</p>
+            </button>
+        </form>
+        <form class="mini-container4">
+
+            <label data-translate="new-password-label" for="password1">Wachtwoord</label>
+            <input type="password" id="password1" name="password1">
+
+            <label data-translate="confirm-password-label" for="password2">Herhaal wachtwoord</label>
+            <input type="password" id="password2" name="password2">
+
+        <p class="error4"></p>
+        <button type="submit" class="submit inverted" id="updatePassword">
+            <p data-translate="login-password-edit">Wachtwoord wijzigen</p>
+        </button>
+        </form>
+    </div>
+</div>

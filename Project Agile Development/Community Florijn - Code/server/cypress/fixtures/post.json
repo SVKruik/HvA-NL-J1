@@ -1,0 +1,160 @@
+{
+    "tags": [
+        {
+            "id": 9,
+            "name": "Bijlmer"
+        },
+        {
+            "id": 14,
+            "name": "Buurtnieuws"
+        },
+        {
+            "id": 12,
+            "name": "Cultuur"
+        },
+        {
+            "id": 5,
+            "name": "Evenement"
+        },
+        {
+            "id": 8,
+            "name": "Florijn"
+        },
+        {
+            "id": 7,
+            "name": "Heden"
+        },
+        {
+            "id": 6,
+            "name": "Historie"
+        },
+        {
+            "id": 1,
+            "name": "Kort"
+        },
+        {
+            "id": 11,
+            "name": "Kunst"
+        },
+        {
+            "id": 2,
+            "name": "Lang"
+        },
+        {
+            "id": 15,
+            "name": "LGBTQ+"
+        },
+        {
+            "id": 10,
+            "name": "Milieu"
+        },
+        {
+            "id": 13,
+            "name": "Sociale Kwestie"
+        },
+        {
+            "id": 4,
+            "name": "Uitnodiging"
+        },
+        {
+            "id": 3,
+            "name": "Vraag"
+        }
+    ],
+    "story": {
+        "fieldCount": 0,
+        "affectedRows": 1,
+        "insertId": 999,
+        "serverStatus": 2,
+        "warningCount": 0,
+        "changedRows": 0,
+        "message": "",
+        "protocol41": true
+    },
+    "fileUpload": {
+        "result": "File succesfully uploaded."
+    },
+    "storyId": {
+        "0": {
+            "id": 319
+        }
+    },
+    "storyTags": {
+        "fieldCount": 0,
+        "affectedRows": 3,
+        "insertId": 433,
+        "serverStatus": 2,
+        "warningCount": 0,
+        "changedRows": 0,
+        "message": "&Records: 3  Duplicates: 0  Warnings: 0",
+        "protocol41": true
+    },
+    "checkUser": {
+        "0": {
+            "email_verification": 1
+        }
+    },
+    "session": {
+        "authorQuery": "",
+        "contentQuery": "",
+        "currentPage": 1,
+        "email": "donovan7903@gmail.com",
+        "emailSent": 0,
+        "foldState": {
+            "tag": true,
+            "story-title": true,
+            "story-content": true,
+            "author": true,
+            "sort": true
+        },
+        "sortColumn": "date",
+        "sortType": "DESC",
+        "storySaved": true,
+        "tagArray": [],
+        "timelineYear": 2023,
+        "titleQuery": "",
+        "userName": "donovan2",
+        "viewLanguage": "nl-NL"
+    },
+    "userAchievement": {
+        "result": [
+            {},
+            {},
+            {},
+            [
+                {
+                    "affectedRows": 1
+                }
+            ]
+        ]
+    },
+    "storyRead": {
+        "result": [
+            {
+                "anonymous": 0,
+                "comments": 0,
+                "content": "A\n                        ",
+                "date": "2023-05-28T15:27:27.000Z",
+                "disable_comments": 0,
+                "disable_votes": 0,
+                "edit_date": null,
+                "explicit": 0,
+                "id": 327,
+                "likes": null,
+                "sotw": 0,
+                "tagid": "8, 9, 14",
+                "tagname": "Florijn, Bijlmer, Buurtnieuws",
+                "title": "Cypress Test Verhaal 3",
+                "url": "8UQYYW39AO",
+                "user_email": "community.florijn@gmail.com",
+                "user_name": "Community Florijn",
+                "user_type": 2,
+                "verified": 0,
+                "year": 2023
+            }
+        ]
+    },
+    "empty": {
+        "result": []
+    }
+}

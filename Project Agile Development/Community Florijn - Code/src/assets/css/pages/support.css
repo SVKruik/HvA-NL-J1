@@ -1,0 +1,335 @@
+.box-content {
+    height: fit-content;
+}
+
+.footer {
+    margin-top: 50px;
+}
+
+.support {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.support-splitter {
+    width: 2px;
+    height: 550px;
+    background-color: var(--gray);
+    border-radius: 10px;
+}
+
+/* Form Elements */
+.support-form-container {
+    display: flex;
+    width: 55%;
+    gap: 25px;
+    box-sizing: border-box;
+    justify-content: flex-start;
+}
+
+.support-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex-grow: 1;
+}
+
+.support-form-element {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.support-form-element input {
+    height: 40px;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 18px;
+    flex-grow: 1;
+}
+
+.support-form-element textarea {
+    height: 200px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.selector-wrapper {
+    display: flex;
+    border: 1px solid var(--border);
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding: 5px 15px;
+}
+
+.support-form-selector {
+    height: 40px;
+    border: none;
+    font-size: 16px;
+    flex-grow: 1;
+}
+
+.selector-wrapper i {
+    font-size: 22px;
+}
+
+select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+.support-input-label {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 20px;
+}
+
+.support-form-counter {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 12px;
+    width: 100%;
+    text-align: right;
+    opacity: 0;
+}
+
+.support-form-submit {
+    border-radius: 10px;
+    height: 40px;
+    width: 150px;
+}
+
+.support-form-submit p {
+    font-family: "DM Sans", sans-serif;
+}
+
+/* Info Container */
+.support-form-info {
+    display: flex;
+    max-width: 340px;
+    gap: 10px;
+    border: 1px solid var(--gray);
+    box-sizing: border-box;
+    padding: 10px;
+    height: fit-content;
+    max-height: 520px;
+    min-width: 270px;
+}
+
+.support-info-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.support-info-text h5 {
+    text-align: left;
+}
+
+.support-info-text p {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 16px;
+}
+
+.support-info-button {
+    background-color: var(--main);
+    border: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 0px;
+    margin: 3px;
+}
+
+.support-info-button:hover {
+    background-color: unset;
+    border: none;
+}
+
+.support-info-button i {
+    font-size: 20px;
+    color: var(--border);
+}
+
+.support-info-button:hover i {
+    color: var(--alt);
+}
+
+/* FAQ */
+.support-faq-parent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 506px;
+    gap: 20px;
+}
+
+.support-faq-container {
+    width: 100%;
+    border: 1px solid var(--gray);
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: 1s ease;
+    max-height: 52px;
+}
+
+.support-faq-title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.support-faq-title {
+    font-size: 18px;
+}
+
+.support-faq-icon {
+    font-size: 20px;
+    rotate: 90deg;
+}
+
+.support-faq-fold-out {
+    height: fit-content;
+}
+
+.fold-out-text {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 1215px) {
+    .support-faq-container {
+        max-height: 76px;
+    }
+}
+
+@media only screen and (max-width: 1130px) {
+    .support-form-container {
+        gap: 25px;
+        justify-content: space-evenly;
+    }
+
+    .support-form {
+        gap: 5px;
+        width: 100%;
+    }
+
+    .support-form-info {
+        max-width: 300px;
+    }
+
+    .support-form-element input,
+    .support-form-element textarea {
+        width: 250px;
+    }
+
+    .selector-wrapper {
+        width: 250px;
+    }
+
+    .support-form-selector {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .support {
+        flex-direction: column;
+    }
+
+    .support-splitter {
+        display: block;
+        width: 90%;
+        height: 2px;
+        margin: auto;
+    }
+
+    .support-form-element input,
+    .support-form-element textarea {
+        width: 100%;
+    }
+
+    .selector-wrapper {
+        width: 100%;
+    }
+
+    .support-form-container {
+        padding: 20px;
+        /* margin: auto; */
+        width: 100%;
+    }
+
+    .support-faq-parent {
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .support-form-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .support-form-element {
+        margin: auto;
+        width: 100%;
+    }
+
+    .support-form {
+        margin: auto;
+    }
+
+    .support-form-info {
+        width: 100%;
+        max-width: none;
+        height: fit-content;
+        margin: auto;
+    }
+
+    .support-form-element input,
+    .support-form-element textarea,
+    .selector-wrapper {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .support-info-text p {
+        font-size: 14px;
+    }
+
+    .support-form-info {
+        width: 100%;
+        min-width: 100%;
+        max-height: fit-content;
+    }
+
+    .submit-button {
+        display: flex;
+        align-items: center;
+    }
+
+    .support-form-submit {
+        width: 100%;
+    }
+
+    .support-faq-container {
+        max-height: 100px;
+    }
+}
