@@ -51,7 +51,7 @@ const Project2 = () => {
       <br />
       <h4>Links</h4>
       <ul className="bullet-list">
-        <li><a href="https://github.com/PuffinKwadraat/PGreflect" className="paragraph-link" target="_blank" rel="noreferrer">Repository</a></li>
+        <li><a href="https://github.com/SVKruik/PGreflect" className="paragraph-link" target="_blank" rel="noreferrer">Repository</a></li>
         <li><a href="https://reactjs.org/" className="paragraph-link" target="_blank" rel="noreferrer">React</a></li>
         <li><a href="https://odindesignthemes.com/vikinger/profile-timeline.html" className="paragraph-link" target="_blank" rel="noreferrer">Reference</a></li>
       </ul>

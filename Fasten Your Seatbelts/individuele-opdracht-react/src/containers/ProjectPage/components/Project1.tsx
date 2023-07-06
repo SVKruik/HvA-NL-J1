@@ -18,7 +18,7 @@ const Project1 = () => {
         Dit project voldeed aan de eisen, en heb deze daarom mijn eigen thuis project, gecombineerd met school.
       </p>
       <p>
-        Ik heb er in totaal 16 gemaakt, elk hun eigen <a href="https://github.com/PuffinKwadraat/Discord-Bots/blob/main/bot-names.md" className="paragraph-link" target="_blank" rel="noreferrer">functiecategorie</a>.
+        Ik heb er in totaal 16 gemaakt, elk hun eigen <a href="https://github.com/SVKruik/Discord-Bots/blob/main/bot-names.md" className="paragraph-link" target="_blank" rel="noreferrer">functiecategorie</a>.
         Voor dit project heb ik toen ook een Raspberry Pi 4 aangeschaft, om de bots te hosten, en 24/7 aan te houden.
       </p>
       <p>
@@ -59,7 +59,7 @@ const Project1 = () => {
       <br />
       <h4>Links</h4>
       <ul className="bullet-list">
-          <li><a href="https://github.com/PuffinKwadraat/Discord-Bots" className="paragraph-link" target="_blank" rel="noreferrer">Repository</a></li>
+          <li><a href="https://github.com/SVKruik/Discord-Bots" className="paragraph-link" target="_blank" rel="noreferrer">Repository</a></li>
           <li><a href="https://discord.js.org/#/" className="paragraph-link" target="_blank" rel="noreferrer">Discord.js</a></li>
           <li><a href="https://www.raspberrypi.com/" className="paragraph-link" target="_blank" rel="noreferrer">Raspberry</a></li>
       </ul>

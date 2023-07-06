@@ -7,9 +7,9 @@ const ActiveProjects = () => {
                 dit moment regelmatig aan werk. Ik heb ook een link gegeven naar de GitHub repository.
             </p>
             <ul className="bullet-list">
-                <li>Portfolio - <a href="https://github.com/PuffinKwadraat/Portfolio-Website" className="paragraph-link" target="_blank" rel="noreferrer">link</a></li>
-                <li>School projecten - <a href="https://github.com/PuffinKwadraat/HvA-NL-J1" className="paragraph-link" target="_blank" rel="noreferrer">link</a></li>
-                <li>PGreflect - <a href="https://github.com/PuffinKwadraat/PGreflect" className="paragraph-link" target="_blank" rel="noreferrer">link</a></li>
+                <li>Portfolio - <a href="https://github.com/SVKruik/Portfolio-Website" className="paragraph-link" target="_blank" rel="noreferrer">link</a></li>
+                <li>School projecten - <a href="https://github.com/SVKruik/HvA-NL-J1" className="paragraph-link" target="_blank" rel="noreferrer">link</a></li>
+                <li>PGreflect - <a href="https://github.com/SVKruik/PGreflect" className="paragraph-link" target="_blank" rel="noreferrer">link</a></li>
             </ul>
         </article>
     )

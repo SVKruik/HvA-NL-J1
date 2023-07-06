@@ -35,7 +35,7 @@ const MiscPage = () => {
             <li>Tijd kwijt: ongeveer 25 uur</li>
             <li>Editor gebruikt: Visual Studio Code</li>
           </ul>
-          <p>Voor vanilla variant: <a href="https://github.com/PuffinKwadraat/HvA-NL-J1/tree/main/FYS/individuele-opdracht-html-css" className="paragraph-link" target="_blank"
+          <p>Voor vanilla variant: <a href="https://github.com/SVKruik/HvA-NL-J1/tree/main/FYS/individuele-opdracht-html-css" className="paragraph-link" target="_blank"
                     rel="noreferrer">Repository</a>
                 </p>
         </article>
