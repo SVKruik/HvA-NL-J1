@@ -1,11 +1,3 @@
-/**
- * This class contains ExpressJS routes specific for the users entity
- * this file is automatically loaded in app.js
- *
- * @author Pim Meijer
- */
-const { hashPassword } = require("mysql/lib/protocol/Auth");
-
 class UsersRoutes {
     #errorCodes = require("../framework/utils/httpErrorCodes");
     #databaseHelper = require("../framework/utils/databaseHelper");
