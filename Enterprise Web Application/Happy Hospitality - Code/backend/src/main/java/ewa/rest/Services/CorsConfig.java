@@ -11,7 +11,7 @@ import java.util.List;
 
 @Configuration
 public class CorsConfig {
-    String productionUrl = "https://www.stefankruik.com";
+    String productionUrl = "";
     String developmentUrl = "http://localhost:5173";
 
     @Bean

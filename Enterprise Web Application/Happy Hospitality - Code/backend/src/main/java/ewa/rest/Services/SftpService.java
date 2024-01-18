@@ -12,8 +12,8 @@ public class SftpService {
             jsch.setKnownHosts("~/.ssh/known_hosts");
             java.util.Properties config = new java.util.Properties();
             config.put("StrictHostKeyChecking", "no");
-            Session jschSession = jsch.getSession("520736681.swh.strato-hosting.eu", "ssh.strato.com", 22);
-            jschSession.setPassword("ABebkA/9217");
+            Session jschSession = jsch.getSession("", "", 22);
+            jschSession.setPassword("");
             jschSession.setConfig(config);
             jschSession.connect();
             return (ChannelSftp) jschSession.openChannel("sftp");

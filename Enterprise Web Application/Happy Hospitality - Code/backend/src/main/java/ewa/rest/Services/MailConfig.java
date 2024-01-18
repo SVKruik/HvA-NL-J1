@@ -12,10 +12,10 @@ public class MailConfig {
     @Bean
     public JavaMailSender getJavaMailSender() {
         JavaMailSenderImpl mailSender = new JavaMailSenderImpl();
-        mailSender.setHost("smtp.strato.com");
-        mailSender.setPort(465);
-        mailSender.setUsername("webmaster@stefankruik.com");
-        mailSender.setPassword("yCwbakux/8254");
+        mailSender.setHost("");
+        mailSender.setPort();
+        mailSender.setUsername("");
+        mailSender.setPassword("");
 
         Properties props = mailSender.getJavaMailProperties();
         props.put("mail.transport.protocol", "smtp");
