@@ -1,0 +1,96 @@
+stages:
+   - test_frontend
+   - test_backend
+   - deploy_web
+   - deploy_api
+   - reload_api
+
+test_frontend:
+  stage: test_frontend
+  image: node:alpine
+  only:
+    - main
+  tags:
+    - hva
+  script:
+    - apk update
+    - cd frontend
+    - npm ci
+    - npm run test
+
+test_backend:
+  stage: test_backend
+  image: node:alpine
+  only:
+    - main
+  tags:
+    - hva
+  script:
+    - apk update
+    - apk add -q openjdk17
+    - apk add -q maven
+    - cd backend
+    - mvn test -q
+  artifacts:
+    when: on_failure
+    paths: 
+      - backend/target/surefire-reports
+    exclude:
+      - backend/target/*.xml
+
+deploy_web:
+  stage: deploy_web
+  image: node:alpine
+  only:
+    - main
+  tags:
+    - hva
+  retry: 1
+  environment: Frontend
+  script:
+    - apk update
+    - apk add openssh
+    - apk add lftp
+    - mkdir -p ~/.ssh
+    - ssh-keyscan -p $SFTP_PORT $SFTP_HOST >> ~/.ssh/known_hosts
+    - cd frontend
+    - npm ci
+    - npm run build
+    - lftp -e "mirror -R --delete dist/ /dist; exit" -u $SFTP_USERNAME,$SFTP_PASSWORD sftp://$SFTP_HOST:$SFTP_PORT
+
+deploy_api:
+  stage: deploy_api
+  only:
+    - main
+  tags:
+    - hva
+  retry: 1
+  environment: Backend
+  script:
+    - apk update
+    - apk add -q openssh
+    - apk add -q lftp
+    - apk add -q openjdk17
+    - apk add -q maven
+    - apk add -q curl
+    - mkdir -p ~/.ssh
+    - ssh-keyscan -p $VPS_PORT $VPS_HOST >> ~/.ssh/known_hosts
+    - cd backend
+    - mvn package -q -B
+    - lftp -e "mirror -R --overwrite target/ files/target; exit" -u $VPS_USERNAME,$VPS_PASSWORD sftp://$VPS_HOST:$VPS_PORT
+  artifacts:
+    when: on_success
+    paths: 
+      - backend/target/rest-1.jar
+
+reload_api:
+  stage: reload_api
+  only:
+    - main
+  tags:
+    - hva
+  retry: 1
+  script:
+    - apk update
+    - apk add -q curl
+    - "curl -k -X GET -H 'X-API-Key: $API_KEY' 'https://www.stefankruik.nl/api/reload'"

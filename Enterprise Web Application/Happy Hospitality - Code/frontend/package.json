@@ -1,0 +1,45 @@
+{
+    "name": "ewa",
+    "version": "4.0.0",
+    "private": true,
+    "scripts": {
+        "dev": "vue-cli-service serve --port 5173",
+        "build": "vue-cli-service build",
+        "test": "node --experimental-vm-modules ./node_modules/.bin/jest"
+    },
+    "dependencies": {
+        "axios": "^1.6.4",
+        "chart.js": "^4.4.1",
+        "crypto-js": "^4.2.0",
+        "dotenv": "^16.3.1",
+        "vue": "^3.4.5",
+        "vue-chartjs": "^5.3.0",
+        "vue-router": "^4.0.3"
+    },
+    "devDependencies": {
+        "@babel/preset-env": "^7.23.7",
+        "@vue/cli-plugin-router": "~5.0.0",
+        "@vue/cli-plugin-unit-jest": "~5.0.0",
+        "@vue/cli-service": "~5.0.0",
+        "@vue/test-utils": "^2.4.3",
+        "@vue/vue3-jest": "^27.0.0-alpha.1",
+        "babel-jest": "^27.0.6",
+        "jest": "^27.5.1"
+    },
+    "browserslist": [
+        "> 1%",
+        "last 2 versions",
+        "not dead",
+        "not ie 11"
+    ],
+    "jest": {
+        "preset": "@vue/cli-plugin-unit-jest/presets/no-babel",
+        "testMatch": [
+            "**/src/**/*.spec.js"
+        ],
+        "verbose": true,
+        "transformIgnorePatterns": [
+            "node_modules/(?!(axios)/)"
+        ]
+    }
+}

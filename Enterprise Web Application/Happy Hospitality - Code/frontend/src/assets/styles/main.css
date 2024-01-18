@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+    transition-duration: 250ms;
+    border-radius: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+
+    --main: #E2E2DA;
+    --main-dark: #b7b7b3;
+    --main-hover: #858585;
+
+    --accent-a: #FECC30;
+    --accent-b: #0992A4;
+    --accent-b-hover: #077B8B;
+    --green: #3BA55C;
+    --red: #CD5C5C;
+    --orange: #CC8615;
+
+    --fill: #D3D3C7;
+    --footer: #333333;
+
+    --font-dark: #0E0E0E;
+    --font-light: #FFFFFF;
+    --font-opacity: rgba(30, 30, 30, 0.3);
+}
+
+body {
+    min-height: 900px;
+    color: var(--font-dark);
+    overflow-x: hidden;
+    background-color: var(--main);
+}
+
+a,
+button,
+.button {
+    cursor: pointer;
+}
+
+button {
+    box-shadow: none;
+    border: none;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.marked-link {
+    text-decoration: underline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+
+.button,
+button {
+    border: none;
+    outline: none;
+    width: 160px;
+    height: 40px;
+    background-color: var(--accent-b);
+    color: var(--font-light);
+    box-sizing: border-box;
+}
+
+.button,
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button:hover,
+button:hover {
+    background-color: transparent;
+    border: 2px solid var(--accent-b);
+    color: var(--font-dark);
+}
+
+.indent {
+    margin: auto;
+    width: 80%;
+}
+
+.btn-primary {
+    font-size: 14px;
+    background-color: var(--accent-b);
+    padding: 16px 60px;
+    color: var(--font-light);
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-b-hover);
+}
+
+.header-with-bg {
+    font-size: 24px;
+    text-transform: uppercase;
+    background-color: var(--accent-a);
+    font-weight: 600;
+    padding: 0 4px;
+    width: fit-content;
+}
+
+.input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--font-dark);
+    padding: 8px 2px;
+}
+
+.input::placeholder {
+    color: var(--font-opacity);
+}
+
+.input:focus {
+    outline: none;
+}
+
+hr {
+    margin: 10px 0;
+    width: 100%;
+}
+
+.link-image {
+    width: 10px;
+    height: 10px;
+}
+
+@media (width <= 800px) {
+    .indent {
+        width: 90%;
+    }
+}

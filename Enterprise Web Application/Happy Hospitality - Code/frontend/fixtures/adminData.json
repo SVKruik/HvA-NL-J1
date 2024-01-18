@@ -1,0 +1,63 @@
+{
+    "superUsers": [
+        {
+            "name": "Stefan Kruik",
+            "id": 1,
+            "date": "January first 2024",
+            "email": "sv.kruik@gmail.com",
+            "rank": "Administrator",
+            "blocked": false,
+            "disabled": false
+        },
+        {
+            "name": "Emir Bay",
+            "id": 2,
+            "date": "January second 2024",
+            "email": "bayet@example.com",
+            "rank": "Super User",
+            "blocked": false,
+            "disabled": false
+        },
+        {
+            "name": "Donovan Tjokrodimedjo",
+            "id": 3,
+            "date": "January third 2024",
+            "email": "donovan.tjokrodimedjo@hva.nl",
+            "rank": "Super User",
+            "blocked": false,
+            "disabled": false
+        }
+    ],
+    "events": [
+        {
+            "id": 1,
+            "title": "Test Title 1",
+            "description": "Test Description 1",
+            "ticket": "81BAABUC",
+            "price": "€11,99",
+            "date": "January first 2024",
+            "creation": "January first 2024",
+            "type": "Event Type 1"
+        },
+        {
+            "id": 2,
+            "title": "Test Title 2",
+            "description": "Test Description 2",
+            "ticket": "IBEB21IV",
+            "price": "€12,99",
+            "date": "January second 2024",
+            "creation": "January second 2024",
+            "type": "Event Type 2"
+        },
+        {
+            "id": 3,
+            "title": "Test Title 3",
+            "description": "Test Description 3",
+            "ticket": "ANUEB2AY",
+            "price": "€13,99",
+            "date": "January third 2024",
+            "creation": "January third 2024",
+            "type": "Event Type 3"
+        }
+    ]
+}

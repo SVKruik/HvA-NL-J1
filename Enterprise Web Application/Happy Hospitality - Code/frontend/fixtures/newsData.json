@@ -1,0 +1,65 @@
+[
+    {
+        "newsId": 1,
+        "title": "Test Challenge 1",
+        "date": "1 januari 2024",
+        "ticket": "TICKET123",
+        "type": "challenges"
+    },
+    {
+        "newsId": 2,
+        "title": "Test Challenge 2",
+        "date": "2 januari 2024",
+        "ticket": "TICKET456",
+        "type": "challenges"
+    },
+    {
+        "newsId": 3,
+        "title": "Test Challenge 3",
+        "date": "3 januari 2024",
+        "ticket": "TICKET789",
+        "type": "challenges"
+    },
+    {
+        "newsId": 4,
+        "title": "Test Research 1",
+        "date": "1 februari 2024",
+        "ticket": "123TICKET",
+        "type": "research"
+    },
+    {
+        "newsId": 5,
+        "title": "Test Research 2",
+        "date": "2 februari 2024",
+        "ticket": "456TICKET",
+        "type": "research"
+    },
+    {
+        "newsId": 6,
+        "title": "Test Research 3",
+        "date": "3 februari 2024",
+        "ticket": "789TICKET",
+        "type": "research"
+    },
+    {
+        "newsId": 7,
+        "title": "Test Networking 1",
+        "date": "1 maart 2024",
+        "ticket": "TICKET111",
+        "type": "networking"
+    },
+    {
+        "newsId": 8,
+        "title": "Test Networking 2",
+        "date": "2 maart 2024",
+        "ticket": "TICKET222",
+        "type": "networking"
+    },
+    {
+        "newsId": 9,
+        "title": "Test Networking 3",
+        "date": "3 maart 2024",
+        "ticket": "TICKET333",
+        "type": "networking"
+    }
+]
