@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+/* Palette */
+:root {
+	--main: #212528;
+	--fill: #343739;
+	--fill-mid: #3B3E40;
+	--fill-light: #404345;
+
+	--font-main: #FFFFFF;
+	--font-mid: #FFFFFF60;
+	--font-light: #FFFFFF10;
+
+	--font-size-normal: 15px;
+	--font-size-mid: 13px;
+	--font-size-small: 10px;
+
+	--border-radius-high: 15px;
+	--border-radius-mid: 10px;
+	--border-radius-low: 5px;
+
+	--accent: #E2C631;
+	--info: #A1CCD1;
+	--success: #99B080;
+	--warning: #FAAB78;
+	--danger: #D04848;
+}
+
+/* Global Styling */
+* {
+	font-family: "Titillium Web", sans-serif;
+	font-weight: 300;
+	padding: 0;
+	margin: 0;
+	transition: 0.2s;
+	font-synthesis: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+	scroll-behavior: smooth;
+	color: var(--font-main);
+	text-decoration: none;
+	user-select: none;
+	cursor: default;
+}
+
+body {
+	background-color: var(--main);
+	overflow: hidden;
+}
+
+/* Continuous Rotating */
+@keyframes loading {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+/* Custom Classes */
+.content-wrapper {
+	margin: auto;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 620px;
+}
+
+.content {
+	box-sizing: border-box;
+	padding: 10px;
+	width: 100vw;
+	height: 100vh;
+	overflow-y: scroll;
+	scrollbar-gutter: stable;
+}
+
+.faded-text {
+	color: var(--font-mid);
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.loading-icon {
+	animation: loading 1s linear infinite;
+	font-size: var(--font-size-mid);
+	color: var(--font-mid);
+	opacity: 0;
+}
+
+.splitter {
+	display: block;
+	background-color: var(--font-light);
+	border-radius: var(--border-radius-mid);
+}
+
+.splitter-accent {
+	display: block;
+	background-color: var(--accent);
+	border-radius: var(--border-radius-mid);
+}
+
+.shadow {
+	-moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.text-shadow {
+	-moz-text-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+	-webkit-text-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+	text-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.input {
+	width: 160px;
+	height: 25px;
+	border-radius: var(--border-radius-low);
+	background-color: var(--fill-mid);
+	border: 2px solid var(--font-light);
+	font-size: var(--font-size-mid);
+}
+
+.error-page {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	overflow: hidden;
+}
+
+.error-page button {
+	width: 100px;
+	height: 30px;
+	border-radius: var(--border-radius-high);
+}
+
+.visible {
+	opacity: 1;
+}
+
+.smaller {
+	font-size: var(--font-size-mid);
+}
+
+.dot {
+	font-size: 5px;
+	text-align: center;
+	line-height: 16px;
+}
+
+.flex {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.ellipsis {
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Default HTML Tags */
+a,
+button,
+select,
+input,
+a *,
+button * {
+	cursor: pointer;
+}
+
+ul,
+ol {
+	list-style-type: none;
+}
+
+small,
+.small {
+	font-size: var(--font-size-small);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.bold {
+	font-weight: 600;
+}
+
+h1 {
+	font-size: 42px;
+	line-height: 42px;
+}
+
+input {
+	background-color: var(--fill);
+	outline: none;
+	border: none;
+	width: 10px;
+	box-sizing: border-box;
+	padding: 0 5px;
+}
+
+button {
+	background-color: var(--fill);
+	border: none;
+	font-size: var(--font-size-normal);
+}
+
+select {
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	background-color: transparent;
+	outline: none;
+	border: none;
+}
+
+select::-ms-expand {
+	display: none;
+}
+
+select option {
+	background-color: var(--fill);
+}
+
+input[type=checkbox] {
+	width: 15px;
+	height: 15px;
+}
+
+input[type=text]:disabled {
+	cursor: text;
+}
+
+button:disabled {
+	cursor: default;
+}
+
+p,
+a {
+	font-size: var(--font-size-normal);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+	width: 7px;
+}
+
+
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px var(--main);
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--font-mid);
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: var(--font-main);
+}

@@ -1,0 +1,40 @@
+.settings-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 150px;
+}
+
+.menu-item {
+    height: 32px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+
+.active {
+    background-color: var(--fill-mid);
+    color: var(--accent);
+    border-radius: var(--border-radius-low);
+    -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.splitter {
+    width: 150px;
+    height: 2px;
+}
+
+.splitter-accent {
+    height: 360px;
+    width: 2px;
+}
