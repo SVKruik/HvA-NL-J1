@@ -49,11 +49,9 @@ export class TimelineController extends Controller {
         const currentYear = new Date().getFullYear();
         const storyYear = this.#App.sessionManager.get("timelineYear") || currentYear;
         for (let i = currentYear; i >= lowerBound; i--) {
-            if (this.#isOdd(i) === 1) {
+            if (this.#isOdd(i) === 0) {
                 this.#yearConstructor(oddTimeline, i, SotWURL);
-            } else {
-                this.#yearConstructor(evenTimeline, i, SotWURL);
-            };
+            } else this.#yearConstructor(evenTimeline, i, SotWURL);
         };
 
         // Story of the Week Mark

@@ -36,7 +36,7 @@
 
 .timeline-mid {
     width: 5px;
-    height: 3910px;
+    height: 3990px;
     background-color: var(--alt);
 }
 
@@ -119,11 +119,11 @@
 }
 
 .empty {
-    background-color: var(--border);
+    background-color: var(--gray);
 }
 
 .inactive {
-    background-color: var(--gray);
+    background-color: var(--border);
 }
 
 /* Stories */
@@ -433,7 +433,7 @@
     }
 
     .timeline-mid {
-        width: 5570px;
+        width: 5690px;
         height: 5px;
     }
 

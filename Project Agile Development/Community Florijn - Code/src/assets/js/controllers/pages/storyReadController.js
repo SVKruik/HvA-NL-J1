@@ -211,8 +211,8 @@ export class StoryReadController extends Controller {
             }
 
             this.#storyReadView.querySelector('.story-translation-disclaimer').style.display = "flex";
-        } catch (e) {
-            console.log(e);
+        } catch (error) {
+            console.log(error);
             this.#storyReadView.querySelector('.story-translate-button').classList.remove('inactive');
             this.#storyReadView.querySelector('.story-translation-disclaimer').classList.remove("inactive-section");
             title.innerHTML = storyData.result[0].title;
