@@ -1,0 +1,117 @@
+workflow:
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "web"
+      when: always
+
+stages:
+  # - docker # Build and push Docker images to the registry
+#  - build-frontend # Build the frontend
+  - validate # Validate the Terraform configuration
+  - plan # Plan the Terraform configuration
+  - apply # Apply the Terraform configuration
+  - destroy # Destroy the Terraform configuration
+
+variables:
+  TF_STATE_NAME: default3
+  TF_ROOT: ${CI_PROJECT_DIR}/terraform
+  TF_VAR_CI_REPOSITORY_URL: $CI_REPOSITORY_URL
+  TF_VAR_AZURE_CLIENT_ID: $AZURE_CLIENT_ID
+  TF_VAR_AZURE_SUBSCRIPTION_ID: $AZURE_SUBSCRIPTION_ID
+  TF_VAR_AZURE_APP_CLIENT_ID: $AZURE_APP_CLIENT_ID
+  TF_VAR_AZURE_CLIENT_SECRET: $AZURE_CLIENT_SECRET
+  TF_VAR_REGISTRY_BACKEND_USER: $CI_DEPLOY_USER
+  TF_VAR_REGISTRY_BACKEND_TOKEN: $CI_DEPLOY_PASSWORD
+  TF_VAR_REGISTRY_URL: $CI_REGISTRY
+  TF_VAR_KEY_VAULT_NAME: "MixitKeyVault"
+
+default:
+  tags:
+    - hva
+  image: $CI_REGISTRY_IMAGE/custom_runner_image:latest
+  id_tokens:
+    ID_TOKEN_1:
+      aud: https://gitlab.fdmci.hva.nl
+  before_script:
+    - cd $TF_ROOT
+    - az login --tenant $AZURE_TENANT_ID
+      --service-principal
+      --username $AZURE_CLIENT_ID
+      --federated-token $ID_TOKEN_1
+    - az account set --subscription $AZURE_SUBSCRIPTION_ID
+    - |
+      terraform init -upgrade \
+      -backend-config="address=https://gitlab.fdmci.hva.nl/api/v4/projects/40738/terraform/state/$TF_STATE_NAME" \
+      -backend-config="lock_address=https://gitlab.fdmci.hva.nl/api/v4/projects/40738/terraform/state/$TF_STATE_NAME/lock" \
+      -backend-config="unlock_address=https://gitlab.fdmci.hva.nl/api/v4/projects/40738/terraform/state/$TF_STATE_NAME/lock" \
+      -backend-config="username=${TERRAFORM_BACKEND_USER}" \
+      -backend-config="password=${TERRAFORM_BACKEND_TOKEN}" \
+      -backend-config="lock_method=POST" \
+      -backend-config="unlock_method=DELETE" \
+      -backend-config="retry_wait_min=5"
+#    load variables from the environment
+    - export TF_VAR_CI_REPOSITORY_URL=$CI_REPOSITORY_URL
+    - export TF_VAR_AZURE_CLIENT_ID=$AZURE_CLIENT_ID
+    - export TF_VAR_AZURE_SUBSCRIPTION_ID=$AZURE_SUBSCRIPTION_ID
+    - export TF_VAR_AZURE_APP_CLIENT_ID=$AZURE_APP_CLIENT_ID
+    - export TF_VAR_AZURE_CLIENT_SECRET=$AZURE_CLIENT_SECRET
+    - export TF_VAR_REGISTRY_BACKEND_USER=$CI_REGISTRY_USER
+    - export TF_VAR_REGISTRY_BACKEND_TOKEN=$CI_REGISTRY_PASSWORD
+    - export TF_VAR_REGISTRY_URL=$CI_REGISTRY
+    - export TF_VAR_KEY_VAULT_NAME="MixitKeyVault"
+  cache:
+    key: terraform
+    paths:
+      - ${TF_ROOT}.terraform
+
+# docker-build:
+#   image: docker:cli
+#   stage: docker
+#   services:
+#     - docker:dind
+#   before_script:
+#     - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+#   script:
+#     - docker build -t $CI_REGISTRY_IMAGE/backend:latest backend/
+#     - docker push $CI_REGISTRY_IMAGE/backend:latest
+#     - docker build -t $CI_REGISTRY_IMAGE/custom_runner_image:latest custom_runner_image/
+#     - docker push $CI_REGISTRY_IMAGE/custom_runner_image:latest
+
+#build-frontend-job:
+#  stage: build-frontend
+#  image: node:latest
+#  before_script:
+#    - cd ${CI_PROJECT_DIR}/frontend/
+#  script:
+#    - npm install
+#    - npm run build
+
+terraform_validate:
+  stage: validate
+#  dependencies:
+#    - docker-build
+  script:
+    - terraform validate
+
+terraform_plan:
+  stage: plan
+  dependencies:
+    - terraform_validate
+  script:
+    - terraform plan --out plan
+  artifacts:
+    name: plan
+    paths:
+      - ${TF_ROOT}/plan
+
+terraform_apply:
+  stage: apply
+  script:
+    - terraform apply --auto-approve plan
+  dependencies:
+    - terraform_plan
+
+terraform_destroy:
+  stage: destroy
+  script:
+    - terraform destroy --auto-approve
+  when: manual
