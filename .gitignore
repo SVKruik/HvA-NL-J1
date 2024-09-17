@@ -1,4 +1,10 @@
-
-Cloud Solutions/Flask REST API/.env
-Project Agile Development/Community Florijn - Code/server/config/config.dev.json
+.env
 /Project Agile Development/Community Florijn - Code/server/config
+package-lock.json
+node_modules
+target
+dist
+.obsidian
+.idea
+.vscode
+.DS_Store
