@@ -1,0 +1,19 @@
+deploy_test:
+  stage: deploy
+  environment: test
+  dependencies: []
+  needs: ["publish"]
+  tags:
+    - hva
+  script:
+    - apk update
+    - apk add -q curl
+    - |
+      curl -X POST \
+      -H "Content-Type: application/json" \
+      -H "Authorization: Bearer $DEPLOYMENT_PASSWORD" \
+      -d '{"type":"push","repository":"Rabbit", "payload": { "env": "test" } }' \
+      $DEPLOYMENT_ENDPOINT
+  rules:
+    - if: '$CI_COMMIT_REF_NAME == "test" && $CI_PIPELINE_SOURCE == "push"'
+    - when: never

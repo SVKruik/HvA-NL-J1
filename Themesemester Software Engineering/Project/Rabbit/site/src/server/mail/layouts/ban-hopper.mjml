@@ -1,0 +1,25 @@
+<mjml>
+  <mj-head>
+    <mj-title>Your Account Has Been Banned</mj-title>
+    <mj-preview>Your account has been banned due to policy violation</mj-preview>
+    <mj-attributes>
+      <mj-all font-family="Open Sans" />
+      <mj-text font-size="16px" line-height="24px" />
+      <mj-class name="head" font-size="20px" font-weight="600" />
+      <mj-class name="bold" font-weight="600" />
+      <mj-class name="small" font-size="12px" />
+    </mj-attributes>
+  </mj-head>
+  <mj-body>
+    <mj-section>
+      <mj-column>
+        <mj-text mj-class="head">Your Account Has Been Banned</mj-text>
+        <mj-text>Hi {{ email }},</mj-text>
+        <mj-text>We regret to inform you that your account has been banned.</mj-text>
+        <mj-text mj-class="bold" padding-top="20px">The reason for the ban is:</mj-text>
+        <mj-text padding-top="10px">{{ reason }}</mj-text>
+        <mj-text mj-class="small">If you believe this was a mistake, you may reply to this email or contact our support team.</mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

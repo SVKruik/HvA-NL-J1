@@ -1,0 +1,801 @@
+Linux 6.12.20+rpt-rpi-2712 (rpi5-H) 	12/04/25 	_aarch64_	(4 CPU)
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+   0.00    0.00    0.00    0.00    0.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+     0.00      0.00 3926496  996016  12.08
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+   0.00    0.00    0.00    0.00    0.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+     0.00      0.00 3926496  996016  12.08
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+   6.00    1.00    0.00    0.00    7.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+    16.00      0.00 3926496  996016  12.08
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+  15.00    4.00    0.00    0.00   19.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+    24.00      0.00 3926496  996016  12.08
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+  15.00    3.00    0.00    0.00   18.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+     0.00      0.00 3926496  996016  12.08
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+  16.00    2.00    0.00    0.00   18.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+     0.00      0.00 3926496  996016  12.08
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+  11.00    6.00    0.00    0.00   17.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+     1.00      0.00 3926496  996016  12.08
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+  15.00    5.00    0.00    0.00   20.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+    45.00      0.00 3926496  996016  12.08
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+  23.00    3.00    0.00    0.00   26.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+   319.00      0.00 3926496  996016  12.08
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+  68.00    0.00    0.00    0.00   68.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+  2475.00      0.00 3930592 1000032  12.13
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+  30.00    0.00    0.00    0.00   30.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+   803.00      0.00 3930592 1000064  12.13
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+  18.00    1.00    0.00    0.00   19.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+   386.00      0.00 3930592 1000576  12.14
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+   8.00    4.00    0.00    0.00   12.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+     0.00      0.00 3930592 1000576  12.14
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+  14.00    1.00    0.00    0.00   15.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+   209.00      0.00 3926496  996368  12.08
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+  54.00    0.00    0.00    0.00   54.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+  2396.00      0.00 3928320  998112  12.11
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+  55.00    0.00    0.00    0.00   55.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+  3129.00      0.00 3932656 1002576  12.16
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+   9.00    4.00    0.00    0.00   13.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+   127.00      0.00 3932656 1002576  12.16
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+  20.00    2.00    0.00    0.00   22.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+   540.00      0.00 3932688 1002576  12.16
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+  11.00    2.00    0.00    0.00   13.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+    43.00      0.00 3926544  996784  12.09
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+  29.00    5.00    0.00    0.00   34.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+  1406.00      0.00 3926544  996832  12.09
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+  16.00    3.00    0.00    0.00   19.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+   129.00      0.00 3926544  996832  12.09
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+   9.00    5.00    0.00    0.00   14.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+     0.00      0.00 3926544  996832  12.09
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+  10.00    4.00    0.00    0.00   14.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+    40.00      0.00 3926544  997344  12.10
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+  23.00    3.00    0.00    0.00   26.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+   540.00      0.00 3926544  997856  12.10
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+  14.00    0.00    0.00    0.00   14.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+   238.00      0.00 3926560  997856  12.10
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+   3.00    7.00    0.00    0.00   10.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+     5.00      0.00 3926560  997856  12.10
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+  43.00    0.00    0.00    0.00   43.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+  1937.00      0.00 3930656 1001440  12.15
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+  16.00    0.00    0.00    0.00   16.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+   362.00      0.00 3930656 1001280  12.14
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+   7.00    5.00    0.00    0.00   12.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+    93.00      0.00 3926560  997504  12.10
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+  11.00    3.00    0.00    0.00   14.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+    63.00      0.00 3926560  997504  12.10
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+  12.00    4.00    0.00    0.00   16.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+   130.00      0.00 3926560  997504  12.10
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+   8.00    5.00    0.00    0.00   13.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+     0.00      0.00 3926560  997504  12.10
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+   8.00    5.00    0.00    0.00   13.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+     0.00      0.00 3926560  997504  12.10
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+   8.00    4.00    0.00    0.00   12.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+     6.00      0.00 3926560  997504  12.10
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+   9.00    3.00    0.00    0.00   12.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+     0.00      0.00 3926560  997504  12.10
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+  11.00    5.00    0.00    0.00   16.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+   108.00      0.00 3926560  997504  12.10
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+   8.00    5.00    0.00    0.00   13.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+     5.00      0.00 3926560  997504  12.10
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+  18.00    3.00    0.00    0.00   21.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+   425.00      0.00 3926560  997472  12.10
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+   7.00    3.00    0.00    0.00   10.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+     0.00      0.00 3926560  997472  12.10
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+  26.00    1.00    0.00    0.00   27.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+  1232.00      0.00 3926560  997872  12.10
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+   7.00    2.00    0.00    0.00    9.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+     0.00      0.00 3926560  997872  12.10
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+:00  38.00    1.00    0.00    0.00   39.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+:00  1552.00      0.00 3930656 1001680  12.15
+
+:00---
+
+ %usr %system  %guest   %wait    %CPU
+   8.00    2.00    0.00    0.00   10.00
+
+:00 minflt/s  majflt/s     VSZ     RSS   %MEM
+     1.00      0.00 3930656 1001680  12.15
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+  55.00    2.00    0.00    0.00   57.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+  2122.00      0.00 3930656 1001840  12.15
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+  21.00    2.00    0.00    0.00   23.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+   872.00      0.00 3930656 1002144  12.15
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+  22.00    1.00    0.00    0.00   23.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+   693.00      0.00 3930656 1001840  12.15
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+  30.00    1.00    0.00    0.00   31.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+  1342.00      0.00 3930688 1002160  12.15
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+  15.00    3.00    0.00    0.00   18.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+   687.00      0.00 3930784 1002128  12.15
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+  10.00    2.00    0.00    0.00   12.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+    35.00      0.00 3926704  998208  12.11
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+   7.00    3.00    0.00    0.00   10.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+     0.00      0.00 3926704  998208  12.11
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+  11.00    1.00    0.00    0.00   12.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+   130.00      0.00 3926704  998208  12.11
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+   7.00    3.00    0.00    0.00   10.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+     0.00      0.00 3926704  998208  12.11
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+   4.00    7.00    0.00    0.00   11.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+     0.00      0.00 3926704  998208  12.11
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+  15.00    4.00    0.00    0.00   19.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+   423.00      0.00 3926704  998176  12.11
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+  12.00    4.00    0.00    0.00   16.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+   251.00      0.00 3926704  998160  12.11
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+  11.00    4.00    0.00    0.00   15.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+   256.00      0.00 3926896  998160  12.11
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+  19.00    1.00    0.00    0.00   20.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+   415.00      0.00 3926704  998144  12.11
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+  16.00    2.00    0.00    0.00   18.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+   699.00      0.00 3926736  998560  12.11
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+  15.00    3.00    0.00    0.00   18.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+   766.00      0.00 3926736  998704  12.11
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+  23.00    6.00    0.00    0.00   29.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+  1264.00      0.00 3926800  998768  12.11
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+  13.00    2.00    0.00    0.00   15.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+   521.00      0.00 3928864  998752  12.11
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+   3.00    4.00    0.00    0.00    7.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+     1.00      0.00 3928864  998752  12.11
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+   6.00    4.00    0.00    0.00   10.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+     0.00      0.00 3928864  998752  12.11
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+   3.00    7.00    0.00    0.00   10.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+     0.00      0.00 3928864  998752  12.11
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+   4.00    5.00    0.00    0.00    9.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+     4.00      0.00 3928864  998752  12.11
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+  22.00    4.00    0.00    0.00   26.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+   899.00      0.00 3929888  999248  12.12
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+   3.00    3.00    0.00    0.00    6.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+     0.00      0.00 3929888  999248  12.12
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+  10.00    1.00    0.00    0.00   11.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+   312.00      0.00 3929920  999248  12.12
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+   4.00    1.00    0.00    0.00    5.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+     2.00      0.00 3928896  999248  12.12
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+  17.00    3.00    0.00    0.00   20.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+   563.00      0.00 3928896  999552  12.12
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+  10.00    2.00    0.00    0.00   12.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+   239.00      0.00 3928896  999552  12.12
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+   6.00    3.00    0.00    0.00    9.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+     0.00      0.00 3928896  999552  12.12
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+   4.00    5.00    0.00    0.00    9.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+     0.00      0.00 3928896  999552  12.12
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+   5.00    3.00    0.00    0.00    8.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+     0.00      0.00 3928896  999552  12.12
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+   6.00    3.00    0.00    0.00    9.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+     0.00      0.00 3928896  999552  12.12
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+  19.00    4.00    0.00    0.00   23.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+   588.00      0.00 3928896  999504  12.12
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+   4.00    2.00    0.00    0.00    6.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+     0.00      0.00 3928896  999504  12.12
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+   9.00    2.00    0.00    0.00   11.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+   273.00      0.00 3928896  999504  12.12
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+   4.00    2.00    0.00    0.00    6.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+     0.00      0.00 3928896  999504  12.12
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+  16.00    2.00    0.00    0.00   18.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+   883.00      0.00 3928896 1000016  12.13
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+   1.00    6.00    0.00    0.00    7.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+     0.00      0.00 3928896 1000016  12.13
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+   6.00    3.00    0.00    0.00    9.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+    34.00      0.00 3928896 1000016  12.13
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+   5.00    4.00    0.00    0.00    9.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+     0.00      0.00 3928896 1000016  12.13
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+   5.00    3.00    0.00    0.00    8.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+     0.00      0.00 3928896 1000016  12.13
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+   6.00    2.00    0.00    0.00    8.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+     5.00      0.00 3928896 1000016  12.13
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+   6.00    3.00    0.00    0.00    9.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+     0.00      0.00 3928896 1000016  12.13
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+   4.00    3.00    0.00    0.00    7.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+     0.00      0.00 3926832 1000016  12.13
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+   4.00    5.00    0.00    0.00    9.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+     0.00      0.00 3926832 1000016  12.13
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+   5.00    3.00    0.00    0.00    8.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+     1.00      0.00 3926832 1000016  12.13
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+   4.00    4.00    0.00    0.00    8.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+     0.00      0.00 3926832 1000016  12.13
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+  11.00    2.00    0.00    0.00   13.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+   209.00      0.00 3928896 1000016  12.13
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+   2.00    6.00    0.00    0.00    8.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+     0.00      0.00 3928896 1000016  12.13
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+   5.00    4.00    0.00    0.00    9.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+     0.00      0.00 3928896 1000016  12.13
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+   5.00    3.00    0.00    0.00    8.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+     0.00      0.00 3928896 1000016  12.13
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+   3.00    5.00    0.00    0.00    8.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+     0.00      0.00 3928896 1000016  12.13
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+   6.00    4.00    0.00    0.00   10.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+     0.00      0.00 3926832 1000016  12.13
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+   5.00    3.00    0.00    0.00    8.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+     2.00      0.00 3926832 1000016  12.13
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+   3.00    5.00    0.00    0.00    8.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+     0.00      0.00 3926832 1000016  12.13
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+   3.00    5.00    0.00    0.00    8.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+     0.00      0.00 3926832 1000016  12.13
+
+---
+
+ %usr %system  %guest   %wait    %CPU
+   4.00    4.00    0.00    0.00    8.00
+
+ minflt/s  majflt/s     VSZ     RSS   %MEM
+     1.00      0.00 3926832 1000016  12.13

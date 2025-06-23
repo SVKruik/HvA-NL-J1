@@ -1,0 +1,35 @@
+# Nuxt dev/build outputs
+.output
+.data
+.nuxt
+.nitro
+.cache
+dist
+
+# Node dependencies
+node_modules
+
+# Coverage reports
+coverage
+
+# Logs
+logs
+*.log
+
+# Misc
+.DS_Store
+.fleet
+.idea
+package-lock.json
+
+# Local env files
+.env.*
+!.env.example
+
+*storybook.log
+storybook-static
+server/mail/out
+site/src/.env
+/site/src/.vscode
+site/src/server/.env
+temp

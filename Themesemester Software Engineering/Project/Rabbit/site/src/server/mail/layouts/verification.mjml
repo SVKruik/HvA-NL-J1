@@ -1,0 +1,24 @@
+<mjml>
+  <mj-head>
+    <mj-title>Welcome to Rabbit!</mj-title>
+    <mj-attributes>
+      <mj-all font-family="Open Sans" />
+      <mj-text font-size="16px" line-height="24px" color="#000000" />
+      <mj-class name="head" font-size="24px" line-height="32px" />
+      <mj-class name="bold" font-weight="600" />
+    </mj-attributes>
+  </mj-head>
+  <mj-body>
+    <mj-section>
+      <mj-column>
+        <mj-text mj-class="head">Welcome to Rabbit!</mj-text>
+        <mj-text>Dear Hopper,</mj-text>
+        <mj-text>To complete the sign-up process and unlock the full platform, please verify your email address by using the following code:</mj-text>
+        <mj-text mj-class="bold">{{ verificationPin }}</mj-text>
+        <mj-text>Do not share this code with anyone.</mj-text>
+        <mj-text>If you have any questions, do not hesitate to reach out.</mj-text>
+        <mj-text>If you did not sign up for the Rabbit Network, please ignore this email.</mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

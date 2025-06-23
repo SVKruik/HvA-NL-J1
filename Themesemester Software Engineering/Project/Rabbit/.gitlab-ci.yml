@@ -1,0 +1,61 @@
+include:
+  - local: ".gitlab/code_quality.yml"
+  - local: ".gitlab/deploy_dev.yml"
+  - local: ".gitlab/deploy_test.yml"
+  - local: ".gitlab/deploy_prod.yml"
+
+stages:
+  - code-quality
+  - test
+  - build
+  - publish
+  - deploy
+
+variables:
+  SITE_IMAGE: $CI_REGISTRY_IMAGE/site:$CI_COMMIT_REF_NAME
+  GIT_DEPTH: "0"
+
+test:
+  stage: test
+  image: node:22.16
+  tags:
+    - hva
+  script:
+    - cd site/src
+    - npm install
+    - npm run test:run
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event" && ($CI_MERGE_REQUEST_TARGET_BRANCH_NAME == "test" || $CI_MERGE_REQUEST_TARGET_BRANCH_NAME == "main")'
+    - if: '$CI_MERGE_REQUEST_TARGET_BRANCH_NAME == "test"'
+      allow_failure: true
+    - when: never
+
+build:
+  stage: build
+  image: node:22.16
+  tags:
+    - rpi-l
+  script:
+    - cd site/src
+    - npm install
+    - npm run build
+  artifacts:
+    paths:
+      - site/src/.output/
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "push" && ($CI_COMMIT_BRANCH == "main" || $CI_COMMIT_BRANCH == "test" || $CI_COMMIT_BRANCH == "dev")'
+    - when: never
+
+publish:
+  stage: publish
+  image: docker
+  tags:
+    - rpi-l
+  needs: ["build"]
+  script:
+    - cd site/src
+    - docker login -u "$REGISTRY_USER" -p "$REGISTRY_PASSWORD" "$CI_REGISTRY"
+    - docker build -t "$SITE_IMAGE" .
+    - docker push "$SITE_IMAGE"
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "push" && ($CI_COMMIT_BRANCH == "main" || $CI_COMMIT_BRANCH == "test" || $CI_COMMIT_BRANCH == "dev")'

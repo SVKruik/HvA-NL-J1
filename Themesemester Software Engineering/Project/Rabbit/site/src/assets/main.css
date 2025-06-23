@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    font-family: "Open Sans", sans-serif;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: rgb(13, 17, 22);
+}
+
+* {
+    outline: none;
+}
+
+html,
+body {
+    overscroll-behavior: none;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera within divs */
+div::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox within divs */
+div {
+    /* IE and Edge */
+    -ms-overflow-style: none;
+    /* Firefox */
+    scrollbar-width: none;
+}
+
+.no-spinner {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+.no-spinner::-webkit-outer-spin-button,
+.no-spinner::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.click-item {
+    @apply w-full h-full absolute z-10 top-0 left-0 cursor-pointer;
+}

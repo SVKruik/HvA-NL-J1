@@ -1,0 +1,43 @@
+<mjml>
+    <mj-head>
+        <mj-title>Support Ticket Confirmation</mj-title>
+        <mj-preview>Your support request has been received</mj-preview>
+        <mj-attributes>
+            <mj-all font-family="Open Sans" />
+            <mj-text font-size="16px" line-height="24px" color="#000000" />
+            <mj-class
+                name="head"
+                font-size="20px"
+                font-weight="600"
+                line-height="28px"
+            />
+            <mj-class name="bold" font-weight="600" />
+            <mj-class name="small" font-size="12px" />
+        </mj-attributes>
+    </mj-head>
+    <mj-body>
+        <mj-section>
+            <mj-column>
+                <mj-text mj-class="head">Support Ticket Received</mj-text>
+                <mj-text>Hi {{ hopper_name }},</mj-text>
+                <mj-text
+                    >Thank you for reaching out to admins. We've received your
+                    message and will get back to you as soon as
+                    possible.</mj-text
+                >
+                <mj-text mj-class="bold" padding-top="20px"
+                    >Your Message:</mj-text
+                >
+                <mj-text mj-class="bold" padding-top="10px"
+                    >{{ title }}</mj-text
+                >
+                <mj-text padding-top="10px">{{ message }}</mj-text>
+                <mj-text mj-class="small"
+                    >You cannot reply to this email. If you'd like to provide
+                    more information, wait for a response from a Keeper and
+                    reply then.</mj-text
+                >
+            </mj-column>
+        </mj-section>
+    </mj-body>
+</mjml>

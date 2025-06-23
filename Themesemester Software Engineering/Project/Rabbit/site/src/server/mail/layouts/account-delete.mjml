@@ -1,0 +1,23 @@
+<mjml>
+  <mj-head>
+    <mj-title>Account Deleted</mj-title>
+    <mj-attributes>
+      <mj-all font-family="Open Sans" />
+      <mj-text font-size="16px" line-height="24px" color="#000000" />
+      <mj-class name="head" font-size="24px" line-height="32px" />
+      <mj-class name="bold" font-weight="600" />
+    </mj-attributes>
+  </mj-head>
+  <mj-body>
+    <mj-section>
+      <mj-column>
+        <mj-text mj-class="head">Account Deleted</mj-text>
+        <mj-text>Dear Hopper,</mj-text>
+        <mj-text>Your account has just been deleted. All your content, including posts, comments and profile information have been removed.</mj-text>
+        <mj-text>We are sorry to see you go! You can always re-register if you change your mind.</mj-text>
+        <mj-text>If you did not initiate this change, please contact us immediately.</mj-text>
+        <mj-text>If you have any questions, do not hesitate to reach out.</mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

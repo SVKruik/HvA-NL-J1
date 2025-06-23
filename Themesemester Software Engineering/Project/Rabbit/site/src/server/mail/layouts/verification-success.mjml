@@ -1,0 +1,22 @@
+<mjml>
+  <mj-head>
+    <mj-title>Account Verification Success</mj-title>
+    <mj-attributes>
+      <mj-all font-family="Open Sans" />
+      <mj-text font-size="16px" line-height="24px" color="#000000" />
+      <mj-class name="head" font-size="24px" line-height="32px" />
+      <mj-class name="bold" font-weight="600" />
+    </mj-attributes>
+  </mj-head>
+  <mj-body>
+    <mj-section>
+      <mj-column>
+        <mj-text mj-class="head">Account Verification Success</mj-text>
+        <mj-text>Dear Hopper,</mj-text>
+        <mj-text>Thank you for completing the account verification process. You can now just all available features that Rabbit offers.</mj-text>
+        <mj-text>We have also given you an Achievement, to commemorate this epic moment.</mj-text>
+        <mj-text>If you have any questions, do not hesitate to reach out.</mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

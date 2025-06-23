@@ -1,0 +1,27 @@
+<mjml>
+  <mj-head>
+    <mj-title>New Support Ticket</mj-title>
+    <mj-preview>Support request from a hopper</mj-preview>
+    <mj-attributes>
+      <mj-all font-family="Open Sans" />
+      <mj-text font-size="16px" line-height="24px" color="#000000" />
+      <mj-class name="head" font-size="20px" font-weight="600" line-height="28px" />
+      <mj-class name="bold" font-weight="600" />
+      <mj-class name="small" font-size="12px"/>
+    </mj-attributes>
+  </mj-head>
+  <mj-body>
+    <mj-section>
+      <mj-column>
+        <mj-text mj-class="head">New Support Ticket</mj-text>
+        <mj-text>
+          <span mj-class="bold">From:</span> {{ email }}<br />
+          <span mj-class="bold">Hopper Name:</span> {{ hopper_name }}<br />
+          <span mj-class="bold">Hopper ID:</span> {{ hopper_id }}<br />
+        </mj-text>
+        <mj-text mj-class="bold" padding-top="20px">{{ title }}</mj-text>
+        <mj-text padding-top="5px">{{ message }}</mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

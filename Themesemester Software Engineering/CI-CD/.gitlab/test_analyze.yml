@@ -1,0 +1,25 @@
+test:
+  stage: test
+  image: maven:3-eclipse-temurin-17
+  dependencies: []
+  tags:
+    - hva
+  script:
+    - cd backend
+    - mvn test
+  rules:
+    - if: '$CI_COMMIT_REF_NAME == "test" || $CI_COMMIT_REF_NAME == "main"'
+
+analyze:
+  stage: test
+  image: maven:3-eclipse-temurin-17
+  dependencies: []
+  tags:
+    - hva
+  script:
+    - cd backend
+    - mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectBaseDir=backend -Dsonar.coverage.jacoco.xmlReportPaths=target/site/jacoco/jacoco.xml
+  rules:
+    - if: '$CI_COMMIT_REF_NAME == "test" || $CI_COMMIT_REF_NAME == "main"'
+    - if: '$CI_COMMIT_REF_NAME == "test"'
+      allow_failure: true

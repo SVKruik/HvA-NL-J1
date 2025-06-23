@@ -1,0 +1,20 @@
+{
+    "name": "rabbitmq",
+    "version": "1.0.0",
+    "description": "TSE Research - RabbitMQ",
+    "license": "ISC",
+    "author": "Stefan Kruik",
+    "scripts": {
+        "consume": "npx tsc && node dist/consumer.js",
+        "produce": "npx tsc && node dist/producer.js"
+    },
+    "dependencies": {
+        "amqplib": "^0.10.7",
+        "dotenv": "^16.4.7"
+    },
+    "devDependencies": {
+        "@types/amqplib": "^0.10.7",
+        "@types/node": "^22.14.0",
+        "typescript": "^5.8.2"
+    }
+}

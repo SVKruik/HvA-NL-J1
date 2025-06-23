@@ -1,0 +1,16 @@
+{
+    "name": "nats",
+    "version": "1.0.0",
+    "description": "TSE Research - NATS",
+    "license": "ISC",
+    "author": "Stefan Kruik",
+    "type": "module",
+    "scripts": {
+        "publish": "node src/publish.js",
+        "subscribe": "node src/subscribe.js"
+    },
+    "dependencies": {
+        "dotenv": "^16.4.7",
+        "nats": "^2.29.3"
+    }
+}

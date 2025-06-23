@@ -1,0 +1,27 @@
+lint:
+  stage: code-quality
+  image: node:22.16
+  tags:
+    - hva
+  script:
+    - cd site/src
+    - npm install
+    - npm run lint
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event" && ($CI_MERGE_REQUEST_TARGET_BRANCH_NAME == "test" || $CI_MERGE_REQUEST_TARGET_BRANCH_NAME == "main")'
+    - when: never
+  allow_failure: true
+
+prettier:
+  stage: code-quality
+  image: node:22.16
+  tags:
+    - hva
+  script:
+    - cd site/src
+    - npm install
+    - npm run prettier
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event" && ($CI_MERGE_REQUEST_TARGET_BRANCH_NAME == "test" || $CI_MERGE_REQUEST_TARGET_BRANCH_NAME == "main")'
+    - when: never
+  allow_failure: true

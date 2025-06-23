@@ -1,0 +1,13 @@
+services:
+  database:
+    image: mariadb:10.6
+    container_name: rabbit_database
+    restart: always
+    ports:
+      - "3306:3306"
+    environment:
+      MARIADB_ROOT_PASSWORD: root
+      TZ: Europe/Amsterdam
+    command: [
+      "--default-time-zone=Europe/Amsterdam"
+    ]

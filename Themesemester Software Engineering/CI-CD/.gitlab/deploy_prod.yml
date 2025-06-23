@@ -1,0 +1,18 @@
+deploy_production:
+  stage: deploy
+  environment: production
+  dependencies: []
+  tags:
+    - hva
+  script:
+    - apk update
+    - apk add -q curl
+    - |
+      curl -X POST \
+      -H "Content-Type: application/json" \
+      -H "Authorization: Bearer $DEPLOYMENT_PASSWORD" \
+      -d '{"type":"push","repository":"TSE", "payload": { "env": "prod" } }' \
+      $DEPLOYMENT_ENDPOINT
+  rules:
+    - if: '$CI_COMMIT_REF_NAME == "main"'
+  when: manual

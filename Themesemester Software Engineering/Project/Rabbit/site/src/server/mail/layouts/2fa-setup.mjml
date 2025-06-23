@@ -1,0 +1,23 @@
+<mjml>
+  <mj-head>
+    <mj-title>2FA Setup Complete</mj-title>
+    <mj-attributes>
+      <mj-all font-family="Open Sans" />
+      <mj-text font-size="16px" line-height="24px" color="#000000" />
+      <mj-class name="head" font-size="24px" line-height="32px" />
+      <mj-class name="bold" font-weight="600" />
+    </mj-attributes>
+  </mj-head>
+  <mj-body>
+    <mj-section>
+      <mj-column>
+        <mj-text mj-class="head">2FA Setup Complete</mj-text>
+        <mj-text>Dear Hopper,</mj-text>
+        <mj-text>You have just setup 2-factor authentication for your account.</mj-text>
+        <mj-text>From now on, you will need to provide a verification code in addition to your password when logging in.</mj-text>
+        <mj-text>If you did not initiate this change, please contact us immediately.</mj-text>
+        <mj-text>If you have any questions, do not hesitate to reach out.</mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

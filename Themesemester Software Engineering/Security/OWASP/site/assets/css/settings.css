@@ -1,0 +1,11 @@
+.settings-page {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+    margin-top: 50px;
+}
+
+.header-text {
+    font-size: large;
+}

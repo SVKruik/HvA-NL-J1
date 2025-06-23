@@ -1,0 +1,14 @@
+{
+    "name": "tse-support",
+    "description": "TSE Support",
+    "version": "1.0.0",
+    "author": "Stefan Kruik",
+    "scripts": {
+        "start": "nodemon index.js"
+    },
+    "type": "module",
+    "dependencies": {
+        "amqplib": "^0.10.5",
+        "dotenv": "^16.4.7"
+    }
+}

@@ -1,0 +1,35 @@
+import { useWebSocket } from "@vueuse/core";
+import { useRuntimeConfig } from "#app";
+import { NotificationTypes, type NotificationItem } from "~/assets/customTypes";
+
+let socketInstance: ReturnType<typeof useWebSocket> | null = null;
+
+export const useAppWebSocket = () => {
+    const config = useRuntimeConfig();
+
+    if (!socketInstance) {
+        const userStore = useUserStore();
+
+        socketInstance = useWebSocket(config.public.wsUrl, {
+            onConnected: () =>
+                socketInstance?.send(JSON.stringify({
+                    hopper_id: userStore.user.id,
+                    type: NotificationTypes.initialize,
+                    data: null,
+                    source: "RTD - Client",
+                    url: "/",
+                    is_read: false,
+                    ticket: createTicket(),
+                    is_silent: false,
+                    date_expiry: new Date(Date.now() + 1000 * 60),
+                    date_creation: new Date(),
+                } as NotificationItem)),
+            autoReconnect: {
+                retries: 3,
+                delay: 2000,
+            },
+        });
+    }
+
+    return socketInstance;
+};

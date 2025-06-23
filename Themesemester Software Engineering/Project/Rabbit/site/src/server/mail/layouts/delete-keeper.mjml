@@ -1,0 +1,22 @@
+<mjml>
+  <mj-head>
+    <mj-title>Your Role as Keeper Has Ended</mj-title>
+    <mj-attributes>
+      <mj-all font-family="Open Sans" />
+      <mj-text font-size="16px" line-height="24px" color="#000000" />
+      <mj-class name="head" font-size="24px" line-height="32px" />
+      <mj-class name="bold" font-weight="600" />
+    </mj-attributes>
+  </mj-head>
+  <mj-body>
+    <mj-section>
+      <mj-column>
+        <mj-text mj-class="head">Update Regarding Your Keeper Role</mj-text>
+        <mj-text>Dear Hopper,</mj-text>
+        <mj-text>Thank you for the time and effort you've contributed to {{ burrow }}. Your support has been greatly appreciated.</mj-text>
+        <mj-text>We wanted to inform you that your role as Keeper has now come to an end. While you will no longer have management access, you are still very welcome to post and participate in the Burrow.</mj-text>
+        <mj-text>We are grateful for everything you have done and hope to see you around!</mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

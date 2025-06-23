@@ -1,0 +1,21 @@
+{
+    "name": "kafka",
+    "version": "1.0.0",
+    "description": "TSE Research - Kafka",
+    "license": "ISC",
+    "author": "Stefan Kruik",
+    "scripts": {
+        "consume": "npm run build && node dist/consumer.js",
+        "produce": "npm run build && node dist/producer.js",
+        "setup": "npm run build && node dist/setup.js",
+        "build": "npx tsc"
+    },
+    "dependencies": {
+        "dotenv": "^16.4.7",
+        "kafkajs": "^2.2.4"
+    },
+    "devDependencies": {
+        "@types/node": "^22.14.0",
+        "typescript": "^5.8.2"
+    }
+}

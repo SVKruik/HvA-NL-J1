@@ -1,0 +1,32 @@
+services:
+  mariadb_prod:
+    image: mariadb:latest
+    container_name: rabbit_db_prod
+    restart: always
+    environment:
+      MARIADB_ROOT_PASSWORD: ${MARIADB_PROD_ROOT_PASSWORD}
+      MARIADB_DATABASE: ${MARIADB_PROD_DATABASE}
+      MARIADB_USER: ${MARIADB_PROD_USER}
+      MARIADB_PASSWORD: ${MARIADB_PROD_PASSWORD}
+    volumes:
+      - mariadb_prod_data:/var/lib/mysql
+    ports:
+      - "13307:3306"
+
+  mariadb_test:
+    image: mariadb:latest
+    container_name: rabbit_db_test
+    restart: always
+    environment:
+      MARIADB_ROOT_PASSWORD: ${MARIADB_TEST_ROOT_PASSWORD}
+      MARIADB_DATABASE: ${MARIADB_TEST_DATABASE}
+      MARIADB_USER: ${MARIADB_TEST_USER}
+      MARIADB_PASSWORD: ${MARIADB_TEST_PASSWORD}
+    volumes:
+      - mariadb_test_data:/var/lib/mysql
+    ports:
+      - "13308:3306"
+
+volumes:
+  mariadb_prod_data:
+  mariadb_test_data:

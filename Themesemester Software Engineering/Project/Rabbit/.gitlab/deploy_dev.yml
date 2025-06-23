@@ -1,0 +1,19 @@
+deploy_dev:
+  stage: deploy
+  environment: development
+  dependencies: []
+  needs: ["publish"]
+  tags:
+    - hva
+  script:
+    - apk update
+    - apk add -q curl
+    - |
+      curl -X POST \
+      -H "Content-Type: application/json" \
+      -H "Authorization: Bearer $DEPLOYMENT_PASSWORD" \
+      -d '{"type":"push","repository":"Rabbit", "payload": { "env": "dev" } }' \
+      $DEPLOYMENT_ENDPOINT
+  rules:
+    - if: '$CI_COMMIT_REF_NAME == "dev" && $CI_PIPELINE_SOURCE == "push"'
+    - when: never
