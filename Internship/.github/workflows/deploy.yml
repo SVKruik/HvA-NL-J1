@@ -1,0 +1,14 @@
+name: Deploy SK Metrics
+on:
+  push
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          curl -X POST \
+               -H "Content-Type: application/json" \
+               -H "Authorization: Bearer ${{ secrets.DEPLOYMENT_PASSWORD }}" \
+               -d '{"type":"push","repository":"SK-Metrics", "payload": {} }' \
+               ${{ secrets.DEPLOYMENT_ENDPOINT }}

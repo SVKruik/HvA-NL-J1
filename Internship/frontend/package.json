@@ -1,0 +1,40 @@
+{
+    "name": "sk-metrics",
+    "description": "SK Metrics",
+    "version": "1.0.0",
+    "author": "Stefan Kruik",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/SVKruik-Organization/SK-Metrics.git"
+    },
+    "bugs": {
+        "url": "https://github.com/SVKruik-Organization/SK-Metrics/issues"
+    },
+    "homepage": "https://github.com/SVKruik-Organization/SK-Metrics#readme",
+    "type": "module",
+    "scripts": {
+        "build": "nuxt build",
+        "dev": "nuxt dev --port 9093 --dotenv .env",
+        "generate": "nuxt generate",
+        "preview": "nuxt preview",
+        "postinstall": "nuxt prepare"
+    },
+    "dependencies": {
+        "@pinia/nuxt": "^0.5.4",
+        "@vueuse/core": "^5.0.0",
+        "@vueuse/nuxt": "^11.1.0",
+        "amqplib": "^0.10.4",
+        "chart.js": "^4.4.4",
+        "mariadb": "^3.3.2",
+        "nuxt": "^3.13.0",
+        "pinia": "2.2.2",
+        "shelljs": "^0.8.5",
+        "vue": "latest",
+        "vue-chartjs": "^5.3.1",
+        "vue-router": "latest"
+    },
+    "devDependencies": {
+        "@types/amqplib": "^0.10.5",
+        "@types/shelljs": "^0.8.15"
+    }
+}
