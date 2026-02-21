@@ -139,7 +139,7 @@ export class StoryReadController extends Controller {
             button.style.opacity = "1";
             button.style.cursor = "pointer";
             button.addEventListener("click", () => {
-                window.location.href = `#post/edit?id=${storyData.result[0].url}`;
+                window.location.href = `${baseUrl}/#post/edit?id=${storyData.result[0].url}`;
             });
         } else button.style.display = "none";
 
@@ -349,7 +349,7 @@ export class StoryReadController extends Controller {
         timeline.addEventListener("click", () => {
             this.#App.sessionManager.set("timelineYear", storyData.result[0].year);
             this.#App.sessionManager.set("timelineAnchor", `anchor-${storyData.result[0].url}`);
-            window.location.href = `#timeline`;
+            window.location.href = `${baseUrl}/#timeline`;
         });
 
         super.updateCredits(email, "Achievement", false, 1);

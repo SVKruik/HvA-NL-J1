@@ -30,8 +30,8 @@ export class HomeController extends Controller {
         document.getElementsByClassName("home-start-button")[0].addEventListener('click', () => {
             const email = this.#App.sessionManager.get("email");
             if (email) {
-                window.location.href = "#post/new";
-            } else window.location.href = "#login";
+                window.location.href = `${baseUrl}/#post/new`;
+            } else window.location.href = `${baseUrl}/#login`;
         });
     }
 
@@ -194,7 +194,7 @@ export class HomeController extends Controller {
             sotwData.appendChild(sotwSideData);
 
             sotwContainer.addEventListener("click", () => {
-                location.href = `/#story-read/${sotw.url}`;
+                location.href = `${baseUrl}/#story-read/${sotw.url}`;
             });
 
             // Appending all children to sotwContainer

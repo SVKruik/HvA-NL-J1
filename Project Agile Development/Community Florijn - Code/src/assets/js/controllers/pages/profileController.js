@@ -43,14 +43,14 @@ export class ProfileController extends Controller {
         const isEmpty = this.#profileView.querySelector(".isEmpty");
         const content = this.#profileView.querySelector(".userContent");
         const profileEdit = this.#profileView.querySelector(".profileEdit");
-        profileEdit.onclick = () => window.location.href = "#settings/account";
+        profileEdit.onclick = () => window.location.href = `${baseUrl}/#settings/account`;
 
         //Profile of user is shown
         const data = await this.#profileRepository.getUser(window.location.hash.replace("#profile/", ""));
 
         //If user doesn't exist redirect to Community Florijn profile
         if (data.result.length == 0) {
-            window.location.href = "#profile/Community Florijn";
+            window.location.href = `${baseUrl}/#profile/Community Florijn`;
         }
 
         //Check if user is logged in
@@ -296,7 +296,7 @@ export class ProfileController extends Controller {
         const editButton = document.createElement('button');
         editButton.className = "story-control-button story-edit-button";
         editButton.addEventListener('click', () => {
-            window.location.href = `#post/edit?id=${url}`;
+            window.location.href = `${baseUrl}/#post/edit?id=${url}`;
             window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
         });
         const editIcon = document.createElement('i');
@@ -451,7 +451,7 @@ export class ProfileController extends Controller {
                 commentTitle.className = "commentTitle";
                 commentTitle.innerText = data.result3[i].title;
                 commentTitle.addEventListener("click", async () => {
-                    window.location.href = `#story-read/${data.result3[i].url}`;
+                    window.location.href = `${baseUrl}/#story-read/${data.result3[i].url}`;
                 });
                 commentInfoWrapper.appendChild(commentInfo);
                 commentInfoWrapper.appendChild(commentTitle);

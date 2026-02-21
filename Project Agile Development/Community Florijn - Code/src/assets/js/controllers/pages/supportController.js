@@ -29,7 +29,7 @@ export class SupportController extends Controller {
         // FAQ Profile Link
         const profileLink = this.#supportView.querySelector("#support-profile-link");
         if (this.#App.sessionManager.get("email")) {
-            profileLink.href = `#profile/${this.#App.sessionManager.get("userName")}`;
+            profileLink.href = `${baseUrl}/#profile/${this.#App.sessionManager.get("userName")}`;
         };
 
         // Email

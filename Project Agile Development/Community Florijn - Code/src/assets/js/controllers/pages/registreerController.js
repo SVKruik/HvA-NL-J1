@@ -236,19 +236,19 @@ export class RegistreerController extends Controller {
             if (status.result.length !== 0 && status.result[0].status === 0) {
                 const hiddenElements = document.querySelectorAll(".hidden");
                 NavbarController.toggleHiddenElements(hiddenElements);
-                document.getElementsByClassName("nav-user-img")[0].parentElement.href = `#profile/${user.username}`;
+                document.getElementsByClassName("nav-user-img")[0].parentElement.href = `${baseUrl}/#profile/${user.username}`;
                 document.getElementsByClassName("nav-user-img")[0].src = `uploads/profile/${user.username}.jpg`;
                 App.sessionManager.set("emailSent", 0);
-                window.location.href = `#verify`;
+                window.location.href = `${baseUrl}/#verify`;
                 window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
             } else if (status.result.length === 0) {
                 await this.customAlert(null, await this.translateComponent("login-error-7"));
             } else {
                 const hiddenElements = document.querySelectorAll(".hidden");
                 NavbarController.toggleHiddenElements(hiddenElements);
-                document.getElementsByClassName("nav-user-img")[0].parentElement.href = `#profile/${user.username}`;
+                document.getElementsByClassName("nav-user-img")[0].parentElement.href = `${baseUrl}/#profile/${user.username}`;
                 document.getElementsByClassName("nav-user-img")[0].src = `uploads/profile/${user.username}.jpg`;
-                window.location.href = "#home";
+                window.location.href = `${baseUrl}/#home`;
                 window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
             };
         } catch (error) {

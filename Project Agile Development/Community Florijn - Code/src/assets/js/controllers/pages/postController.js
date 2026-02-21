@@ -37,7 +37,7 @@ export class PostController extends Controller {
         if (window.location.hash.match(/^#post\/new$/) || window.location.hash.match(/^#post\/edit\?id=.+/)) {
             // Hash matches the desired formats
         } else {
-            window.location.href = "#post/new";
+            window.location.href = `${baseUrl}/#post/new`;
             return;
         }
 
@@ -78,7 +78,7 @@ export class PostController extends Controller {
             } catch (error) {
                 // Shows an permission error when the email of the story author does not match the current logged in user.
                 await this.customAlert(`${await super.translateComponent("alert-msg-error-title")}`, error.toString().split("Error: ")[1]);
-                window.location.href = "#post/new";
+                window.location.href = `${baseUrl}/#post/new`;
             }
         }
 
@@ -89,7 +89,7 @@ export class PostController extends Controller {
             // User needs to verify before posting a story.
             if (userVerified[0].email_verification !== 1) {
                 this.customAlert(null, await super.translateComponent("post-verification-error"), "error");
-                window.location.href = "#verify";
+                window.location.href = `${baseUrl}/#verify`;
             }
         }
 
@@ -901,7 +901,7 @@ export class PostController extends Controller {
                         App.sessionManager.set("storySaved", true);
                     }
                 } else {
-                    window.location.href = "#home";
+                    window.location.href = `${baseUrl}/#home`;
                 }
             } else if (type == "edit") {
                 history.back();

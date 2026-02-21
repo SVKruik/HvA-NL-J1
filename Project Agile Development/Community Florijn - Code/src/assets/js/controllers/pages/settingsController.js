@@ -30,7 +30,7 @@ export class SettingsController extends Controller {
      */
     async #setupView() {
         if (!App.sessionManager.get("userName")) {
-            window.location.href = "#home"
+            window.location.href = `${baseUrl}/#home`;
             return;
         }
 
@@ -119,7 +119,7 @@ export class SettingsController extends Controller {
                 accessToggle.classList.add('selected-tab');
                 docTitle = await super.translateComponent("access-tab");
                 break;
-            default: window.location.href = "#settings/account";
+            default: window.location.href = `${baseUrl}/#settings/account`;
         }
 
         document.title = "Community Florijn | " + docTitle || "Instellingen";
@@ -148,7 +148,7 @@ export class SettingsController extends Controller {
                 }
             });
 
-            supportTab.addEventListener("click", () => { window.location.href = "#support" });
+            supportTab.addEventListener("click", () => { window.location.href = `${baseUrl}/#support` });
 
             userButtons.forEach(btn => {
                 const origin = btn.classList.value.split(" ")[0];

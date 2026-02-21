@@ -39,15 +39,15 @@ export class StoriesController extends Controller {
         // Tab Session
         const urlPage = parseInt(window.location.hash.slice(7));
         if (window.location.hash.match(/^#story\?\d+$/)) {
-            window.location.href = `#story?${urlPage}`;
+            window.location.href = `${baseUrl}/#story?${urlPage}`;
             window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
             this.#App.sessionManager.set("currentPage", urlPage);
         } else if (parseInt(this.#App.sessionManager.get("currentPage"))) {
             window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
-            return window.location.href = `#story?${parseInt(this.#App.sessionManager.get("currentPage"))}`;
+            return window.location.href = `${baseUrl}/#story?${parseInt(this.#App.sessionManager.get("currentPage"))}`;
         } else {
             window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
-            return window.location.href = "#story?1";
+            return window.location.href = `${baseUrl}/#story?1`;
         };
 
         // Initiate
@@ -379,8 +379,8 @@ export class StoriesController extends Controller {
         container.innerHTML = "";
         this.#loadTagColors(storyDataGlobal.result, tagData);
         if (storyDataGlobal.result.length === 0) return super.createStoryPlaceholder(await super.translateComponent("story-placeholder"), "Search", "story-container");
-        if (urlPage > tabCount) return window.location.href = `#story?${tabCount}`;
-        if (urlPage === 0) return window.location.href = "#story?1";
+        if (urlPage > tabCount) return window.location.href = `${baseUrl}/#story?${tabCount}`;
+        if (urlPage === 0) return window.location.href = `${baseUrl}/#story?1`;
         for (let i = urlPage * storyCountPerTab - storyCountPerTab; i < urlPage * storyCountPerTab; i++) {
             if (storyDataGlobal.result[i]) {
                 const tagNames = storyDataGlobal.result[i].tagname.split(", ");
@@ -462,7 +462,7 @@ export class StoriesController extends Controller {
         previousButton.innerHTML = "<i class='fa-solid fa-angle-left'></i>";
         previousButton.id = "story-tab-previous";
         previousButton.addEventListener("click", () => {
-            if (urlPage > 1) window.location.href = `#story?${urlPage - 1}`;
+            if (urlPage > 1) window.location.href = `${baseUrl}/#story?${urlPage - 1}`;
             window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
         });
 
@@ -479,7 +479,7 @@ export class StoriesController extends Controller {
             number.innerHTML = i;
             number.id = `story-tab-${i}`;
             number.addEventListener("click", () => {
-                window.location.href = `#story?${i}`;
+                window.location.href = `${baseUrl}/#story?${i}`;
                 window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
             });
             numberContainer.appendChild(number);
@@ -491,7 +491,7 @@ export class StoriesController extends Controller {
         nextButton.innerHTML = "<i class='fa-solid fa-angle-right'></i>";
         nextButton.id = "story-tab-next";
         nextButton.addEventListener("click", () => {
-            if (urlPage !== tabCount) window.location.href = `#story?${urlPage + 1}`;
+            if (urlPage !== tabCount) window.location.href = `${baseUrl}/#story?${urlPage + 1}`;
             window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
         });
 

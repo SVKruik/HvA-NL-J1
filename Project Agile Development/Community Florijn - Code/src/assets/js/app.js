@@ -211,7 +211,7 @@ export class App {
                     window.location.hash.includes("verify") ||
                     window.location.hash.includes("settings")
                 ) return;
-                window.location.href = "#home";
+                window.location.href = `${baseUrl}/#home`;
             }
         } else App.loadController(fallbackController);
     }

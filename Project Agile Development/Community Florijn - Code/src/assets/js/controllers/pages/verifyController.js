@@ -30,14 +30,14 @@ export class VerifyController extends Controller {
     async #setupView() {
         const email = await this.#App.sessionManager.get("email");
         if (!email) {
-            window.location.href = `#home`;
+            window.location.href = `${baseUrl}/#home`;
             window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
             return;
         };
 
         const status = await this.#verifyRepository.getStatus(email);
         if (window.location.hash !== "#verify/succes" && status.result[0].status === 1) {
-            window.location.href = `#verify/verified`;
+            window.location.href = `${baseUrl}/#verify/verified`;
             window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
         };
 
@@ -47,7 +47,7 @@ export class VerifyController extends Controller {
 
             // Support Page Button
             this.#verifyView.querySelector("#contact").addEventListener("click", () => {
-                window.location.href = `#support`;
+                window.location.href = `${baseUrl}/#support`;
                 window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
             });
 
@@ -64,7 +64,7 @@ export class VerifyController extends Controller {
 
             // Wrong Email Button
             this.#verifyView.getElementsByClassName("wrong-email")[0].addEventListener("click", () => {
-                window.location.href = `#verify/redo`;
+                window.location.href = `${baseUrl}/#verify/redo`;
                 window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
             });
         } else if (window.location.hash === "#verify/input") {
@@ -119,13 +119,13 @@ export class VerifyController extends Controller {
             this.#verifyView = await super.loadHtmlIntoContent("html_views/components/verify-succes.html");
 
             if (status.result[0].status === 0) {
-                window.location.href = `#verify`;
+                window.location.href = `${baseUrl}/#verify`;
                 window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
             };
 
             const doneButton = this.#verifyView.querySelector("#done");
             doneButton.addEventListener("click", () => {
-                window.location.href = `#home`;
+                window.location.href = `${baseUrl}/#home`;
                 window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
             });
         } else if (window.location.hash === "#verify/verified") {
@@ -166,7 +166,7 @@ export class VerifyController extends Controller {
                     };
                     this.#App.sessionManager.set("email", emailInput.value);
                     this.#App.sessionManager.set("emailSent", 0);
-                    window.location.href = `#verify`;
+                    window.location.href = `${baseUrl}/#verify`;
                     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
                 };
             });
@@ -184,7 +184,7 @@ export class VerifyController extends Controller {
             if (status.result[0].status === 0 && sendStatus === 0) {
                 const emailData = await this.#sendMail(email);
                 if (emailData.result === "Invalid Email") {
-                    window.location.href = `#verify/redo?invalid=`;
+                    window.location.href = `${baseUrl}/#verify/redo?invalid=`;
                     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
                 } else {
                     this.#App.sessionManager.set("emailSent", 1);
@@ -192,7 +192,7 @@ export class VerifyController extends Controller {
             };
 
             this.#verifyView.getElementsByClassName("wrong-email")[0].addEventListener("click", () => {
-                window.location.href = `#verify/redo`;
+                window.location.href = `${baseUrl}/#verify/redo`;
                 window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
             });
         };
@@ -208,35 +208,35 @@ export class VerifyController extends Controller {
 
         if (resend) {
             resend.addEventListener("click", async () => {
-                window.location.href = `#verify/resend`;
+                window.location.href = `${baseUrl}/#verify/resend`;
                 window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
             });
         };
 
         if (received) {
             received.addEventListener("click", async () => {
-                window.location.href = `#verify/input`;
+                window.location.href = `${baseUrl}/#verify/input`;
                 window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
             });
         };
 
         if (inputBack) {
             inputBack.addEventListener("click", async () => {
-                window.location.href = `#verify`;
+                window.location.href = `${baseUrl}/#verify`;
                 window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
             });
         };
 
         if (resendBack) {
             resendBack.addEventListener("click", async () => {
-                window.location.href = `#verify`;
+                window.location.href = `${baseUrl}/#verify`;
                 window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
             });
         };
 
         if (redoBack) {
             redoBack.addEventListener("click", async () => {
-                window.location.href = `#verify`;
+                window.location.href = `${baseUrl}/#verify`;
                 window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
             });
         };
@@ -280,7 +280,7 @@ export class VerifyController extends Controller {
             this.clearInputs(inputs);
         } else if (userPin == dataPin) {
             await this.#verifyRepository.verifyAccount(email);
-            window.location.href = `#verify/succes`;
+            window.location.href = `${baseUrl}/#verify/succes`;
             window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
         } else {
             errorMessage.style.display = "flex";
@@ -340,7 +340,7 @@ export class VerifyController extends Controller {
                     if (redirect) {
                         element.innerHTML = `${redirectMessage} . . .`
                         setTimeout(() => {
-                            window.location.href = `#home`;
+                            window.location.href = `${baseUrl}/#home`;
                             window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
                         }, 1000);
                     };

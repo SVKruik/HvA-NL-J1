@@ -464,7 +464,7 @@ export class Controller {
         image.className = "story-image";
         image.src = `${baseUrl}/uploads/story/${storyData.url}.jpg`;
         image.addEventListener('click', async () => {
-            window.location.href = `#story-read/${storyData.url}`;
+            window.location.href = `${baseUrl}/#story-read/${storyData.url}`;
             window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
         });
         image.addEventListener('error', () => {
@@ -533,7 +533,7 @@ export class Controller {
         titleContainer.appendChild(title);
         titleContainer.appendChild(description);
         titleContainer.addEventListener('click', async () => {
-            window.location.href = `#story-read/${storyData.url}`;
+            window.location.href = `${baseUrl}/#story-read/${storyData.url}`;
             window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
         });
 
@@ -543,7 +543,7 @@ export class Controller {
         const date = document.createElement('p');
         date.className = "story-date";
         date.addEventListener('click', async () => {
-            window.location.href = `#story-read/${storyData.url}`;
+            window.location.href = `${baseUrl}/#story-read/${storyData.url}`;
             window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
         });
         date.innerHTML = await this.dateFormat(storyData.date, "long");
@@ -629,7 +629,7 @@ export class Controller {
             const commentContainer = document.createElement('div');
             commentContainer.className = "story-comment-container";
             commentContainer.addEventListener('click', async () => {
-                window.location.href = `#story-read/${storyData.url}`;
+                window.location.href = `${baseUrl}/#story-read/${storyData.url}`;
                 window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
             });
 

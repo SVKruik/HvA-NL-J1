@@ -144,7 +144,7 @@ export class NavbarController extends Controller {
         userImg.src = `${baseUrl}/assets/img/icons/default.svg`;
       } finally {
         profileBtns.forEach(btn => {
-          btn.href = `#profile/${userData[0].user_name}`;
+          btn.href = `${baseUrl}/#profile/${userData[0].user_name}`;
         });
       }
     }
@@ -156,7 +156,7 @@ export class NavbarController extends Controller {
         App.sessionManager.clear();
         App.sessionManager.set("viewLanguage", language);
         NavbarController.toggleHiddenElements(hiddenElements);
-        window.location.href = "#home";
+        window.location.href = `${baseUrl}/#home`;
       });
     });
   }
