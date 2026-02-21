@@ -6,7 +6,7 @@
 class settingsRoutes {
     #errorCodes = require("../framework/utils/httpErrorCodes");
     #databaseHelper = require("../framework/utils/databaseHelper.js");
-    #cryptoHelper = require("../framework/utils/CryptoHelper.js");
+    #cryptoHelper = require("../framework/utils/cryptoHelper.js");
     #app;
 
     /**

@@ -98,12 +98,12 @@ export class HomeController extends Controller {
 
             const sotwImage = document.createElement("img");
             sotwImage.classList.add("sotw-image");
-            sotwImage.src = `uploads/story/${sotw.url}.jpg`;
+            sotwImage.src = `${baseUrl}/uploads/story/${sotw.url}.jpg`;
 
             sotwImage.addEventListener(
                 "error",
                 () => {
-                    sotwImage.src = `assets/img/background/error.svg`;
+                    sotwImage.src = `${baseUrl}/assets/img/background/error.svg`;
                     sotwImage.style.filter = "brightness(50%)";
                 },
                 { once: true }
@@ -117,10 +117,10 @@ export class HomeController extends Controller {
 
             const sotwUserImg = document.createElement("img");
             sotwUserImg.classList.add("sotw-user-img");
-            sotwUserImg.src = `/assets/img/icons/default.svg`;
+            sotwUserImg.src = `${baseUrl}/assets/img/icons/default.svg`;
 
             sotwUserImg.addEventListener('error', () => {
-                sotwUserImg.src = `/assets/img/icons/default.svg`;
+                sotwUserImg.src = `${baseUrl}/assets/img/icons/default.svg`;
             }, { once: true });
 
             const sotwAuthor = document.createElement("p");
@@ -128,14 +128,14 @@ export class HomeController extends Controller {
 
             if (sotw.anonymous !== 0) {
                 sotwAuthor.textContent = await super.translateComponent("user-1");
-                sotwUserImg.src = `/assets/img/icons/default.svg`;
+                sotwUserImg.src = `${baseUrl}/assets/img/icons/default.svg`;
                 sotwUserinfo.style.cursor = "default";
             } else {
                 if (sotw.user_type == 2) {
                     sotwAuthor.textContent = await super.translateComponent("user-2");
                 } else {
                     sotwAuthor.textContent = `${sotw.user_name}`;
-                    sotwUserImg.src = `uploads/profile/${sotw.user_name}.jpg`;
+                    sotwUserImg.src = `${baseUrl}/uploads/profile/${sotw.user_name}.jpg`;
                     sotwUserinfo.setAttribute("href", `#profile/${sotw.user_name}`);
                 }
             }

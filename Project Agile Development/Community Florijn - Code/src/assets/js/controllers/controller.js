@@ -379,7 +379,7 @@ export class Controller {
         const title = document.createElement('h4');
         title.innerHTML = titleContent;
         const image = document.createElement('img');
-        image.src = `../assets/img/svg/${displayImage}.svg`;
+        image.src = `${baseUrl}/assets/img/svg/${displayImage}.svg`;
 
         // Parent
         const container = document.createElement('div');
@@ -462,13 +462,13 @@ export class Controller {
         imageContainer.className = "story-image-container";
         const image = document.createElement('img');
         image.className = "story-image";
-        image.src = `uploads/story/${storyData.url}.jpg`;
+        image.src = `${baseUrl}/uploads/story/${storyData.url}.jpg`;
         image.addEventListener('click', async () => {
             window.location.href = `#story-read/${storyData.url}`;
             window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
         });
         image.addEventListener('error', () => {
-            image.src = `assets/img/background/error.svg`;
+            image.src = `${baseUrl}/assets/img/background/error.svg`;
             image.style.filter = 'brightness(50%)';
         });
         if (storyData.explicit === 1) {
@@ -560,7 +560,7 @@ export class Controller {
 
         const authorImage = document.createElement('img');
         authorImage.className = "story-author-image";
-        authorImage.src = `/uploads/profile/${storyData.user_name}.jpg`;
+        authorImage.src = `${baseUrl}/uploads/profile/${storyData.user_name}.jpg`;
 
         let authorUsername;
         if (storyData.anonymous === 0 && storyData.user_type !== 2) {
@@ -569,14 +569,14 @@ export class Controller {
             authorUsername = await this.translateComponent("user-1");
         } else if (storyData.user_type === 2) {
             authorUsername = await this.translateComponent("user-2");
-            authorImage.src = `/assets/img/icons/default.svg`;
+            authorImage.src = `${baseUrl}/assets/img/icons/default.svg`;
         };
 
         authorImage.addEventListener("error", () => {
-            authorImage.src = "/assets/img/icons/default.svg";
+            authorImage.src = `${baseUrl}/assets/img/icons/default.svg`;
         }, { once: true });
 
-        if (storyData.anonymous > 0) authorImage.src = "/assets/img/icons/default.svg";
+        if (storyData.anonymous > 0) authorImage.src = `${baseUrl}/assets/img/icons/default.svg`;
 
         const authorName = document.createElement('p');
         authorName.className = "story-author-name";

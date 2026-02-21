@@ -53,10 +53,10 @@ export class LoginController extends Controller {
         const randomNumber = Math.floor(Math.random() * 4) + 1;
         const backgroundImg = document.getElementById("background-img");
         const imageUrls = [
-            "../assets/img/background/authentication/FlorijnFlat.png",
-            "../assets/img/background/authentication/RainbowFlat.png",
-            "../assets/img/background/authentication/NightFlorijn.png",
-            "../assets/img/background/authentication/CleanFlorijn.jpg"
+            "./assets/img/background/authentication/FlorijnFlat.png",
+            "./assets/img/background/authentication/RainbowFlat.png",
+            "./assets/img/background/authentication/NightFlorijn.png",
+            "./assets/img/background/authentication/CleanFlorijn.jpg"
         ];
 
         if (randomNumber >= 1 && randomNumber <= imageUrls.length) {
@@ -104,7 +104,7 @@ export class LoginController extends Controller {
 
         await this.#usersRepository.sendCodeMail(email1, verification_pin, "dev", await super.translateComponent("email-update-password"), await super.translateComponent("email-general"));
         // emaik succesfully send popup
-        this.customAlert("confirmation", await this.translateComponent("verify-description-1-1", false, null)+ email1);
+        this.customAlert("confirmation", await this.translateComponent("verify-description-1-1", false, null) + email1);
 
         // display none of current form
         const form2 = document.getElementsByClassName("mini-container2")[0];
@@ -223,7 +223,7 @@ export class LoginController extends Controller {
                 const hiddenElements = document.querySelectorAll(".hidden");
                 NavbarController.toggleHiddenElements(hiddenElements);
                 document.getElementsByClassName("nav-user-img")[0].parentElement.href = `#profile/${user.username}`;
-                document.getElementsByClassName("nav-user-img")[0].src = `uploads/profile/${user.username}.jpg`;
+                document.getElementsByClassName("nav-user-img")[0].src = `${baseUrl}/uploads/profile/${user.username}.jpg`;
                 App.sessionManager.set("emailSent", 0);
                 window.location.href = `#verify`;
                 window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
@@ -233,7 +233,7 @@ export class LoginController extends Controller {
                 const hiddenElements = document.querySelectorAll(".hidden");
                 NavbarController.toggleHiddenElements(hiddenElements);
                 document.getElementsByClassName("nav-user-img")[0].parentElement.href = `#profile/${user.username}`;
-                document.getElementsByClassName("nav-user-img")[0].src = `uploads/profile/${user.username}.jpg`;
+                document.getElementsByClassName("nav-user-img")[0].src = `${baseUrl}/uploads/profile/${user.username}.jpg`;
                 window.location.href = "#home";
                 window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
             };

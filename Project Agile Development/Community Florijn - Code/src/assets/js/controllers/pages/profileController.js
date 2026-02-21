@@ -65,11 +65,11 @@ export class ProfileController extends Controller {
         }
 
         //Converting database value to elements
-        profilePicture.src = `uploads/profile/${data.result[0].user_name}.jpg`;
+        profilePicture.src = `${baseUrl}/uploads/profile/${data.result[0].user_name}.jpg`;
 
         // On image load error, load default profile picture
         profilePicture.addEventListener("error", () => {
-            profilePicture.src = "/assets/img/icons/default.svg";
+            profilePicture.src = `${baseUrl}/assets/img/icons/default.svg`;
         }, { once: true });
 
         // Profile Info
@@ -430,7 +430,7 @@ export class ProfileController extends Controller {
                 // Profile Picture
                 const userPicture = document.createElement("img");
                 userPicture.className = "userPicture";
-                userPicture.src = `uploads/profile/${data.result[0].user_name}.jpg`;
+                userPicture.src = `${baseUrl}/uploads/profile/${data.result[0].user_name}.jpg`;
                 commentSection.appendChild(userPicture);
 
                 // Header
@@ -622,7 +622,7 @@ export class ProfileController extends Controller {
 
         const image = document.createElement("img");
         image.className = "user-achievement-image";
-        image.src = `assets/img/svg/trophy-solid.svg`
+        image.src = `${baseUrl}/assets/img/svg/trophy-solid.svg`
 
         // Content
         const achievementContent = document.createElement("section");
@@ -638,7 +638,7 @@ export class ProfileController extends Controller {
 
         if (!earned) {
             container.classList.add("locked");
-            image.src = "assets/img/svg/lock-solid.svg";
+            image.src = `${baseUrl}/assets/img/svg/lock-solid.svg`;
             date.innerHTML = ``;
         };
 

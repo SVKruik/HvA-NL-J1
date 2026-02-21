@@ -413,7 +413,7 @@ export class StoriesController extends Controller {
                 document.querySelectorAll(`#leaderboard-${i + 1}-image`)[j].src = data.result[i].image;
 
                 document.querySelectorAll(`#leaderboard-${i + 1}-image`)[j].addEventListener('error', () => {
-                    document.querySelectorAll(`#leaderboard-${i + 1}-image`)[j].src = `/assets/img/icons/default.svg`;
+                    document.querySelectorAll(`#leaderboard-${i + 1}-image`)[j].src = `${baseUrl}/assets/img/icons/default.svg`;
                 }, { once: true });
 
                 document.querySelectorAll(`#leaderboard-${i + 1}-name`)[j].innerHTML = name;

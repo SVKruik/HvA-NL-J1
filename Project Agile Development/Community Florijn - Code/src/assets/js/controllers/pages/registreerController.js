@@ -60,10 +60,10 @@ export class RegistreerController extends Controller {
         const randomNumber = Math.floor(Math.random() * 4) + 1;
         const backgroundImg = document.getElementById("background-img");
         const imageUrls = [
-            "../assets/img/background/authentication/FlorijnFlat.png",
-            "../assets/img/background/authentication/RainbowFlat.png",
-            "../assets/img/background/authentication/NightFlorijn.png",
-            "../assets/img/background/authentication/CleanFlorijn.jpg"
+            "./assets/img/background/authentication/FlorijnFlat.png",
+            "./assets/img/background/authentication/RainbowFlat.png",
+            "./assets/img/background/authentication/NightFlorijn.png",
+            "./assets/img/background/authentication/CleanFlorijn.jpg"
         ];
 
         if (randomNumber >= 1 && randomNumber <= imageUrls.length) {
@@ -93,12 +93,13 @@ export class RegistreerController extends Controller {
 
         // simple if check if everything is filled
         if (!firstname || !lastname || !gender || !birthdate || !email || !password || !repeatpassword) {
-            return  this.customAlert(null, await this.translateComponent("login-error-6"));}
+            return this.customAlert(null, await this.translateComponent("login-error-6"));
+        }
 
         const pattern = /^[a-zA-Z]+$/;
-        if (!pattern.test(firstname)) {return  this.customAlert(null, await this.translateComponent("register-error-1"))}
+        if (!pattern.test(firstname)) { return this.customAlert(null, await this.translateComponent("register-error-1")) }
 
-        if (!pattern.test(lastname)) {return this.customAlert(null, await this.translateComponent("register-error-2"))}
+        if (!pattern.test(lastname)) { return this.customAlert(null, await this.translateComponent("register-error-2")) }
         // ^ and $ are anchor characters that mark the start and end of the string to be matched, respectively.
         // [\w-.]+ matches one or more word characters (letters, digits, or underscores), hyphens, or periods.
         const emailPattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
@@ -117,19 +118,21 @@ export class RegistreerController extends Controller {
         }
 
         const pattern2 = /^[a-zA-Z0-9_!\/]+$/;
-        if (!pattern2.test(password)) {return  await this.customAlert(null, await this.translateComponent("register-error-7"))}
+        if (!pattern2.test(password)) { return await this.customAlert(null, await this.translateComponent("register-error-7")) }
         //Checks if password length is < 5
-        if (password.length < 5) {return  await this.customAlert(null, await this.translateComponent("register-error-8"))}
+        if (password.length < 5) { return await this.customAlert(null, await this.translateComponent("register-error-8")) }
 
         //Checks if password matches herhaalPassword
-        if (password !== repeatpassword) {return await this.customAlert(null, await this.translateComponent("register-error-9"))
-            ;}
+        if (password !== repeatpassword) {
+            return await this.customAlert(null, await this.translateComponent("register-error-9"))
+                ;
+        }
         //Checks if chechbox is ticked
-        if (!checkbox.checked) {return await this.customAlert(null, await this.translateComponent("register-error-10"))}
+        if (!checkbox.checked) { return await this.customAlert(null, await this.translateComponent("register-error-10")) }
 
         //Checsk if email already exist in the database
         const emailExists = await this.#registreerRepository.checkEmail(email);
-        if (emailExists) {return  await this.customAlert(null, await this.translateComponent("register-error-11"))}
+        if (emailExists) { return await this.customAlert(null, await this.translateComponent("register-error-11")) }
 
 
         //hide all elements and by looping through each and setting style to none
@@ -155,19 +158,19 @@ export class RegistreerController extends Controller {
         const biography = target.querySelector("#biography").value;
 
         //check if image is null
-        if (image_input.files.length === 0) {return await this.customAlert(null, await this.translateComponent("register-error-12"))}
+        if (image_input.files.length === 0) { return await this.customAlert(null, await this.translateComponent("register-error-12")) }
 
         //checkt if username is null and a regex
-        if (!username) {return await this.customAlert(null, await this.translateComponent("register-error-13"))}
+        if (!username) { return await this.customAlert(null, await this.translateComponent("register-error-13")) }
 
         const pattern = /^[a-zA-Z0-9]+$/;
-        if (!pattern.test(username)) {return await this.customAlert(null, await this.translateComponent("register-error-14"))}
+        if (!pattern.test(username)) { return await this.customAlert(null, await this.translateComponent("register-error-14")) }
         //checks if username is alreqady in database
         const usernameExists = await this.#registreerRepository.checkUsername(username);
 
-        if (usernameExists) {return await this.customAlert(null, await this.translateComponent("register-error-15"))}
+        if (usernameExists) { return await this.customAlert(null, await this.translateComponent("register-error-15")) }
         //checks if biography is not null
-        if (!biography) {return  await this.customAlert(null, await this.translateComponent("register-error-16"))}
+        if (!biography) { return await this.customAlert(null, await this.translateComponent("register-error-16")) }
 
         // makes a verification pin which is a random 6 digit number
         const verification_pin = Math.floor(Math.random() * 900000) + 100000;

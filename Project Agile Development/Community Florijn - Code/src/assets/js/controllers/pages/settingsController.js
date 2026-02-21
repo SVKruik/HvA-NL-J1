@@ -538,12 +538,12 @@ export class SettingsController extends Controller {
                                     if (localProfileSrc) {
                                         img.setAttribute("src", `${localProfileSrc}`);
 
-                                        img.addEventListener('error', () => { img.src = "/assets/img/icons/default.svg" }, { once: true })
+                                        img.addEventListener('error', () => { img.src = "./assets/img/icons/default.svg" }, { once: true })
 
                                     } else {
                                         img.setAttribute("src", `/uploads/profile/${newUsername}.jpg`);
 
-                                        img.addEventListener('error', () => { img.src = "/assets/img/icons/default.svg" }, { once: true })
+                                        img.addEventListener('error', () => { img.src = "./assets/img/icons/default.svg" }, { once: true })
                                     }
                                 });
 
@@ -710,7 +710,7 @@ export class SettingsController extends Controller {
 
                         try {
                             if (validColorblindOptions.includes(colorblindMode)) {
-                                await settingsRepository.setAccessSettings(App.sessionManager.get("email"), colorblind ? colorblindMode : null, highContrast ? 1 : null);
+                                await settingsRepository.setAccessSettings(App.sessionManager.get("email"), colorblind ? colorblindMode : null, highContrast ? 1 : 0);
                                 await controller.customAlert(null, await translateComponent("settings-access-success"), "confirmation");
                             } else {
                                 throw new Error("Invalid colorblind mode!")

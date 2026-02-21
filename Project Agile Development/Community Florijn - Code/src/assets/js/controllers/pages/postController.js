@@ -603,7 +603,7 @@ export class PostController extends Controller {
 
         if (type == "edit") {
             // Changing the source of the preview to the existing story image
-            storyImage.src = `/uploads/story/${storyData.url}.jpg`;
+            storyImage.src = `${baseUrl}/uploads/story/${storyData.url}.jpg`;
 
             // Event listener to remove the image on error
             storyImage.addEventListener("error", () => { clearImage(true); }, { once: true });

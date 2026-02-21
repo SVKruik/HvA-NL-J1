@@ -6,7 +6,7 @@
     width: 100%;
     height: calc(100vh - 101px);
     position: absolute;
-    border-radius: 0px;
+    border-radius: 0;
     top: 100px;
     filter: opacity(0.9);
 }
@@ -15,7 +15,7 @@
     width: 100%;
     height: calc(155vh - 101px);
     position: absolute;
-    border-radius: 0px;
+    border-radius: 0;
     top: 101px;
     filter: opacity(0.9);
 }
@@ -81,7 +81,6 @@
     font-size: 16px;
     font-family: 'Playfair Display', sans-serif;
     word-break: break-word;
-    align-items: center;
     align-items: start;
     gap: 5px;
 }
@@ -120,7 +119,6 @@
 .login-box input[type="password"] {
     padding: 10px;
     margin-bottom: 10px;
-    border-radius: 10px;
     border: 1px solid var(--gray);
     color: var(--alt);
     width: 100%;

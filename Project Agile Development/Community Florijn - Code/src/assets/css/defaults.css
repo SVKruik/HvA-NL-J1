@@ -43,7 +43,6 @@
     border-radius: 10px;
     font-weight: 400;
     font-family: 'DM Sans', sans-serif;
-    transition: 0.4s ease-out;
 }
 
 img {
@@ -579,8 +578,7 @@ button.invalid {
 
 /* High Contrast Styling */
 :root.high-contrast {
-    --border: var(
-    --alt);
+    --border: var(--alt);
     --error: #FF0000;
     --warning: #FFFF00;
     --confirm: #00FF00;

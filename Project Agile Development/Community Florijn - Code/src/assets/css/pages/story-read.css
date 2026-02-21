@@ -201,7 +201,6 @@
 
 .story-stat-container {
     display: flex;
-    gap: 20px;
     gap: 15px;
 }
 
@@ -533,7 +532,7 @@ button.story-translate-button p {
     height: fit-content;
     margin-top: 20px;
     border-left: 2px solid var(--border);
-    border-radius: 0px;
+    border-radius: 0;
     box-sizing: border-box;
     padding-left: 20px;
 }
@@ -585,7 +584,7 @@ button.story-translate-button p {
     }
 
     .story-author-container {
-        margin-left: 0px;
+        margin-left: 0;
     }
 
     .story-tag {
@@ -596,7 +595,7 @@ button.story-translate-button p {
     }
 
     .story-modifier-container {
-        margin-right: 0px;
+        margin-right: 0;
     }
 
     .story-read-footer {
@@ -626,7 +625,7 @@ button.story-translate-button p {
     }
 
     .story-title {
-        border-radius: 0px;
+        border-radius: 0;
         height: fit-content;
         max-height: 300px;
     }
@@ -646,7 +645,7 @@ button.story-translate-button p {
     }
 
     .story-modifier-container {
-        margin-right: 0px;
+        margin-right: 0;
     }
 
     #place-story-icon {
@@ -685,7 +684,7 @@ button.story-translate-button p {
     }
 
     .story-info-sub-bar {
-        gap: 0px;
+        gap: 0;
     }
 
     .bar1 {
@@ -717,7 +716,7 @@ button.story-translate-button p {
     }
 
     .story-stat-container {
-        margin-left: 0px;
+        margin-left: 0;
     }
 
     .comment-footer-container,
