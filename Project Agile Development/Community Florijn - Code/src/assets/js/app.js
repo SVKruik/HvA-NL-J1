@@ -33,6 +33,7 @@ export class App {
 
     static CONTROLLER_HOME = "home";
     static CONTROLLER_STORY = "story";
+    static CONTROLLER_STORY_READ = "story-read";
     static CONTROLLER_POST = "post";
     static CONTROLLER_ABOUT = "about";
     static CONTROLLER_CONTACT = "contact";

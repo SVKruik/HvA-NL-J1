@@ -25,7 +25,6 @@ h5.title {
 .settings-tabs {
     display: flex;
     flex-direction: column;
-    /* flex-grow: 1; */
     border-right: 1px solid var(--gray);
     border-radius: 0;
     width: max-content;

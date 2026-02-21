@@ -1,7 +1,7 @@
 class RegistreerRoutes {
     #databasehelper = require("../framework/utils/databaseHelper.js");
     #httpErrorCodes = require("../framework/utils/httpErrorCodes.js");
-    #cryptoHelper = require('../framework/utils/CryptoHelper.js');
+    #cryptoHelper = require('../framework/utils/cryptoHelper.js');
     #app;
 
     constructor(app) {

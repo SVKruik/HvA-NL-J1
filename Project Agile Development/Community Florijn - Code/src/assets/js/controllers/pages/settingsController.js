@@ -538,12 +538,12 @@ export class SettingsController extends Controller {
                                     if (localProfileSrc) {
                                         img.setAttribute("src", `${localProfileSrc}`);
 
-                                        img.addEventListener('error', () => { img.src = "/assets/img/icons/default.svg" }, { once: true })
+                                        img.addEventListener('error', () => { img.src = "./assets/img/icons/default.svg" }, { once: true })
 
                                     } else {
                                         img.setAttribute("src", `/uploads/profile/${newUsername}.jpg`);
 
-                                        img.addEventListener('error', () => { img.src = "/assets/img/icons/default.svg" }, { once: true })
+                                        img.addEventListener('error', () => { img.src = "./assets/img/icons/default.svg" }, { once: true })
                                     }
                                 });
 

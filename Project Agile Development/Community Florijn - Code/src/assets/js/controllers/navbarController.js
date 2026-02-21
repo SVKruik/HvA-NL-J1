@@ -134,14 +134,14 @@ export class NavbarController extends Controller {
 
       // Trying to load the user image from the logged in user
       try {
-        userImg.src = `uploads/profile/${userData[0].user_name}.jpg`;
+        userImg.src = `${baseUrl}/uploads/profile/${userData[0].user_name}.jpg`;
 
         // On error when loading the profile image, load the default.svg
         userImg.addEventListener('error', () => {
-          userImg.src = "/assets/img/icons/default.svg";
+          userImg.src = `${baseUrl}/assets/img/icons/default.svg`;
         }, { once: true });
-      } catch {
-        userImg.src = `../../img/icons/default.svg`;
+      } catch (e) {
+        userImg.src = `${baseUrl}/assets/img/icons/default.svg`;
       } finally {
         profileBtns.forEach(btn => {
           btn.href = `#profile/${userData[0].user_name}`;

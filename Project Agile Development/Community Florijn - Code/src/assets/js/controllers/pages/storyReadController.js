@@ -59,7 +59,7 @@ export class StoryReadController extends Controller {
 
         // Explicit Handling
         if (storyData.result[0] && storyData.result[0].explicit === 1 && explicit === 0) {
-            this.#storyReadView.getElementsByClassName("story-read-placeholder-image")[0].src = "assets/img/svg/Exclamation.svg";
+            this.#storyReadView.getElementsByClassName("story-read-placeholder-image")[0].src = `${baseUrl}/assets/img/svg/Exclamation.svg`;
             this.#storyReadView.getElementsByClassName("story-read-placeholder")[0].innerHTML = await super.translateComponent("story-read-placeholder-4")
             this.#storyReadView.getElementsByClassName("story-read-placeholder")[0].setAttribute("data-translate", "story-read-placeholder-4");
             return this.#storyReadView.getElementsByClassName("story-content-wrapper")[0].style.display = "none";
@@ -269,10 +269,10 @@ export class StoryReadController extends Controller {
         if (storyData.result[0].explicit > 0) super.createModifier("Explicit", modifierContainerHost);
 
         // Filling Content
-        image.src = `uploads/story/${storyData.result[0].url}.jpg`;
+        image.src = `${baseUrl}/uploads/story/${storyData.result[0].url}.jpg`;
 
         image.addEventListener("error", () => {
-            image.src = "/assets/img/background/error.svg";
+            image.src = `${baseUrl}/assets/img/background/error.svg`;
             image.style.filter = "brightness(0.5)";
         }, { once: true });
 
@@ -311,23 +311,23 @@ export class StoryReadController extends Controller {
 
         // Default Image
         authorImage.addEventListener("error", () => {
-            authorImage.src = "/assets/img/icons/default.svg";
+            authorImage.src = `${baseUrl}/assets/img/icons/default.svg`;
         }, { once: true });
 
         // Check for story configuration values
         if (storyData.result[0].anonymous === 1 && storyData.result[0].user_type !== 2) {
             authorName.innerHTML = await super.translateComponent("user-1");
             date.innerHTML = `${await super.translateComponent("story-read-author-2")} ${formattedDate}.`;
-            authorImage.src = "/assets/img/icons/default.svg";
+            authorImage.src = `${baseUrl}/assets/img/icons/default.svg`;
             authorContainer.style.cursor = "default";
         } else if (storyData.result[0].user_type === 2) {
             authorName.innerHTML = await super.translateComponent("user-2");
             date.innerHTML = `${await super.translateComponent("story-read-author-3")} ${formattedDate}.`;
-            authorImage.src = "/assets/img/icons/default.svg";
+            authorImage.src = `${baseUrl}/assets/img/icons/default.svg`;
             authorContainer.style.cursor = "default";
         } else {
             authorName.innerHTML = storyData.result[0].user_name;
-            authorImage.src = `uploads/profile/${storyData.result[0].user_name}.jpg`;
+            authorImage.src = `${baseUrl}/uploads/profile/${storyData.result[0].user_name}.jpg`;
             authorContainer.setAttribute("href", `#profile/${storyData.result[0].user_name}`);
         };
         if (storyData.result[0].edit_date) {
@@ -444,11 +444,11 @@ export class StoryReadController extends Controller {
         authorSubContainer.className = "comment-sub-container";
         const authorImage = document.createElement("img");
         authorImage.className = "comment-author-image";
-        authorImage.src = `uploads/profile/${commentData.user_name}.jpg`;
+        authorImage.src = `${baseUrl}/uploads/profile/${commentData.user_name}.jpg`;
 
         // Default Image
         authorImage.addEventListener("error", () => {
-            authorImage.src = "/assets/img/icons/default.svg";
+            authorImage.src = `${baseUrl}/assets/img/icons/default.svg`;
         }, { once: true });
 
         const authorName = document.createElement("p");
@@ -906,7 +906,7 @@ export class StoryReadController extends Controller {
         const title = document.createElement("h5");
         title.innerHTML = titleContent;
         const image = document.createElement("img");
-        image.src = "../assets/img/svg/Empty.svg";
+        image.src = `${baseUrl}/assets/img/svg/Empty.svg`;
 
         // Parent
         const container = document.createElement("div");
