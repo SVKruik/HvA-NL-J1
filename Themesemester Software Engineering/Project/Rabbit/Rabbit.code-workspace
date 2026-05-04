@@ -1,0 +1,53 @@
+{
+  "folders": [
+    {
+      "path": "./",
+      "name": "Root"
+    },
+    {
+      "path": "./site/src",
+      "name": "Frontend - Nuxt"
+    },
+    {
+      "path": "./mission/site",
+      "name": "Backend - Node.js"
+    }
+  ],
+  "settings": {
+    "window.titleBarStyle": "custom",
+
+    "workbench.colorCustomizations": {
+      "titleBar.activeBackground": "#ff5a1f",
+      "titleBar.activeForeground": "#ffffff",
+
+      "titleBar.inactiveBackground": "#1f2937",
+      "titleBar.inactiveForeground": "#9fb3d1",
+
+      "commandCenter.background": "#111820",
+      "commandCenter.foreground": "#ffffff",
+      "commandCenter.activeBackground": "#1f2937",
+
+      "activityBar.background": "#0b1117",
+      "activityBar.foreground": "#ffffff",
+      "activityBar.inactiveForeground": "#6f84a3",
+      "activityBarBadge.background": "#ff5a1f",
+      "activityBarBadge.foreground": "#ffffff",
+
+      "statusBar.background": "#0b1117",
+      "statusBar.foreground": "#ffffff",
+      "statusBar.noFolderBackground": "#0b1117",
+      "statusBar.debuggingBackground": "#ff5a1f",
+      "statusBar.debuggingForeground": "#ffffff",
+
+      "window.activeBorder": "#ff5a1f",
+      "window.inactiveBorder": "#1f2937",
+
+      "badge.background": "#0aa875",
+      "badge.foreground": "#ffffff",
+
+      "button.background": "#ff5a1f",
+      "button.foreground": "#ffffff",
+      "button.hoverBackground": "#ff7a3d"
+    }
+  }
+}
